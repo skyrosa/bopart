@@ -1,1 +1,1 @@
-
+React and tailwind installed
