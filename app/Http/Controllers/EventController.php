@@ -14,7 +14,8 @@ class EventController extends Controller
      */
     public function index()
     {
-        return view('events.index');
+        $events = Event::all();
+        return view('events.index', compact('events'));
     }
 
     /**
@@ -35,7 +36,11 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Event::create([
+            'name' => $request['name'],
+        ]);
+
+        return redirect()->route('events.index');
     }
 
     /**
@@ -57,7 +62,7 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
-        return view('events.show', compact('event'));
+        return view('events.edit', compact('event'));
     }
 
     /**
@@ -69,7 +74,10 @@ class EventController extends Controller
      */
     public function update(Request $request, Event $event)
     {
-        //
+        $event->update([
+            'name' => $request['name'],
+        ]);
+        return redirect()->route('events.index');
     }
 
     /**
@@ -80,6 +88,7 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
-        //
+        $event->delete();
+        return redirect()->route('events.index');
     }
 }
