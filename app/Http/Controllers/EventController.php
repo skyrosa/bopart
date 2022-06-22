@@ -115,6 +115,15 @@ class EventController extends Controller
         
         return view('auth.profile', compact('events'));
     }
+
+
+    public function deleteAllUserInEvent(Event $event)
+    {
+        $registered = $event->user;
+
+        $event->user()->detach($registered);
+    }
+
     /**
      * Remove the specified resource from storage.
      *
