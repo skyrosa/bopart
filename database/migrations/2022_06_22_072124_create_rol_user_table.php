@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('rol_user', function (Blueprint $table) {
             $table->id();
+
+            $table->unsignedBigInteger('rol_id');
+            $table->unsignedBigInteger('user_id');
+
             $table->timestamps();
         });
     }
