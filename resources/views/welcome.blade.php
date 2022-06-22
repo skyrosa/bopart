@@ -5,7 +5,6 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div id="example" ></div>
-            <i class="fa-solid fa-user" ></i>
         </div>
     </div>
 </div>

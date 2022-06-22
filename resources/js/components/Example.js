@@ -10,8 +10,7 @@ function Example() {
                 <div className="col-md-8">
                     <div className="card">
                         <div className="card-header">Example Component</div>
-                        <div className="card-body text-3xl font-bold underline">I'm an example component!</div>
-                        
+                        <div className="card-body text-3xl font-bold underline">I'm an example component!</div>                      
                         <FontAwesomeIcon icon={faEye} />
                     </div>
                 </div>
