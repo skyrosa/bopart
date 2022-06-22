@@ -20,6 +20,10 @@
                         </button>
                     </form>
                     <a href="{{ route('events.edit', $event->id) }}" class="btn btn-primary"> Editar</a>
+
+                        <a href="{{ route('events.dropOut', $event->id) }}" class="btn btn-danger">Retirarse del evento</a>
+
+                        <a href="{{ route('events.checkIn', $event->id) }}" class="btn btn-success text-white">Apuntarse al evento</a>
                 </div>
 
             </div>

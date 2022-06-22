@@ -80,6 +80,25 @@ class EventController extends Controller
         return redirect()->route('events.index');
     }
 
+    public function checkIn(Event $event)
+    {
+        $user = auth()->user();
+        $user->event()->attach($event);
+        return redirect()->route('events.index');
+    }
+
+    public function dropOut(Event $event)
+    {
+        $user = auth()->user();
+        $user->event()->detach($event);
+        return redirect()->route('events.index');
+    }
+
+    public function myEvents()
+    {
+        $events = auth()->user()->event;
+        return view('auth.profile', compact('events'));
+    }
     /**
      * Remove the specified resource from storage.
      *

@@ -21,6 +21,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/profile', [EventController::class, 'myEvents'])->name('profile');
+
+Route::get('/events/{event}/check-in', [EventController::class, 'checkIn'])->name('events.checkIn');
+Route::get('/events/{event}/drop-out', [EventController::class, 'dropOut'])->name('events.dropOut');
+
 Route::resource('events', EventController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
