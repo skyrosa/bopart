@@ -33,7 +33,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item"> <a href="{{ route('events.index') }}">Eventos</a> </li>
+                        <li class="nav-item"> <a href="{{ route('events.create') }}">nuevo Evento</a> </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
