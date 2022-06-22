@@ -5450,8 +5450,6 @@ function Example() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: "card-body text-3xl font-bold underline",
             children: "I'm an example component!"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(FontAwesomeIcon, {
-            icon: "fa-solid fa-book-skull"
           })]
         })
       })
