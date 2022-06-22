@@ -24,20 +24,30 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $rol = Rol ::factory()->create([
-            'name' => 'seller'
+        $rol1 = Rol ::factory()->create([
+            'name' => 'admin'
         ]);
 
-        Rol::factory()->create([
-            'name' => 'customer'
+        $rol2 = Rol::factory()->create([
+            'name' => 'user'
         ]);
-
-        $user = User ::factory()->create([
+        
+        $user1 = User ::factory()->create([
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'password' => Hash::make('12345'),
         ]);
-
-        $user->Rol()->attach($rol);
+        $user1->Rol()->attach($rol1);
+        
+        $user2 = User ::factory()->create([
+            'name' => 'User',
+            'email' => 'user@gmail.com',
+            'password' => Hash::make('12345'),
+        ]);
+        $user2->Rol()->attach($rol2);
+        
+        
+        
+        
     }
 }
