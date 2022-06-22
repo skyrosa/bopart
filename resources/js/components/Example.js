@@ -9,6 +9,7 @@ function Example() {
                     <div className="card">
                         <div className="card-header">Example Component</div>
                         <div className="card-body text-3xl font-bold underline">I'm an example component!</div>
+                        <FontAwesomeIcon icon="fa-solid fa-book-skull" />
                     </div>
                 </div>
             </div>

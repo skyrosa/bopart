@@ -7,12 +7,12 @@ module.exports = {
   ],
   theme: {
     colors:{
-      bobRed:    '#ED155D',
-      bobRedd:   '#ED155D',
-      bobYellow: '#F8D210',
-      bobTourq:  '#2FF3E0',
-      bobWhite:  '#FFFFFF',
-      bobBlack:  '#222222',
+      colorRed:    '#ED155D',
+      colorRedd:   '#ED155D',
+      colorYellow: '#F8D210',
+      colorTourq:  '#2FF3E0',
+      colorWhite:  '#FFFFFF',
+      colorBlack:  '#222222',
 
     },
 
