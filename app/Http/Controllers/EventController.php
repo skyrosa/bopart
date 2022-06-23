@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
@@ -120,7 +121,6 @@ class EventController extends Controller
     public function deleteAllUserInEvent(Event $event)
     {
         $registered = $event->user;
-
         $event->user()->detach($registered);
     }
 
@@ -132,6 +132,8 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
+        $this->deleteAllUserInEvent($event);
+
         $event->delete();
         return redirect()->route('events.index');
     }
