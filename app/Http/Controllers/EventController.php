@@ -5,9 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Event;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class EventController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth'); // unfinished
+    }
     /**
      * Display a listing of the resource.
      *
@@ -78,6 +82,9 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
+        if(! Gate::allows('only-admin')){
+            abort(403);
+        }
         return view('events.edit', compact('event'));
     }
 
@@ -90,6 +97,8 @@ class EventController extends Controller
      */
     public function update(Request $request, Event $event)
     {
+        $this->authorize('update', $event);
+
         $event->update([
             'name' => $request['name'],
         ]);
@@ -132,6 +141,13 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
+        /*
+        if(! Gate::allows('only-admin')){
+            abort(403);
+        }
+ */
+        $this->authorize('delete', $event);
+
         $this->deleteAllUserInEvent($event);
 
         $event->delete();
