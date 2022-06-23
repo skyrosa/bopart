@@ -51,7 +51,22 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        return view('events.show', compact('event'));
+        $isCheck = false;
+
+        if(auth()->user()){
+            $myEvents = auth()->user()->event->where('id', $event->id)->first();
+            
+            switch($myEvents){
+                case true:
+                    $isCheck = true;
+                    break;
+                case false:
+                    $isCheck = false;
+                    break;
+            }
+        }
+ 
+        return view('events.show', compact('event', 'isCheck'));
     }
 
     /**
@@ -97,8 +112,18 @@ class EventController extends Controller
     public function myEvents()
     {
         $events = auth()->user()->event;
+        
         return view('auth.profile', compact('events'));
     }
+
+
+    public function deleteAllUserInEvent(Event $event)
+    {
+        $registered = $event->user;
+
+        $event->user()->detach($registered);
+    }
+
     /**
      * Remove the specified resource from storage.
      *
