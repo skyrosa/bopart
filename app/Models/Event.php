@@ -12,7 +12,9 @@ class Event extends Model
     protected $fillable = [
         'name',
         'description',
-        'dateTime',
+        'date',
+        'startTime',
+        'endTime',
         'image',
         'address',
     ];

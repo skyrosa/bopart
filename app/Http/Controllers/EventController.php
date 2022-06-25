@@ -43,6 +43,9 @@ class EventController extends Controller
     {
         Event::create([
             'name' => $request['name'],
+            'date' => $request['date'],
+            'startTime' => $request['startTime'],
+            'endTime' => $request['endTime'],
         ]);
 
         return redirect()->route('events.index');
@@ -101,6 +104,9 @@ class EventController extends Controller
 
         $event->update([
             'name' => $request['name'],
+            'date' => $request['date'],
+            'startTime' => $request['startTime'],
+            'endTime' => $request['endTime'],
         ]);
         return redirect()->route('events.index');
     }

@@ -31,6 +31,51 @@
                                     </span>
                                 @enderror
                             </div>
+
+                            <div class="row mb-3">
+                                <label for="name" class="col-md-4 col-form-label text-md-end">fecha</label>
+    
+                                <div class="col-md-6">
+                                    <input 
+                                    id="date" 
+                                    type="date" 
+                                    class="form-control" 
+                                    name="date" 
+                                    value="{{ old('name') ?? $event->date }}"
+                                    required 
+                                    autofocus>
+                                </div>
+                            </div>
+    
+                            <div class="row mb-3">
+                                <label for="name" class="col-md-4 col-form-label text-md-end">Hora de inicio</label>
+    
+                                <div class="col-md-6">
+                                    <input 
+                                    id="startTime" 
+                                    type="time" 
+                                    class="form-control" 
+                                    name="startTime" 
+                                    value="{{ old('name') ?? $event->startTime }}"
+                                    required 
+                                    autofocus>
+                                </div>
+                            </div>
+    
+                            <div class="row mb-3">
+                                <label for="name" class="col-md-4 col-form-label text-md-end">Hora de finalizacion</label>
+    
+                                <div class="col-md-6">
+                                    <input 
+                                    id="endTime" 
+                                    type="time" 
+                                    class="form-control" 
+                                    name="endTime" 
+                                    value="{{ old('name') ?? $event->endTime }}"
+                                    required 
+                                    autofocus>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="row mb-0">
