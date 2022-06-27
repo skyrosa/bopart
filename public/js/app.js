@@ -20432,10 +20432,8 @@ var RTab = function RTab(_ref) {
       otherProps = _objectWithoutProperties(_ref, _excluded);
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_tabs__WEBPACK_IMPORTED_MODULE_1__.Tab, _objectSpread(_objectSpread({}, otherProps), {}, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-      className: "flex items-center bg-colorYellow text-colorWhite hover:bg-colorDarkYellow font-bold py-2 px-4 rounded",
-      children: children
-    })
+    className: "flex items-center text-colorWhite font-bold py-2 px-4 rounded bg-colorYellow cursor-pointer",
+    children: children
   }));
 };
 
