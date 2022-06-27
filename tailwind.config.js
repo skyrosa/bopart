@@ -11,6 +11,7 @@ module.exports = {
       colorRed:    '#ED155D',
       colorRedd:   '#ED155D',
       colorYellow: '#F8D210',
+      colorDarkYellow: '#cfb00e',
       colorTourq:  '#2FF3E0',
       colorWhite:  '#FFFFFF',
       colorBlack:  '#222222',
