@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from "react-dom/client";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 
@@ -22,5 +22,6 @@ function Example() {
 export default Example;
 
 if (document.getElementById('example')) {
-    ReactDOM.render(<Example />, document.getElementById('example'));
+    const root = createRoot(document.getElementById("example"));
+    root.render(<Example />);
 }
