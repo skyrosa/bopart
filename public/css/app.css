@@ -21082,11 +21082,30 @@ video {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.flex {
+  display: flex;
+}
 .hidden {
   display: none;
 }
+.items-center {
+  align-items: center;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.bg-colorRed {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 21 93 / var(--tw-bg-opacity));
+}
 .p-0 {
   padding: 0px;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .py-4 {
   padding-top: 1rem;
