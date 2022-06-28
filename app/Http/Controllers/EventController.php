@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreEvent;
 use App\Models\Event;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -10,7 +11,7 @@ use Illuminate\Support\Facades\Gate;
 class EventController extends Controller
 {
     public function __construct(){
-        $this->middleware('auth'); // unfinished
+        $this->middleware('auth')->except('index', 'show');
     }
     /**
      * Display a listing of the resource.
@@ -39,7 +40,7 @@ class EventController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreEvent $request)
     {
         Event::create([
             'name' => $request['name'],
@@ -115,29 +116,27 @@ class EventController extends Controller
     {
         $user = auth()->user();
         $user->event()->attach($event);
-        return redirect()->route('events.index');
+        return redirect()->back();
     }
 
     public function dropOut(Event $event)
     {
         $user = auth()->user();
         $user->event()->detach($event);
-        return redirect()->route('events.index');
+        return redirect()->back();
     }
 
     public function myEvents()
     {
         $events = auth()->user()->event;
-        
         return view('auth.profile', compact('events'));
     }
 
-
-    public function deleteAllUserInEvent(Event $event)
-    {
-        $registered = $event->user;
-        $event->user()->detach($registered);
-    }
+    // public function deleteAllUserInEvent(Event $event)
+    // {
+    //     $registered = $event->user;
+    //     $event->user()->detach($registered);
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -147,14 +146,7 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
-        /*
-        if(! Gate::allows('only-admin')){
-            abort(403);
-        }
- */
         $this->authorize('delete', $event);
-
-        $this->deleteAllUserInEvent($event);
 
         $event->delete();
         return redirect()->route('events.index');
