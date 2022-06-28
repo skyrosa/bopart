@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Event;
 use App\Models\Rol;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -32,20 +33,21 @@ class DatabaseSeeder extends Seeder
             'name' => 'user'
         ]);
         
-        $user1 = User ::factory()->create([
+        $user1 = User::factory()->create([
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'password' => Hash::make('12345'),
         ]);
         $user1->Rol()->attach($rol1);
         
-        $user2 = User ::factory()->create([
+        $user2 = User::factory()->create([
             'name' => 'User',
             'email' => 'user@gmail.com',
             'password' => Hash::make('12345'),
         ]);
         $user2->Rol()->attach($rol2);
         
+        Event::factory(5)->create();
         
         
         
