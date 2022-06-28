@@ -31,7 +31,8 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('events.create');
+        $event = Event::factory()->make();
+        return view('events.create', compact('event'));
     }
 
     /**

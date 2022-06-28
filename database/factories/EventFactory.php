@@ -15,13 +15,15 @@ class EventFactory extends Factory
      * @return array<string, mixed>
      */
     public function definition()
-    {   $time = $this->faker->time();
+    {   
+        $date = $this->faker->dateTimeBetween('+0 days', '+2 years');
+        $time = date('H:i' ,strtotime($this->faker->time()));
         return [
             "name" => $this->faker->company(),
             "description" => $this->faker->paragraph(),
-            "date" => $this->faker->dateTimeBetween('+0 days', '+2 years'),
+            "date" => date_format($date, 'Y-m-d'),
             "startTime" => $time,
-            "endTime" => $this->faker->time($format = 'H:i:s', $min = $time),
+            "endTime" => $time,
             "image" => $this->faker->imageUrl(),
             "address" => $this->faker->address(),
         ];
