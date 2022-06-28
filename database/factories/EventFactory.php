@@ -19,9 +19,9 @@ class EventFactory extends Factory
         return [
             "name" => $this->faker->company(),
             "description" => $this->faker->paragraph(),
-            "date" => $this->faker->date($format = 'Y-m-d', $min = 'now'),
-            // "startTime" => $time,
-            // "endTime" => $this->faker->time($min=$time),
+            "date" => $this->faker->dateTimeBetween('+0 days', '+2 years'),
+            "startTime" => $time,
+            "endTime" => $this->faker->time($format = 'H:i:s', $min = $time),
             "image" => $this->faker->imageUrl(),
             "address" => $this->faker->address(),
         ];
