@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreEvent;
 use App\Models\Event;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -39,7 +40,7 @@ class EventController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreEvent $request)
     {
         Event::create([
             'name' => $request['name'],

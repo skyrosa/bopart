@@ -7,6 +7,7 @@ import RTabList from "./tabs/RTabList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faLocationDot, faClock } from "@fortawesome/free-solid-svg-icons";
 
+
 const EventForm = () => {
     return (
         <RTabs>
