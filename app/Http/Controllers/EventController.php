@@ -31,6 +31,10 @@ class EventController extends Controller
      */
     public function create()
     {
+        if(! Gate::allows('only-admin')){
+            abort(403);
+        }
+        
         $event = Event::factory()->make();
         return view('events.create', compact('event'));
     }
@@ -43,6 +47,9 @@ class EventController extends Controller
      */
     public function store(StoreEvent $request)
     {
+        if(! Gate::allows('only-admin')){
+            abort(403);
+        }
         Event::create([
             'name' => $request['name'],
             'date' => $request['date'],
@@ -87,9 +94,8 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
-        if(! Gate::allows('only-admin')){
-            abort(403);
-        }
+        $this->authorize('update', $event);
+
         return view('events.edit', compact('event'));
     }
 

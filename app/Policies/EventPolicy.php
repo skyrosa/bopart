@@ -42,8 +42,7 @@ class EventPolicy
      */
     public function create(User $user)
     {
-        $rolName = $user->rol->first()->name;
-        return $rolName == 'admin';
+
     }
 
     /**
