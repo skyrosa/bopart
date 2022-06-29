@@ -29,9 +29,29 @@
                                 @enderror
                             </div>
                         </div>
+
+                        <div class="row mb-3">
+                            <label for="description" class="col-md-4 col-form-label text-md-end">Descripcion</label>
+                            
+                            <div class="col-md-6">
+                                <input 
+                                id="description" 
+                                type="text" 
+                                class="form-control @error('description') is-invalid @enderror" 
+                                name="description" 
+                                required 
+                                value="{{ old('description') ?? $event->description }}"
+                                autofocus>
+                                @error('description')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
                         
                         <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">fecha</label>
+                            <label for="date" class="col-md-4 col-form-label text-md-end">fecha</label>
 
                             <div class="col-md-6">
                                 <input 
@@ -51,7 +71,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">Hora de inicio</label>
+                            <label for="startTime" class="col-md-4 col-form-label text-md-end">Hora de inicio</label>
 
                             <div class="col-md-6">
                                 <input 
@@ -71,7 +91,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">Hora de finalizacion</label>
+                            <label for="endTime" class="col-md-4 col-form-label text-md-end">Hora de finalizacion</label>
 
                             <div class="col-md-6">
                                 <input 
@@ -83,6 +103,46 @@
                                 value="{{ old('endTime') ?? $event->endTime }}"
                                 autofocus>
                                 @error('endTime')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="image" class="col-md-4 col-form-label text-md-end">Imagen</label>
+
+                            <div class="col-md-6">
+                                <input 
+                                id="image" 
+                                type="text" 
+                                class="form-control @error('image') is-invalid @enderror" 
+                                name="image" 
+                                required 
+                                value="{{ old('image') ?? $event->image }}"
+                                autofocus>
+                                @error('image')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="address" class="col-md-4 col-form-label text-md-end">Dirección</label>
+
+                            <div class="col-md-6">
+                                <input 
+                                id="address" 
+                                type="text" 
+                                class="form-control @error('address') is-invalid @enderror" 
+                                name="address" 
+                                required 
+                                value="{{ old('address') ?? $event->address }}"
+                                autofocus>
+                                @error('address')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

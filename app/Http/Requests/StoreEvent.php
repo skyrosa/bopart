@@ -25,12 +25,12 @@ class StoreEvent extends FormRequest
     {
         return [
             'name' => 'required|string',
-            'description' => 'string',
+            'description' => 'nullable|string',
             'date' => 'required|date',
             'startTime' => 'required|date_format:H:i',
             'endTime' => 'required|date_format:H:i',
-            'image' => 'image',
-            'address' => 'string',
+            'image' => 'nullable|url',
+            'address' => 'nullable|string',
         ];
     }
 }
