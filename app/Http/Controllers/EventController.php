@@ -109,7 +109,7 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Event $event)
+    public function update(StoreEvent $request, Event $event)
     {
         $this->authorize('update', $event);
 
