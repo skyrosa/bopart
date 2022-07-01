@@ -53,11 +53,10 @@ class AdminEventTest extends TestCase
         $this->assertDatabaseCount('events', 1); //verificamos si el registro existe en la base de datos 
 
         $this->withoutExceptionHandling();
-
     }
 
     //no se puede introducir datos con un fomato incorrecto en los formularios
-    public function test_cant_store_event_with_incorrect_format()
+    public function test_throw_invalid_error_input()
     {
         $event = $this->event();
         $event['date'] = 'invalidDate'; //cambiamos el contenido
@@ -96,7 +95,7 @@ class AdminEventTest extends TestCase
     }
 
     //no se puede actualizar datos con un fomato incorrecto en los formularios
-    public function test_cant_update_event_with_incorrect_format()
+    public function test_throw_invalid_error_while_update()
     {
         $event = Event::factory()->create(); //agregamos un evento en la base de datos
         $editedEvent = $event->toArray(); //convertimos el evento en un array

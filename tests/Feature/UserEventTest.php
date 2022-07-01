@@ -59,7 +59,7 @@ class UserEventTest extends TestCase
     }
 
     //no se puede entrar a la vista de crear evento
-    public function test_cant_see_create_event_view()
+    public function test_cant_see_view_create_event()
     {
         $response = $this->get(route('events.create'));
         $response->assertStatus(403);
@@ -78,7 +78,7 @@ class UserEventTest extends TestCase
     }
 
     //No se puede acceder a la vista de crear evento
-    public function test_cant_see_edit_event()
+    public function test_cant_see_view_edit_event()
     {
         $event = Event::factory()->create(); //Agregamos un evento en la database
         $response = $this->get(route('events.edit', $event));//Intentamos entrar a la vista create
