@@ -42,7 +42,7 @@
                                 class="form-control @error('description') is-invalid @enderror" 
                                 name="description" 
                                 required 
-                                value="{{ old('description') ?? $event->name }}"
+                                value="{{ old('description') ?? $event->description }}"
                                 autofocus>
                                 @error('description')
                                     <span class="invalid-feedback" role="alert">
@@ -82,7 +82,7 @@
                                 class="form-control @error('startTime') is-invalid @enderror" 
                                 name="startTime" 
                                 required 
-                                value="{{  old('startTime') ?? $event->startTime }}"
+                                value="{{  old('startTime') ?? date('H:i' ,strtotime($event->startTime)) }}"
                                 autofocus>
                                 @error('startTime')
                                     <span class="invalid-feedback" role="alert">
@@ -102,7 +102,7 @@
                                 class="form-control @error('endTime') is-invalid @enderror" 
                                 name="endTime" 
                                 required 
-                                value="{{ old('endTime') ?? $event->endTime }}"
+                                value="{{ old('endTime') ?? date('H:i' ,strtotime($event->endTime)) }}"
                                 autofocus>
                                 @error('endTime')
                                     <span class="invalid-feedback" role="alert">

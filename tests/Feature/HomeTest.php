@@ -13,10 +13,13 @@ class HomeTest extends TestCase
      *
      * @return void
      */
+
+    //pagina principal es la home
     public function test_view_home_is_the_main()
     {
-        $this -> withoutExceptionHandling();
         $response = $this->get('/');
         $response->assertStatus(200)->assertViewIs('home');
+
+        $this -> withoutExceptionHandling();
     }
 }

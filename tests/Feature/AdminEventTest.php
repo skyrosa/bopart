@@ -111,6 +111,7 @@ class AdminEventTest extends TestCase
         $this->withoutExceptionHandling();
     }
 
+    // admin puede eliminar evento
     public function test_admin_can_delete_event()
     {
         $event = Event::factory()->create(); //agregamos un evento en la base de datos
