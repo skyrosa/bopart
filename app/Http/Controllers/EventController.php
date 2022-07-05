@@ -58,6 +58,7 @@ class EventController extends Controller
             'endTime' => $request['endTime'],
             'image' => $request['image'],
             'address' => $request['address'],
+            'capacity' => $request['capacity'],
         ]);
 
         return redirect()->route('events.index');
@@ -121,6 +122,7 @@ class EventController extends Controller
             'endTime' => $request['endTime'],
             'image' => $request['image'],
             'address' => $request['address'],
+            'capacity' => $request['capacity'],
         ]);
         return redirect()->route('events.index');
     }
