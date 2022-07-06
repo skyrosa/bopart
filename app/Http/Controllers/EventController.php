@@ -72,22 +72,10 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        $isCheck = false;
+        $isCheck = $this->verifyRecord($event);
+        $canRegister = $this->checkCapacity($event);
 
-        if(auth()->user()){
-            $myEvents = auth()->user()->event->where('id', $event->id)->first();
-            
-            switch($myEvents){
-                case true:
-                    $isCheck = true;
-                    break;
-                case false:
-                    $isCheck = false;
-                    break;
-            }
-        }
- 
-        return view('events.show', compact('event', 'isCheck'));
+        return view('events.show', compact('event', 'isCheck', 'canRegister'));
     }
 
     /**
@@ -124,18 +112,27 @@ class EventController extends Controller
             'address' => $request['address'],
             'capacity' => $request['capacity'],
         ]);
-        return redirect()->route('events.index');
+        return redirect()->route('events.show', compact('event'));
     }
 
     public function checkIn(Event $event)
-    {
-        $user = auth()->user();
-        $user->event()->attach($event);
+    {   
+        if($this->checkCapacity($event)){
+
+            $event->capacity--;
+            $event->save();
+
+            $user = auth()->user();
+            $user->event()->attach($event);
+        }
         return redirect()->back();
     }
 
     public function dropOut(Event $event)
     {
+        $event->capacity++;
+        $event->save();
+
         $user = auth()->user();
         $user->event()->detach($event);
         return redirect()->back();
@@ -147,11 +144,33 @@ class EventController extends Controller
         return view('auth.profile', compact('events'));
     }
 
-    // public function deleteAllUserInEvent(Event $event)
-    // {
-    //     $registered = $event->user;
-    //     $event->user()->detach($registered);
-    // }
+    public function verifyRecord(Event $event)
+    {
+        $isCheck = false;
+
+        if(auth()->user()){
+            $myEvents = auth()->user()->event->where('id', $event->id)->first();
+            
+            switch($myEvents){
+                case true:
+                    $isCheck = true;
+                    break;
+                case false:
+                    $isCheck = false;
+                    break;
+            }
+        }
+        return $isCheck;
+    }
+
+    public function checkCapacity(Event $event)
+    {
+        $canRegister = false;
+        if($event->capacity > 0){
+            $canRegister = true;
+        }
+        return $canRegister;
+    }
 
     /**
      * Remove the specified resource from storage.

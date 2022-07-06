@@ -10,6 +10,14 @@
                     <h3>{{ $event->name }}</h3>
                 </div>
                 <div class="card-body">
+                    <ul>
+                        <li>{{ $event->description }}</li>
+                        <li>{{ $event->date }}</li>
+                        <li>{{ $event->startTime }}</li>
+                        <li>{{ $event->endTime }}</li>
+                        <li>{{ $event->address }}</li>
+                        <li>{{ $event->capacity }}</li>
+                    </ul>
                 </div>
                 <div class="card-footer d-flex justify-content-evenly">
                     @can('view', $event)
@@ -24,7 +32,13 @@
                     @endcan
 
                         @if (!$isCheck)
-                            <a href="{{ route('events.checkIn', $event->id) }}" class="btn btn-success text-white">Apuntarse al evento</a>
+                            <form method="POST" action="{{ route('events.checkIn', $event->id) }}">
+                                @csrf
+                                @method('GET')
+                                <button type="submit" class="btn btn-success text-white" @if (!$canRegister) disabled="true" @endif >
+                                    Apuntarse al evento
+                                </button>
+                            </form>
                         @endif
                         @if ($isCheck)
                             <a href="{{ route('events.dropOut', $event->id) }}" class="btn btn-danger">Retirarse del evento</a>

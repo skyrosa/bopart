@@ -151,6 +151,26 @@
                                 @enderror
                             </div>
                         </div>
+
+                        <div class="row mb-3">
+                            <label for="capacity" class="col-md-4 col-form-label text-md-end">Número de personas que pueden asistir</label>
+
+                            <div class="col-md-6">
+                                <input 
+                                id="capacity" 
+                                type="number" 
+                                class="form-control @error('capacity') is-invalid @enderror" 
+                                name="capacity" 
+                                required 
+                                value="{{ old('capacity') ?? $event->capacity }}"
+                                autofocus>
+                                @error('capacity')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
                         
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
