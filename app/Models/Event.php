@@ -17,6 +17,7 @@ class Event extends Model
         'endTime',
         'image',
         'address',
+        'capacity',
     ];
 
     public function user(){

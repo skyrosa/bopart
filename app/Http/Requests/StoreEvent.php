@@ -31,6 +31,7 @@ class StoreEvent extends FormRequest
             'endTime' => 'required|date_format:H:i',
             'image' => 'nullable|url',
             'address' => 'nullable|string',
+            'capacity' => 'required|integer',
         ];
     }
 }

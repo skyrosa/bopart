@@ -23,6 +23,7 @@ return new class extends Migration
             $table->time('endTime')->nullable();
             $table->string('image')->nullable();
             $table->text('address')->nullable();
+            $table->integer('capacity')->default(1);
 
             $table->timestamps();
         });
