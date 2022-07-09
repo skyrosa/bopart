@@ -45,7 +45,7 @@ class HomeTest extends TestCase
 
         $this->assertDatabaseCount('users', 1);
     }
-    
+ 
     //una persona puede ver el formulario de login
     public function test_can_see_view_login()
     {

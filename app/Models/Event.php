@@ -23,4 +23,12 @@ class Event extends Model
     public function user(){
         return $this->belongsToMany(User::class);
     }
+
+    // static function minusStock(){
+
+    // }
+
+    // static function moreStock(){
+
+    // }
 }
