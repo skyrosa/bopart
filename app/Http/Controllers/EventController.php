@@ -118,7 +118,10 @@ class EventController extends Controller
 
     public function checkIn(Event $event)
     {   
-        if($this->checkCapacity($event)){
+        $isCheck = $this->verifyRecord($event);
+        $canRegister = $this->checkCapacity($event);
+
+        if($canRegister && !$isCheck){
 
             $event->capacity--;
             $event->save();
