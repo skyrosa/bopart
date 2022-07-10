@@ -14565,6 +14565,7 @@ function classList(props) {
     'fa-inverse': inverse,
     'fa-border': border,
     'fa-li': listItem,
+    'fa-flip': flip === true,
     'fa-flip-horizontal': flip === 'horizontal' || flip === 'both',
     'fa-flip-vertical': flip === 'vertical' || flip === 'both'
   }, _defineProperty(_classes, "fa-".concat(size), typeof size !== 'undefined' && size !== null), _defineProperty(_classes, "fa-rotate-".concat(rotation), typeof rotation !== 'undefined' && rotation !== null && rotation !== 0), _defineProperty(_classes, "fa-pull-".concat(pull), typeof pull !== 'undefined' && pull !== null), _defineProperty(_classes, 'fa-swap-opacity', props.swapOpacity), _classes); // map over all the keys in the classes object
@@ -14777,6 +14778,7 @@ FontAwesomeIcon.displayName = 'FontAwesomeIcon';
 FontAwesomeIcon.propTypes = {
   beat: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   border: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  beatFade: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   bounce: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   className: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
   fade: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
@@ -14785,7 +14787,7 @@ FontAwesomeIcon.propTypes = {
   maskId: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
   fixedWidth: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   inverse: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
-  flip: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf(['horizontal', 'vertical', 'both']),
+  flip: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf([true, false, 'horizontal', 'vertical', 'both']),
   icon: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().array), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)]),
   listItem: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   pull: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf(['right', 'left']),
@@ -14809,7 +14811,7 @@ FontAwesomeIcon.defaultProps = {
   maskId: null,
   fixedWidth: false,
   inverse: false,
-  flip: null,
+  flip: false,
   icon: null,
   listItem: false,
   pull: null,
@@ -14817,6 +14819,8 @@ FontAwesomeIcon.defaultProps = {
   rotation: null,
   size: null,
   spin: false,
+  spinPulse: false,
+  spinReverse: false,
   beat: false,
   fade: false,
   beatFade: false,
