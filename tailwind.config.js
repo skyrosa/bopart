@@ -2,18 +2,18 @@
 module.exports = {
   content: [
     "./resources/**/*.blade.php",
-    "./resources/**/*.js",
     "./resources/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     colors:{
-      colorRed:    '#ED155D',
-      colorRedd:   '#ED155D',
-      colorYellow: '#F8D210',
-      colorTourq:  '#2FF3E0',
-      colorWhite:  '#FFFFFF',
-      colorBlack:  '#222222',
-
+      setRed:    '#ED155D',
+      setYellow: '#F8D210',
+      setTourq:  '#2FF3E0',
+      setWhite:  '#FFFFFF',
+      setBlack:{
+        100: '#3D3D3D',
+        200: '#222222',
+      }  
     },
 
     extend: {},
