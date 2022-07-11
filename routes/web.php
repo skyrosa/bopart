@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CollaboratorController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -28,4 +29,6 @@ Route::get('/events/{event}/drop-out', [EventController::class, 'dropOut'])->nam
 
 Route::resource('events', EventController::class);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('collaborators', CollaboratorController::class);
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
