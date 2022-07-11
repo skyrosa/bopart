@@ -21091,21 +21091,15 @@ video {
 .w-full {
   width: 100%;
 }
-.list-disc {
-  list-style-type: disc;
-}
 .bg-setBlack-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(61 61 61 / var(--tw-bg-opacity));
 }
-.p-0 {
-  padding: 0px;
-}
-.p-2 {
-  padding: 0.5rem;
-}
 .p-3 {
   padding: 0.75rem;
+}
+.p-0 {
+  padding: 0px;
 }
 .py-4 {
   padding-top: 1rem;
@@ -21123,10 +21117,6 @@ video {
 }
 .font-bold {
   font-weight: 700;
-}
-.text-setWhite {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;

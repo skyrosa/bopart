@@ -1,6 +1,6 @@
-import { after } from 'lodash'
 import React, {useState, useEffect} from 'react'
 import { createRoot } from "react-dom/client"
+import {Insta} from "scraper-instagram"
 
 const Instagram = () => {
   const [post, setPost] = useState('')
@@ -9,8 +9,6 @@ const Instagram = () => {
   const url = `https://www.instagram.com/${ username }`
 
 
-  useEffect(() => {
-  }, [])
 
   return (
     <div className='w-full h-52 bg-setBlack-100 p-3'>
