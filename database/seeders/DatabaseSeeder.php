@@ -45,11 +45,15 @@ class DatabaseSeeder extends Seeder
             'email' => 'user@gmail.com',
             'password' => Hash::make('12345'),
         ]);
+
         $user2->Rol()->attach($rol2);
         
-        Event::factory(5)->create();
+        $events = Event::factory()->create();
         
-        
-        
+        $users = User::factory(10)->create();
+
+        $rol2->User()->attach($users);
+
+        $events->User()->attach($users);
     }
 }

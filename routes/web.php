@@ -31,8 +31,9 @@ Route::get('/users/{user}/destroy', [UserController::class, 'destroy'])->name('u
 Route::get('/events/{event}/check-in', [EventController::class, 'checkIn'])->name('events.checkIn');
 Route::get('/events/{event}/drop-out', [EventController::class, 'dropOut'])->name('events.dropOut');
 
-Route::resource('events', EventController::class);
+Route::get('/events/{event}/{user}/drop-out', [EventController::class, 'detachRegisteredUser'])->name('events.detachRegisteredUser');
 
+Route::resource('events', EventController::class);
 
 Route::resource('collaborators', CollaboratorController::class);
 

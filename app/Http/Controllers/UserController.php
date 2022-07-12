@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class UserController extends Controller
 {
@@ -18,6 +19,10 @@ class UserController extends Controller
      */
     public function index()
     {
+        if(! Gate::allows('only-admin')){
+            abort(403);
+        }
+
         $users = User::all();
         return view('auth.users', compact('users'));
     }
@@ -91,4 +96,5 @@ class UserController extends Controller
 
         return redirect()->back();
     }
+
 }

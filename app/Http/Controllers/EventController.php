@@ -73,10 +73,12 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
+        $registereds = $this->showRegisteredUsers($event);
+
         $isCheck = $this->verifyRecord($event);
         $canRegister = $this->checkCapacity($event);
 
-        return view('events.show', compact('event', 'isCheck', 'canRegister'));
+        return view('events.show', compact('event', 'isCheck', 'canRegister'), ['registereds' => Gate::allows('only-admin') ? $registereds : []]);
     }
 
     /**
@@ -188,5 +190,15 @@ class EventController extends Controller
 
         $event->delete();
         return redirect()->route('events.index');
+    }
+
+    public function showRegisteredUsers(Event $event)
+    {
+        return $event->user;
+    }
+    public function detachRegisteredUser(Event $event, User $user)
+    {
+        $user->event()->detach($event);
+        return redirect()->back();
     }
 }

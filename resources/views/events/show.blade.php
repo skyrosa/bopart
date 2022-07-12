@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
+
         <div class="col-md-4">
-            <div class="card  mb-2">
+            <div class="card  mb-5">
 
                 <div class="card-header text-center">
                     <h3>{{ $event->name }}</h3>
@@ -45,7 +47,19 @@
                         @endif
                 </div>
             </div>
+
+            @foreach ($registereds as $user)
+            <div class="card  mb-2">
+                <div class="card-header text-center">
+                    <h3>{{ $user->name }}</h3>
+                </div>
+                <div class="card-footer d-flex justify-content-evenly">
+                    <a href="{{ route('events.detachRegisteredUser', [$event->id, $user->id]) }}" class="btn btn-danger">Retirar del evento</a>
+                </div>
+            </div>
+            @endforeach
         </div>
+
     </div>
 </div>
 @endsection
