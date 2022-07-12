@@ -24,12 +24,15 @@ Route::get('/', [HomeController::class, 'index']);
 Auth::routes();
 
 Route::get('/profile', [EventController::class, 'myEvents'])->name('profile');
+
 Route::get('/users', [UserController::class, 'index'])->name('users');
+Route::get('/users/{user}/destroy', [UserController::class, 'destroy'])->name('users');
 
 Route::get('/events/{event}/check-in', [EventController::class, 'checkIn'])->name('events.checkIn');
 Route::get('/events/{event}/drop-out', [EventController::class, 'dropOut'])->name('events.dropOut');
 
 Route::resource('events', EventController::class);
+
 
 Route::resource('collaborators', CollaboratorController::class);
 

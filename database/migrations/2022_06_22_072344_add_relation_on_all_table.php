@@ -19,8 +19,8 @@ return new class extends Migration
         });
 
         Schema::table('rol_user', function (Blueprint $table){
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('rol_id')->references('id')->on('rols');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('rol_id')->references('id')->on('rols')->onDelete('cascade');
         });
     }
 
