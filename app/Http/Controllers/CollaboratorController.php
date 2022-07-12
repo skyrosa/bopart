@@ -17,11 +17,13 @@ class CollaboratorController extends Controller
         $this->middleware('auth')->except('index', 'show');
     }
 
+
     public function index()
     {
         $collaborators = Collaborator::all();
         return view('collaborators.index', compact('collaborators'));
     }
+
 
     public function create()
     {
@@ -30,6 +32,7 @@ class CollaboratorController extends Controller
         }
         return view('collaborators.create');
     }
+
 
     public function store(StoreCollaborator $request)
     {
@@ -45,6 +48,7 @@ class CollaboratorController extends Controller
         return redirect()->back();
     }
 
+
     public function storeImage($request)
     {   
         if(array_key_exists('image', $request))
@@ -54,15 +58,12 @@ class CollaboratorController extends Controller
         }
     }
 
-    public function updateImage($request, $collaborator)
-    {
-        dd( json_encode($collaborator) );
-    }
 
     public function show(Collaborator $collaborator)
     {
         return view('collaborators.show', compact('collaborator'));
     }
+
 
     public function edit(Collaborator $collaborator)
     {
@@ -76,15 +77,26 @@ class CollaboratorController extends Controller
     {
         $this->authorize('update', $collaborator);
 
-        $this->updateImage($request, $collaborator);
+        $data = $request->all();
+        
+        if($this->storeImage($data)){
 
-        $collaborator->update([
-            'name' => $request['name'],
-            'image' => $this->storeImage($request->all()),
-            'url' => $request['url'],
-        ]);
+            $this->deleteImage($collaborator);
+
+            $data['image'] = $this->storeImage($data);
+        }
+
+        $collaborator->update($data);
 
         return redirect()->route('collaborators.index');
+    }
+
+
+    public function deleteImage($collaborator){
+        $this->authorize('delete', $collaborator);
+
+        $url = str_replace('storage', 'public', $collaborator->image);
+        Storage::delete($url);
     }
 
 
@@ -92,8 +104,8 @@ class CollaboratorController extends Controller
     {
         $this->authorize('delete', $collaborator);
 
-        $url = str_replace('storage', 'public', $collaborator->image);
-        Storage::delete($url);
+        $this->deleteImage($collaborator);
+
         $collaborator->delete();
         return redirect()->route('collaborators.index');
     }
