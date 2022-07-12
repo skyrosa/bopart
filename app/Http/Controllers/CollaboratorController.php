@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreCollaborator;
 use App\Models\Collaborator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Intervention\Image\Facades\Image;
 
 class CollaboratorController extends Controller
 {
@@ -12,21 +14,12 @@ class CollaboratorController extends Controller
     {
         $this->middleware('auth')->except('index', 'show');
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         return view('collaborators.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         if(! Gate::allows('only-admin')){
@@ -35,42 +28,34 @@ class CollaboratorController extends Controller
         return view('collaborators.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function store(StoreCollaborator $request)
     {
         if(! Gate::allows('only-admin')){
             abort(403);
         }
-
+        
         Collaborator::create([
             'name' => $request['name'],
+            'image' => $this->storeImage($request->all()),
+            'url' => $request['url'],
         ]);
-
         return redirect()->back();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Collaborator  $collaborator
-     * @return \Illuminate\Http\Response
-     */
+    public function storeImage($request)
+    {
+        if(array_key_exists('image', $request))
+        {
+            $img = $request['image']->store('pictures', 'public');
+            return "/storage/$img";
+        }
+    }
+
     public function show(Collaborator $collaborator)
     {
         return view('collaborators.show', compact('collaborator'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Collaborator  $collaborator
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Collaborator $collaborator)
     {
         $this->authorize('update', $collaborator);
@@ -78,13 +63,7 @@ class CollaboratorController extends Controller
         return view('collaborators.show', compact('collaborator'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Collaborator  $collaborator
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request, Collaborator $collaborator)
     {
         $this->authorize('update', $collaborator);
@@ -94,12 +73,7 @@ class CollaboratorController extends Controller
         ]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Collaborator  $collaborator
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy(Collaborator $collaborator)
     {
         $this->authorize('delete', $collaborator);
