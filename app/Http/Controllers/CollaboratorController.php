@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCollaborator;
 use App\Models\Collaborator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File as FacadesFile;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 
 class CollaboratorController extends Controller
@@ -17,7 +19,8 @@ class CollaboratorController extends Controller
 
     public function index()
     {
-        return view('collaborators.index');
+        $collaborators = Collaborator::all();
+        return view('collaborators.index', compact('collaborators'));
     }
 
     public function create()
@@ -43,12 +46,17 @@ class CollaboratorController extends Controller
     }
 
     public function storeImage($request)
-    {
+    {   
         if(array_key_exists('image', $request))
         {
             $img = $request['image']->store('pictures', 'public');
             return "/storage/$img";
         }
+    }
+
+    public function updateImage($request, $collaborator)
+    {
+        dd( json_encode($collaborator) );
     }
 
     public function show(Collaborator $collaborator)
@@ -60,7 +68,7 @@ class CollaboratorController extends Controller
     {
         $this->authorize('update', $collaborator);
 
-        return view('collaborators.show', compact('collaborator'));
+        return view('collaborators.edit', compact('collaborator'));
     }
 
 
@@ -68,9 +76,15 @@ class CollaboratorController extends Controller
     {
         $this->authorize('update', $collaborator);
 
+        $this->updateImage($request, $collaborator);
+
         $collaborator->update([
             'name' => $request['name'],
+            'image' => $this->storeImage($request->all()),
+            'url' => $request['url'],
         ]);
+
+        return redirect()->route('collaborators.index');
     }
 
 
@@ -78,6 +92,9 @@ class CollaboratorController extends Controller
     {
         $this->authorize('delete', $collaborator);
 
+        $url = str_replace('storage', 'public', $collaborator->image);
+        Storage::delete($url);
         $collaborator->delete();
+        return redirect()->route('collaborators.index');
     }
 }
