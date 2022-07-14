@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    @foreach ($events as $event)
+<div class="w-full h-screen py-4 bg-gradient-to-b from-colorTourq to-colorYellow ">
+    {{-- @foreach ($events as $event)
     <div class="container">
         <div class="row justify-content-center">
             <div class="row justify-content-center">
@@ -15,5 +16,7 @@
             </div>
         </div>
     </div>
-    @endforeach
+    @endforeach --}}
+    <div id='profile-user' name="{{ Auth::user()->name }}" email="{{ Auth::user()->email }}" ></div>
+</div>
 @endsection
