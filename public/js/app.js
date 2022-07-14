@@ -20353,8 +20353,16 @@ var Instagram = function Instagram() {
       post = _useState2[0],
       setPost = _useState2[1];
 
-  var username = 'nike/';
-  var url = "https://www.instagram.com/".concat(username);
+  var yourSessionId = '3117114579%3AFLkElr6VCakIY5%3A13%3AAYdYFHYSAY9F6PWbOizRJEsygoCN_ICFbMZptTBXBA';
+  var InstaClient = new (scraper_instagram__WEBPACK_IMPORTED_MODULE_2___default())();
+
+  var read = function read() {
+    InstaClient.authBySessionId(yourSessionId);
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    read();
+  }, []);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     className: "w-full h-52 bg-setBlack-100 p-3",
     children: "hola"
