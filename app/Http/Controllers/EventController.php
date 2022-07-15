@@ -14,22 +14,15 @@ class EventController extends Controller
     {
         $this->middleware('auth')->except('index', 'show');
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+
     public function index()
     {
         $events = Event::all();
         return view('events.index', compact('events'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         if(! Gate::allows('only-admin')){
@@ -40,12 +33,7 @@ class EventController extends Controller
         return view('events.create', compact('event'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(StoreEvent $request)
     {
         if(! Gate::allows('only-admin')){
@@ -65,12 +53,7 @@ class EventController extends Controller
         return redirect()->route('events.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Event  $event
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(Event $event)
     {
         $registereds = $this->showRegisteredUsers($event);
@@ -78,15 +61,10 @@ class EventController extends Controller
         $isCheck = $this->verifyRecord($event);
         $canRegister = $this->checkCapacity($event);
 
-        return view('events.show', compact('event', 'isCheck', 'canRegister'), ['registereds' => Gate::allows('only-admin') ? $registereds : []]);
+        return view('events.show', compact('event', 'isCheck', 'canRegister'), ['registereds' => Gate::allows('only-admin') ? $registereds : [] ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Event  $event
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit(Event $event)
     {
         $this->authorize('update', $event);
@@ -94,13 +72,7 @@ class EventController extends Controller
         return view('events.edit', compact('event'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Event  $event
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(StoreEvent $request, Event $event)
     {
         $this->authorize('update', $event);
@@ -118,6 +90,7 @@ class EventController extends Controller
         return redirect()->route('events.show', compact('event'));
     }
 
+
     public function checkIn(Event $event)
     {   
         $isCheck = $this->verifyRecord($event);
@@ -134,6 +107,7 @@ class EventController extends Controller
         return redirect()->back();
     }
 
+
     public function dropOut(Event $event)
     {
         $event->capacity++;
@@ -144,11 +118,13 @@ class EventController extends Controller
         return redirect()->back();
     }
 
+
     public function myEvents()
     {
         $events = auth()->user()->event;
         return view('auth.profile', compact('events'));
     }
+
 
     public function verifyRecord(Event $event)
     {
@@ -178,12 +154,7 @@ class EventController extends Controller
         return $canRegister;
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Event  $event
-     * @return \Illuminate\Http\Response
-     */
+    
     public function destroy(Event $event)
     {
         $this->authorize('delete', $event);
@@ -192,10 +163,13 @@ class EventController extends Controller
         return redirect()->route('events.index');
     }
 
+
     public function showRegisteredUsers(Event $event)
     {
         return $event->user;
     }
+
+
     public function detachRegisteredUser(Event $event, User $user)
     {
         $user->event()->detach($event);

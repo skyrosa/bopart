@@ -55,5 +55,7 @@ class DatabaseSeeder extends Seeder
         $rol2->User()->attach($users);
 
         $events->User()->attach($users);
+
+        $user1->Event()->attach(Event::factory(5)->create());
     }
 }
