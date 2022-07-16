@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Button from '../Button'
 
 const ProfileEvent = (props) => {
-    const [date, setDate] = useState(props.event.date)
+    const [date, setDate] = useState(props.myEvent.date)
     
     const changeFormat = () => {
         let months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"]
@@ -18,14 +18,14 @@ const ProfileEvent = (props) => {
 
   return (
     <div className='flex flex-row w-full border-b'>
-        <div className='w-full bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(`+props.event.image+`)` }}>
+        <div className='w-full bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(`+props.myEvent.image+`)` }}>
 
         </div>
         <div className='w-full flex flex-col space-y-5 py-2'> 
 
             <div className='mt-3'>
                 <h1 className='pl-2 font-inter font-bold text-[20px] lg:text-[32px] text-left capitalize my-1'>
-                    {props.event.name.replace(/[_]/gi, ' ')}
+                    {props.myEvent.name.replace(/[_]/gi, ' ')}
                 </h1>
                 <p className='pl-2 text-[12px] font-bold lg:text-[18px] text-colorPink capitalize'>
                     {date}
@@ -33,7 +33,7 @@ const ProfileEvent = (props) => {
             </div>
 
             <div className='flex justify-center w-full'>
-                <Button link={`events/${props.event.id}/drop-out`}>
+                <Button idEvent={props.myEvent.id} event={props.event}>
                     retirarse
                 </Button>
             </div>

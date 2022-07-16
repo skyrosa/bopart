@@ -115,16 +115,8 @@ class EventController extends Controller
 
         $user = auth()->user();
         $user->event()->detach($event);
-        return redirect()->back();
+        // return redirect()->back();
     }
-
-
-    public function myEvents()
-    {
-        $events = auth()->user()->event;
-        return view('auth.profile', compact('events'));
-    }
-
 
     public function verifyRecord(Event $event)
     {

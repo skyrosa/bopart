@@ -23,7 +23,9 @@ Route::get('/', [HomeController::class, 'index']);
 
 Auth::routes();
 
-Route::get('/profile', [EventController::class, 'myEvents'])->name('profile');
+
+Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+Route::get('/myInformation', [UserController::class, 'myInformation']);
 
 Route::get('/users', [UserController::class, 'index'])->name('users');
 Route::get('/users/{user}/destroy', [UserController::class, 'destroy'])->name('users');

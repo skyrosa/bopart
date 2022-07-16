@@ -39,7 +39,7 @@ class AdminEventTest extends TestCase
     public function test_admin_can_see_view_create()
     {
         $response = $this->get(route('events.create'));
-        $response->assertOk();
+        $response->assertOK();
 
         $this->withoutExceptionHandling();
     }
