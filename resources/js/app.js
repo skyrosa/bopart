@@ -14,3 +14,5 @@ require('./bootstrap');
 
 require('./components/Example');
 require('./components/profile/ProfileUser')
+
+require('./components/form/LoginForm')

@@ -32,11 +32,9 @@ const ProfileUser = () => {
           <div className='w-5/6 lg:w-4/5 border-1 border-[#959393] rounded-[20px] my-4 flex flex-col items-center'>
               <h1 className='font-inter font-bold text-[20px] lg:text-[32px] capitalize my-3'>perfil personal</h1>
               <span className='border-b-2 border-[#959393] w-48 lg:w-80'></span>
-
               <div className='mt-3 bg-colorTourq py-2  w-48 lg:w-80 text-center font-inter rounded-md capitalize'>
                 { myUser.name}
               </div>
-
               <div className='mt-3 mb-3 bg-colorTourq py-2 w-48 lg:w-80 text-center font-inter rounded-md'>
                 {myUser.email}
               </div>
@@ -62,8 +60,6 @@ const ProfileUser = () => {
         </div>
         }
       </div>
-
-
     </section>
   
   )
