@@ -17,7 +17,7 @@ const LoginForm = () => {
             <div className='w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(`+Background+`)`}} >
             </div>
             
-            <div className='w-full font-inter flex flex-col gap-[60px] py-14 lg:py-24   '>
+            <div className='w-full font-inter flex flex-col gap-[60px] py-14 lg:py-24'>
 
                 <div className='flex flex-col items-center gap-4'>
                     <p className='text-[25px] lg:text-[32px] font-bold'>Login de Usuario</p>
@@ -44,7 +44,7 @@ const LoginForm = () => {
 
                     <div className='w-3/4'>
                         <a href='#' className='underline underline-offset-4 text-xs	text-left'>
-                            Olvide mi contraseña:
+                            Olvide mi contraseña
                         </a>
                     </div>
 
