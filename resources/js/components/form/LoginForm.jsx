@@ -28,16 +28,6 @@ const LoginForm = () => {
         type=='password' ? setType('text') : setType('password')
     }
 
-<<<<<<< HEAD
-=======
-  return (
-    <section className='w-full flex justify-center'>
-        <div className='bg-colorWhite w-full lg:w-3/5 rounded-[28px] flex flex-row'>
-            <div className='w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(`+Background+`)`}} >
-            </div>
-            
-            <div className='w-full font-inter flex flex-col gap-[60px] py-14 lg:py-24'>
->>>>>>> 0c42b61d7b34b6d390f42846bbcaa6113dc12471
 
   return (
     <section className='bg-colorWhite w-full lg:w-3/5 rounded-[28px] flex flex-row'>
@@ -88,18 +78,10 @@ const LoginForm = () => {
                     </a>
                 </div>
 
-<<<<<<< HEAD
                 <div className="flex flex-row justify-evenly items-center mt-2 w-3/4 ">
                     <button type='submit' className="px-3 py-[10px] text-colorBlack text-sm lg:text-lg font-inter font-medium border-2 rounded-lg border-colorTourq hover:bg-colorGreen hover:text-colorWhite">
                         Iniciar sesión
                     </button>
-=======
-                    <div className='w-3/4'>
-                        <a href='#' className='underline underline-offset-4 text-xs	text-left'>
-                            Olvide mi contraseña
-                        </a>
-                    </div>
->>>>>>> 0c42b61d7b34b6d390f42846bbcaa6113dc12471
 
                     <button type='submit' className="px-3 py-[10px] text-colorBlack text-sm lg:text-lg font-inter font-medium  rounded-lg border-colorTourq hover:bg-colorGreen hover:text-colorWhite">
                         Registrarse
