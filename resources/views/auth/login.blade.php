@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="w-full min-h-full bg-gradient-to-b from-colorPink to-colorTourq p-4 flex flex-col justify-center">
-    <div id="login-form"></div>
+    <div id="login-form" class='w-full flex justify-center'></div>
 </div>
 {{-- <div class="container">
     <div class="row justify-content-center">

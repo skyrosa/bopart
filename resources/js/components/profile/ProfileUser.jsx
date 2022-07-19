@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { createRoot } from "react-dom/client"
 import ProfileEvent from './ProfileEvent'
 import Spinner from '../Spinner'
+import swal from 'sweetalert'
 
 const ProfileUser = () => {
   const [myUser, setMyUser] = useState()
@@ -17,6 +18,21 @@ const ProfileUser = () => {
   const dropOutEvent = async (id) => {
     await axios.get(`events/${id}/drop-out`)
     setMyEvents(false)
+    swal({
+      text: 'Te has desapuntado exitosamente',
+      icon: 'success',
+    })
+  }
+
+  const alert = (event) => {
+    swal({
+      title: '¿Estás seguro?',
+      text: 'Estas apunto de desapuntarte de ' + event.name,
+      icon: 'info',
+      buttons: ['No', 'Si'],
+    }).then(response =>{
+      response ? dropOutEvent(event.id) : ''
+    })
   }
 
   useEffect(() => {
@@ -27,7 +43,7 @@ const ProfileUser = () => {
     <section className='container'>
       <div className='flex justify-center'>
         { !myUser ? <Spinner /> :
-        <div className='bg-colorWhite w-full lg:w-2/4 rounded-[20px] flex flex-col items-center'>
+        <div className='bg-colorWhite w-full sm:w-2/5 md:w-3/5 lg:w-3/5 xl:w-2/5 rounded-[20px] flex flex-col items-center'>
 
           <div className='w-5/6 lg:w-4/5 border-1 border-[#959393] rounded-[20px] my-4 flex flex-col items-center'>
               <h1 className='font-inter font-bold text-[20px] lg:text-[32px] capitalize my-3'>perfil personal</h1>
@@ -52,7 +68,7 @@ const ProfileUser = () => {
                 </div>
               </div>:
               myEvents.map((event, index) => {
-              return <ProfileEvent key={index} myEvent={event} event={dropOutEvent} />
+              return <ProfileEvent key={index} myEvent={event} event={alert} />
               })
             }
           </div>

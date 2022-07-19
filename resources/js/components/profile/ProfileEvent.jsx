@@ -17,15 +17,15 @@ const ProfileEvent = (props) => {
     }, [])
 
   return (
-    <div className='flex flex-row w-full border-b'>
+    <div className='flex flex-row w-full h-28 lg:h-48   border-b'>
         <div className='w-full bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(`+props.myEvent.image+`)` }}>
 
         </div>
-        <div className='w-full flex flex-col space-y-5 py-2'> 
+        <div className='w-full flex flex-col justify-evenly'> 
 
-            <div className='mt-3'>
-                <h1 className='pl-2 font-inter font-bold text-[20px] lg:text-[32px] text-left capitalize my-1'>
-                    {props.myEvent.name.replace(/[_]/gi, ' ')}
+            <div className=''>
+                <h1 className='pl-2 font-inter font-bold text-[15px] lg:text-[24px] text-left capitalize my-1'>
+                    {props.myEvent.name}
                 </h1>
                 <p className='pl-2 text-[12px] font-bold lg:text-[18px] text-colorPink capitalize'>
                     {date}
@@ -33,7 +33,7 @@ const ProfileEvent = (props) => {
             </div>
 
             <div className='flex justify-center w-full'>
-                <Button idEvent={props.myEvent.id} event={props.event}>
+                <Button idEvent={props.myEvent} event={props.event}>
                     retirarse
                 </Button>
             </div>
