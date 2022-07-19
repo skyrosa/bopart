@@ -76,6 +76,8 @@ const ProfileUser = () => {
         </div>
         }
       </div>
+
+        <Footer/>
     </section>
   
   )
