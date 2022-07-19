@@ -56,12 +56,13 @@ class EventController extends Controller
 
     public function show(Event $event)
     {
-        $registereds = $this->showRegisteredUsers($event);
+        $registereds = Event::showRegisteredUsers($event);
 
-        $isCheck = $this->verifyRecord($event);
-        $canRegister = $this->checkCapacity($event);
-
-        return view('events.show', compact('event', 'isCheck', 'canRegister'), ['registereds' => Gate::allows('only-admin') ? $registereds : [] ]);
+        $isCheck = Event::verifyRecord($event);
+        $canRegister = Event::checkCapacity($event);
+        
+        return view('events.show', compact('event', 'isCheck', 'canRegister'), 
+        ['registereds' => Gate::allows('only-admin') ? $registereds : [] ]);
     }
 
 
@@ -93,16 +94,15 @@ class EventController extends Controller
 
     public function checkIn(Event $event)
     {   
-        $isCheck = $this->verifyRecord($event);
-        $canRegister = $this->checkCapacity($event);
+        $isCheck = Event::verifyRecord($event);
+        $canRegister = Event::checkCapacity($event);
 
         if($canRegister && !$isCheck){
-
-            $event->capacity--;
-            $event->save();
-
+            
             $user = auth()->user();
             $user->event()->attach($event);
+
+            Event::minusStock($event);
         }
         return redirect()->back();
     }
@@ -110,40 +110,10 @@ class EventController extends Controller
 
     public function dropOut(Event $event)
     {
-        $event->capacity++;
-        $event->save();
-
         $user = auth()->user();
         $user->event()->detach($event);
-        // return redirect()->back();
-    }
 
-    public function verifyRecord(Event $event)
-    {
-        $isCheck = false;
-
-        if(auth()->user()){
-            $myEvents = auth()->user()->event->where('id', $event->id)->first();
-            
-            switch($myEvents){
-                case true:
-                    $isCheck = true;
-                    break;
-                case false:
-                    $isCheck = false;
-                    break;
-            }
-        }
-        return $isCheck;
-    }
-
-    public function checkCapacity(Event $event)
-    {
-        $canRegister = false;
-        if($event->capacity > 0){
-            $canRegister = true;
-        }
-        return $canRegister;
+        Event::moreStock($event);
     }
 
     
@@ -156,15 +126,11 @@ class EventController extends Controller
     }
 
 
-    public function showRegisteredUsers(Event $event)
-    {
-        return $event->user;
-    }
-
-
     public function detachRegisteredUser(Event $event, User $user)
     {
         $user->event()->detach($event);
+        Event::moreStock($event);
+
         return redirect()->back();
     }
 }

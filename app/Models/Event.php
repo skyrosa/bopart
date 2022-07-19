@@ -23,11 +23,34 @@ class Event extends Model
     public function user(){
         return $this->belongsToMany(User::class);
     }
-    // static function minusStock(){
 
-    // }
+    static function minusStock(Event $event){
+        $event->capacity--;
+        $event->save();
+    }
 
-    // static function moreStock(){
+    static function moreStock(Event $event){
+        $event->capacity++;
+        $event->save();
+    }
 
-    // }
+    static function checkCapacity(Event $event){
+        $capacity = $event->capacity;
+        return $capacity ? true : false;
+    }
+
+    static function verifyRecord(Event $event)
+    {
+        $isCheck = false;
+        if(auth()->user()){
+            $myEvents = auth()->user()->event->where('id', $event->id)->first();
+            $isCheck = $myEvents ? true : false;
+        }
+        return $isCheck;
+    }
+
+    static function showRegisteredUsers(Event $event)
+    {
+        return $event->user;
+    }
 }
