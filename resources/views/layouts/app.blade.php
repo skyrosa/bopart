@@ -20,7 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div id="app"> 
         {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -83,7 +83,19 @@
 
             <div class='flex flex-row justify-end gap-2 mr-2'>
                 <a href='#' class='hover:text-colorWhite'> Registrarse </a>|
-                <a href='{{ route('login') }}' class='hover:text-colorWhite'>Iniciar Sesión</a>
+                @auth
+                    <a class='hover:text-colorWhite' href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @endauth
+                @guest
+                    <a href='{{ route('login') }}' class='hover:text-colorWhite'>Iniciar Sesión</a> 
+                @endguest
             </div>
     
             <div class='w-full flex flex-row'>
@@ -113,7 +125,7 @@
                 <a href='{{ route('events.index') }}' class='hover:text-colorWhite'>Evento</a>
             </div>
         </nav>
-        {{-- <nav id="header" ></nav> --}}
+        
         <main class="">
             @yield('content')
         </main>
