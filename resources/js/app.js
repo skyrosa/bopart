@@ -14,8 +14,12 @@ require('./bootstrap');
 
 require('./components/Example')
 
+require('./components/card/BigCard')
+
 require('./components/profile/ProfileUser')
 
 require('./components/form/EventForm.jsx')
 require('./components/form/LoginForm')
 require('./components/form/RegisterForm')
+
+

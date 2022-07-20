@@ -20216,6 +20216,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
 
+__webpack_require__(/*! ./components/card/BigCard */ "./resources/js/components/card/BigCard.jsx");
+
 __webpack_require__(/*! ./components/profile/ProfileUser */ "./resources/js/components/profile/ProfileUser.jsx");
 
 __webpack_require__(/*! ./components/form/EventForm.jsx */ "./resources/js/components/form/EventForm.jsx");
@@ -20395,6 +20397,71 @@ var Spinner = function Spinner() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Spinner);
+
+/***/ }),
+
+/***/ "./resources/js/components/card/BigCard.jsx":
+/*!**************************************************!*\
+  !*** ./resources/js/components/card/BigCard.jsx ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+var BigCard = function BigCard() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      "class": "bg-colorWhite flex flex-col container max-w-screen-lg text-center items-center rounded-[10px] gap-[10px] pb-5 ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        "class": "  flex flex-col rounded-t-[10px] h-[300px] bg-center bg-no-repeat bg-cover w-full",
+        style: " background-image: url(https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
+        "class": "flex flex-col gap-[60px] font-extrabold font-sansita",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          "class": "flex flex-col mx-14 gap-[10px]",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            "class": " text-[40px]",
+            children: "San Juan"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            "class": "text-2xl font-normal",
+            children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus consequat ornare porttitor aliquet semper. Habitasse lorem netus est id elit ut. Nulla adipiscing maecenas hac vulputate lectus elementum. Molestie turpis blandit fermentum leo diam praesent tellus donec."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            "class": "text-2xl   text-colorPink",
+            children: "Jueves, 23 de Junio"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            "class": "text-xl font-bold",
+            children: "CARRER DE BARNOLA, 08030 BARCELONA."
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          "class": "place-content-center tracking-[0.20em] flex mx-[155px] min-w-fit min-h-fit py-[10px] px-[10px]   font-librefranklin font-bold text-[24px] bg-colorGreen rounded-bl-[10px] rounded-br-[10px]  text-colorWhite",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: "APUNTATE"
+          })
+        })]
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BigCard);
+
+if (document.getElementById('big-card')) {
+  var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById("big-card"));
+  root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(BigCard, {}));
+}
 
 /***/ }),
 
