@@ -48,6 +48,7 @@ class EventController extends Controller
             'image' => $request['image'],
             'address' => $request['address'],
             'capacity' => $request['capacity'],
+            'type' => $request['type'],
         ]);
 
         return redirect()->route('events.index');

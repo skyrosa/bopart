@@ -3,7 +3,7 @@
 @section('content')
 <div class="bg-gradient-to-b from-colorPink to-colorTourq w-full h-screen">
     
-    <div class="row justify-content-center">
+    {{-- <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     
 </div>
 @endsection

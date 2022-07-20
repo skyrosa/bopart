@@ -62,6 +62,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('profile') }}"> Perfil </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">
@@ -83,7 +84,20 @@
 
             <div class='flex flex-row justify-end gap-2 mr-2'>
                 <a href='#' class='hover:text-colorWhite'> Registrarse </a>|
-                <a href='{{ route('login') }}' class='hover:text-colorWhite'>Iniciar Sesión</a>
+                @auth
+                    <a class='hover:text-colorWhite' href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @endauth
+                @guest
+                    <a href='{{ route('login') }}' class='hover:text-colorWhite'>Iniciar Sesión</a>
+                @endguest
+
             </div>
     
             <div class='w-full flex flex-row'>

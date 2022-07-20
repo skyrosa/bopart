@@ -18,6 +18,7 @@ class Event extends Model
         'image',
         'address',
         'capacity',
+        'type',
     ];
 
     public function user(){

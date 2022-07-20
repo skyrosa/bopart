@@ -27,6 +27,7 @@ class EventFactory extends Factory
             "image" => $this->faker->imageUrl(),
             "address" => $this->faker->address(),
             "capacity" => $this->faker->numberBetween($min = 1, $max = 10),
+            "type" => 'Evento'
         ];
     }
 }

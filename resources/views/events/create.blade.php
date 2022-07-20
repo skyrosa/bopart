@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -183,5 +183,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+
+<section class="w-full min-h-full bg-cover bg-center bg-no-repeat py-5" style="background-image: url('/storage/pictures/event.png');">
+    <div id='event-form' class='container'></div>
+</section>
+
 @endsection

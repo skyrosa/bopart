@@ -32,6 +32,7 @@ class StoreEvent extends FormRequest
             'image' => 'nullable|url',
             'address' => 'nullable|string',
             'capacity' => 'required|integer',
+            'type' => 'required|integer',
         ];
     }
 }

@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->text('address')->nullable();
             $table->integer('capacity')->default(1);
+            $table->text('type')->nullable();
 
             $table->timestamps();
         });
