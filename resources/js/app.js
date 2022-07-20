@@ -16,3 +16,4 @@ require('./components/Example')
 require('./components/profile/ProfileUser')
 
 require('./components/form/LoginForm')
+require('./components/form/RegisterForm')

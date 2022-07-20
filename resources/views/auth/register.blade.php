@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="bg-gradient-to-b from-colorPink to-colorTourq w-full h-screen">
+<div class="w-full min-h-full bg-gradient-to-b from-colorPink to-colorTourq p-4 flex flex-col justify-center">
+    <div id="register-form"></div>
+</div>
+@endsection
+
+<!-- <div class="bg-gradient-to-b from-colorPink to-colorTourq w-full h-screen">
     
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -75,5 +80,4 @@
         </div>
     </div>
     
-</div>
-@endsection
+</div> -->
