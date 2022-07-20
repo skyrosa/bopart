@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -77,8 +77,43 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
 
+        <nav class='w-full bg-colorBlack text-colorWhite  font-sansita py-2 space-y-2 lg:space-y-6 lg:text-2xl bg-cover bg-center bg-no-repeat' style="background-image: url('/storage/pictures/banner.png');">
+
+            <div class='flex flex-row justify-end gap-2 mr-2'>
+                <a href='#' class='hover:text-colorWhite'> Registrarse </a>|
+                <a href='{{ route('login') }}' class='hover:text-colorWhite'>Iniciar Sesión</a>
+            </div>
+    
+            <div class='w-full flex flex-row'>
+    
+                <div class='w-full flex items-center justify-center'>
+                    <a href='#' class='hover:text-colorWhite'>
+                        Que ofrecemos
+                    </a>
+                </div>
+    
+                <div class='w-full flex justify-center items-center'>
+                    <a href='{{ route('home') }}' class=' flex justify-center items-center bg-colorPink rounded-full w-[90px] h-[90px] md:w-[140px] md:h-[140px] lg:w-[200px] lg:h-[200px] drop-shadow-lg'>
+                        <div class='w-[80px] h-[80px] md:w-[130px] md:h-[130px] lg:w-[190px] lg:h-[190px] bg-cover bg-center bg-no-repeat' style="background-image: url('/storage/pictures/logo.svg');"></div>
+                    </a>
+                </div>
+    
+                <div class='w-full flex items-center justify-center'>
+                    <a href='#' class='hover:text-colorWhite'>
+                        Quienes somos
+                    </a>
+                </div>
+    
+            </div>
+    
+            <div class='flex justify-center gap-2'>
+                <a href='#' class='hover:text-colorWhite'>Contacto</a>|
+                <a href='{{ route('events.index') }}' class='hover:text-colorWhite'>Evento</a>
+            </div>
+        </nav>
+        {{-- <nav id="header" ></nav> --}}
         <main class="">
             @yield('content')
         </main>

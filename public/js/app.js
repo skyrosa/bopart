@@ -20214,6 +20214,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  */
 
 
+__webpack_require__(/*! ./components/Header */ "./resources/js/components/Header.jsx");
+
 __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
 
 __webpack_require__(/*! ./components/profile/ProfileUser */ "./resources/js/components/profile/ProfileUser.jsx");
@@ -20298,7 +20300,7 @@ var Button = function Button(_ref) {
       onClick: function onClick() {
         return event(idEvent);
       },
-      className: " p-2 bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase"
+      className: "p-2 bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase"
     }, otherProps))
   });
 };
@@ -20360,6 +20362,100 @@ function Example() {
 if (document.getElementById('example')) {
   var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById("example"));
   root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Example, {}));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Header.jsx":
+/*!********************************************!*\
+  !*** ./resources/js/components/Header.jsx ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
+/* harmony import */ var _public_storage_pictures_logo_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../public/storage/pictures/logo.svg */ "./storage/app/public/pictures/logo.svg");
+/* harmony import */ var _public_storage_pictures_banner_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../public/storage/pictures/banner.png */ "./storage/app/public/pictures/banner.png");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var Header = function Header() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    className: "w-full bg-colorBlack text-colorWhite  font-sansita py-2 space-y-2 lg:space-y-6 lg:text-2xl bg-cover bg-center bg-no-repeat",
+    style: {
+      backgroundImage: "url(".concat(_public_storage_pictures_banner_png__WEBPACK_IMPORTED_MODULE_3__["default"], ")")
+    },
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "flex flex-row justify-end gap-2 mr-2",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+        href: "#",
+        className: "hover:text-colorWhite",
+        children: " Registrarse "
+      }), "|", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+        href: "/login",
+        className: "hover:text-colorWhite",
+        children: "Iniciar Sesi\xF3n"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "w-full flex flex-row",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "w-full flex items-center justify-center",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+          href: "#",
+          className: "hover:text-colorWhite",
+          children: "Que ofrecemos"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "w-full flex justify-center items-center",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+          href: "/",
+          className: " flex justify-center items-center bg-colorPink rounded-full w-[90px] h-[90px] md:w-[140px] md:h-[140px] lg:w-[200px] lg:h-[200px] drop-shadow-lg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "w-[80px] h-[80px] md:w-[130px] md:h-[130px] lg:w-[190px] lg:h-[190px] bg-cover bg-center bg-no-repeat",
+            style: {
+              backgroundImage: "url(".concat(_public_storage_pictures_logo_svg__WEBPACK_IMPORTED_MODULE_2__["default"], ")")
+            }
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "w-full flex items-center justify-center",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+          href: "#",
+          className: "hover:text-colorWhite",
+          children: "Quienes somos"
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "flex justify-center gap-2",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+        href: "#",
+        className: "hover:text-colorWhite",
+        children: "Contacto"
+      }), "|", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+        href: "/events",
+        className: "hover:text-colorWhite",
+        children: "Evento"
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
+
+if (document.getElementById('header')) {
+  var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById('header'));
+  root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Header, {}));
 }
 
 /***/ }),
@@ -25895,6 +25991,21 @@ defineJQueryPlugin(Toast);
 
 /***/ }),
 
+/***/ "./storage/app/public/pictures/banner.png":
+/*!************************************************!*\
+  !*** ./storage/app/public/pictures/banner.png ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/banner.png?d9d18b9798d56cccb79a1366b19bf7ae");
+
+/***/ }),
+
 /***/ "./storage/app/public/pictures/login.jpg":
 /*!***********************************************!*\
   !*** ./storage/app/public/pictures/login.jpg ***!
@@ -25907,6 +26018,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/login.jpg?8c96498d9432b5af9ed3542b71a506c1");
+
+/***/ }),
+
+/***/ "./storage/app/public/pictures/logo.svg":
+/*!**********************************************!*\
+  !*** ./storage/app/public/pictures/logo.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo.svg?8128cf5aa7a39bb7c49911ea602fadd5");
 
 /***/ }),
 
