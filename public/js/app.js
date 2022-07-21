@@ -20491,29 +20491,29 @@ __webpack_require__.r(__webpack_exports__);
 var SmallCard = function SmallCard() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
-      "class": " flex flex-col gap-[10px] font-extrabold font-sansita text-colorBlack bg-colorWhite rounded-[10px]   ",
+      className: " h-fit  max-w-max flex flex-col gap-[10px] font-extrabold font-sansita text-colorBlack bg-colorWhite rounded-[10px]   ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        "class": "max-w-fit mb-2.5 hidden md:block sm:block  ",
+        className: "max-w-fit mb-2.5 hidden md:block sm:block  ",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-          "class": "rounded-t-[10px] ",
-          src: "https://hogueras.com/wp-content/uploads/2020/09/noche-de-san-juan-768x432.jpg.webp",
+          className: "rounded-t-[10px] w-screen max-h-56 object-cover ",
+          src: "https://images.unsplash.com/photo-1658266212763-49bf8e9f8ac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
           alt: ""
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        "class": "flex flex-col text-center gap-[40px] py-[20px]  ",
+        className: "flex flex-col text-center gap-[40px] py-[20px]  ",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          "class": "text-[26px]",
-          children: "San Juan "
+          className: "text-[26px]",
+          children: "San Miguel "
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          "class": "text-[20px] text-colorPink",
+          className: "text-[20px] text-colorPink",
           children: "Jueves, 23 de Junio"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          "class": "font-bold",
+          className: "font-bold",
           children: "CARRER DE BARNOLA, 08030 BARCELONA."
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-        "class": " tracking-[0.20em] h-fit py-4 px-[93px] font-librefranklin font-bold text-[24px] bg-colorGreen rounded-bl-[10px] rounded-br-[10px]  text-colorWhite text-2xl",
-        children: "APUNTATE"
+        className: " tracking-[0.20em] h-fit py-4 px-[69px]  font-librefranklin font-bold text-[24px] bg-colorYellow rounded-bl-[10px] rounded-br-[10px]  text-colorWhite text-2xl",
+        children: "DESAPUNTAR"
       })]
     })
   });
@@ -21294,7 +21294,7 @@ __webpack_require__.r(__webpack_exports__);
 var HomeView = function HomeView() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "bg-colorPink flex h-full border-2  ",
+      className: "bg-colorPink flex  min-w-fit   h-full border-2  ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
     })
   });

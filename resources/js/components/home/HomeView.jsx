@@ -6,7 +6,9 @@ import SmallCard from '../card/SmallCard'
 const HomeView = () => {
     return (
         <>
-        <div className='bg-colorPink flex h-full border-2  '>
+        <div className='bg-colorPink flex  min-w-fit   h-full border-2  '>
+
+
 
         <SmallCard></SmallCard>
         <SmallCard></SmallCard>
