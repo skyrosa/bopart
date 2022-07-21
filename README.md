@@ -2,6 +2,7 @@
 ​
 Bopart nace con la intención de crear comunidad artística en el barrio de Sant Andreu. Para ello se ha habilitado una sala comunal en la que podrán hacer eventos para que, tanto los artistas puedan conocerse y hacer comunidad a nivel interno, como que los artistas puedan hacer bolos y darse a conocer al resto del barrio. 
 Para poder acercar la comunidad de vecinos, la web permitirá tener el conocimiento de las actividades organizadas en el local y se podrá inscribir a los eventos para controlar el aforo limitado del local
+<br>
 ​
 ​
 ![Logo](https://i.postimg.cc/wMxxsKm5/bopart-logo.png)
@@ -72,7 +73,7 @@ Run this command on the terminal to install the project
 ```bash
   git clone https://github.com/jhonv4sq/bopart.git
 ```
-Open it in the folder thath you are using 
+Open it in the folder that you are using 
 ​
 ##
 ​
@@ -87,7 +88,7 @@ Once you have done it run this again in to your terminal
 Then put this command on the terminal to install laravel 
 ​
 ```bash
-  git clone https://github.com/jhonv4sq/bopart.git
+  
 ```
 ​
 ![Logo](https://i.postimg.cc/XJ362pbK/asdgfwtqwe.png)
@@ -134,9 +135,10 @@ Then execute the server command
 ​
 ![Logo](https://i.postimg.cc/NM2FqdC8/SEMIOSDGISAD.png)
 ​
-Then copy the ip thath the command give it to you and copy it in to your favorite browser!
+Then copy the ip that the command gave to you and copy it in to your favorite browser!
 ​
-Enter the ip in to the searcher and... whoualah! 
+Enter the ip in to the searcher and... whoualah!
+
 ## Lessons Learned
 ​
 What did you learn while building this project? What challenges did you face and how did you overcome them?
@@ -168,20 +170,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 Contraer
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Enviar un mensaje a bopart
 
