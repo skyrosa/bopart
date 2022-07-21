@@ -39,7 +39,6 @@ class CollaboratorController extends Controller
         if(! Gate::allows('only-admin')){
             abort(403);
         }
-        
         Collaborator::create([
             'name' => $request['name'],
             'image' => $this->storeImage($request->all()),

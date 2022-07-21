@@ -29,10 +29,10 @@ class StoreEvent extends FormRequest
             'date' => 'required|date',
             'startTime' => 'required|date_format:H:i',
             'endTime' => 'required|date_format:H:i',
-            'image' => 'nullable|url',
+            'image' => 'present',
             'address' => 'nullable|string',
             'capacity' => 'required|integer',
-            'type' => 'required|integer',
+            'type' => 'required|string',
         ];
     }
 }

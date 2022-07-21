@@ -6,7 +6,10 @@ use App\Http\Requests\StoreEvent;
 use App\Models\Event;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Str;
+use Intervention\Image\Facades\Image;
 
 class EventController extends Controller
 {
@@ -39,19 +42,31 @@ class EventController extends Controller
         if(! Gate::allows('only-admin')){
             abort(403);
         }
-        Event::create([
-            'name' => $request['name'],
-            'description' => $request['description'],
-            'date' => $request['date'],
-            'startTime' => $request['startTime'],
-            'endTime' => $request['endTime'],
-            'image' => $request['image'],
-            'address' => $request['address'],
-            'capacity' => $request['capacity'],
-            'type' => $request['type'],
-        ]);
+        
+        $data = $request->validated();
 
-        return redirect()->route('events.index');
+        $data['image'] =  $data['image'] ? $this->storeImage($data['image']) : '';
+
+        $event = Event::create($data);
+
+        return response($event, Response::HTTP_CREATED);
+    }
+
+
+    public function storeImage($data)
+    {
+        $img = Image::make($data);
+        $fileName = Str::uuid() . '.' . explode('/', $img->mime())[1];
+        $filePath = "/storage/pictures/$fileName";
+        $img->save(public_path($filePath));
+
+        return $filePath;
+    }
+
+
+    public function deleteImage($event)
+    {
+
     }
 
 
@@ -88,6 +103,7 @@ class EventController extends Controller
             'image' => $request['image'],
             'address' => $request['address'],
             'capacity' => $request['capacity'],
+            'type' => $request['type'],
         ]);
         return redirect()->route('events.show', compact('event'));
     }
