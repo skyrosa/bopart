@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
-import Button from '../Button'
+
 import { createRoot } from "react-dom/client"
 import SmallCard from '../card/SmallCard'
-
+import { TextImageMiscA } from './TextImageMisc'
+import { RowImagesA } from './RowImages'
 const HomeView = () => {
     return (
         <>
