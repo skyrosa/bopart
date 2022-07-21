@@ -21840,11 +21840,11 @@ video {
 .h-full {
   height: 100%;
 }
-.h-28 {
-  height: 7rem;
-}
 .h-auto {
   height: auto;
+}
+.h-28 {
+  height: 7rem;
 }
 .max-h-56 {
   max-height: 14rem;
@@ -22266,6 +22266,10 @@ video {
 .px-\[67px\] {
   padding-left: 67px;
   padding-right: 67px;
+}
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 .pb-5 {
   padding-bottom: 1.25rem;

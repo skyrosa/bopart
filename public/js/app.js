@@ -20216,6 +20216,10 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
 
+__webpack_require__(/*! ./components/home/RowImages */ "./resources/js/components/home/RowImages.jsx");
+
+__webpack_require__(/*! ./components/home/TextImageMisc */ "./resources/js/components/home/TextImageMisc.jsx");
+
 __webpack_require__(/*! ./components/home/HomeView */ "./resources/js/components/home/HomeView.jsx");
 
 __webpack_require__(/*! ./components/card/BigCard */ "./resources/js/components/card/BigCard.jsx");
@@ -21279,10 +21283,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Button */ "./resources/js/components/Button.jsx");
-/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var _card_SmallCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../card/SmallCard */ "./resources/js/components/card/SmallCard.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
+/* harmony import */ var _card_SmallCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../card/SmallCard */ "./resources/js/components/card/SmallCard.jsx");
+/* harmony import */ var _RowImages__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RowImages */ "./resources/js/components/home/RowImages.jsx");
+/* harmony import */ var _TextImageMisc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TextImageMisc */ "./resources/js/components/home/TextImageMisc.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -21292,20 +21298,194 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var HomeView = function HomeView() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "bg-colorPink flex  min-w-fit   h-full border-2  ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
-    })
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_RowImages__WEBPACK_IMPORTED_MODULE_3__.RowImagesA, {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
+      className: "flex gap-10 self-center px-40 font-sansita | flex min-h-screen ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_TextImageMisc__WEBPACK_IMPORTED_MODULE_4__.TextImageMiscA, {})
+    })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomeView);
 
 if (document.getElementById('home-view')) {
-  var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(document.getElementById("home-view"));
-  root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(HomeView, {}));
+  var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById("home-view"));
+  root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(HomeView, {}));
 }
+
+/***/ }),
+
+/***/ "./resources/js/components/home/RowImages.jsx":
+/*!****************************************************!*\
+  !*** ./resources/js/components/home/RowImages.jsx ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "RowImagesA": () => (/* binding */ RowImagesA),
+/* harmony export */   "RowImagesB": () => (/* binding */ RowImagesB),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var RowImagesA = function RowImagesA() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "flex h-screen  bg-gradient-yellow border-4 ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "border w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "border w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "border w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        className: "border w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        className: "border w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      })]
+    })
+  });
+};
+var RowImagesB = function RowImagesB() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "flex h-screen  bg-gradient-yellow border-4 ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "border w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "border w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "border w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        className: "border w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        className: "border w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+        style: {
+          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+        }
+      })]
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RowImagesA);
+
+/***/ }),
+
+/***/ "./resources/js/components/home/TextImageMisc.jsx":
+/*!********************************************************!*\
+  !*** ./resources/js/components/home/TextImageMisc.jsx ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TextImageMiscA": () => (/* binding */ TextImageMiscA),
+/* harmony export */   "TextImageMiscB": () => (/* binding */ TextImageMiscB),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var TextImageMiscA = function TextImageMiscA() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "bg-gradient-blue h-auto border-4 min-h-screen | p-[50px] gap-[30px]  flex  ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "border  w-screen h-screen   ",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          className: "border-2   h-full w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+          style: {
+            backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+          }
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "justify-center flex flex-col max-w-prose border text-2xl font-sansita text-center gap-y-2.5",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "text-[40px] font-extrabold",
+          children: "Bop & LiveMusic  "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "border",
+          children: "CatchPhrase "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "",
+          children: "Enim urna fames convallis leo ultrices ut facilisis. Et eros donec sagittis mauris sed duis cras integer viverra. Eu sed consequat in commodo vitae, nunc quam suspendisse nunc. Mollis sed nulla blandit nullam suspendisse habitant. Pellentesque ipsum sollicitudin a eget ornare. Mi et sed adipiscing id neque pellentesque fermentum. Ullamcorper rhoncus purus, vitae nec, leo. Diam nunc commodo lacinia risus urna. Arcu urna, nunc varius cursus. Rhoncus id nulla lacus, nunc.  "
+        })]
+      })]
+    })
+  });
+};
+var TextImageMiscB = function TextImageMiscB() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "bg-gradient-blue h-auto border-4 min-h-screen | p-[50px] gap-[30px]  flex  ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "border  w-screen h-screen   ",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          className: "border-2   h-full w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+          style: {
+            backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+          }
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "justify-center flex flex-col max-w-prose border text-2xl font-sansita text-center gap-y-2.5",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "text-[40px] font-extrabold",
+          children: "Bop & LiveMusic  "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "border",
+          children: "CatchPhrase "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "",
+          children: "Enim urna fames convallis leo ultrices ut facilisis. Et eros donec sagittis mauris sed duis cras integer viverra. Eu sed consequat in commodo vitae, nunc quam suspendisse nunc. Mollis sed nulla blandit nullam suspendisse habitant. Pellentesque ipsum sollicitudin a eget ornare. Mi et sed adipiscing id neque pellentesque fermentum. Ullamcorper rhoncus purus, vitae nec, leo. Diam nunc commodo lacinia risus urna. Arcu urna, nunc varius cursus. Rhoncus id nulla lacus, nunc.  "
+        })]
+      })]
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TextImageMiscA);
 
 /***/ }),
 

@@ -1,21 +1,26 @@
 import React, {useState, useEffect} from 'react'
-
 import { createRoot } from "react-dom/client"
+
 import SmallCard from '../card/SmallCard'
-import { TextImageMiscA } from './TextImageMisc'
 import { RowImagesA } from './RowImages'
+import { TextImageMiscA } from './TextImageMisc'
+
 const HomeView = () => {
     return (
         <>
-        <div className='bg-colorPink flex  min-w-fit   h-full border-2  '>
 
 
-
-        <SmallCard></SmallCard>
-        <SmallCard></SmallCard>
-        <SmallCard></SmallCard>
-        
-        </div>
+        <section>
+            <RowImagesA></RowImagesA>
+        </section>   
+        <section className='flex gap-10 self-center px-40 font-sansita | flex min-h-screen '>
+            <SmallCard></SmallCard>
+            <SmallCard></SmallCard>
+            <SmallCard></SmallCard>
+        </section>
+        <section>
+            <TextImageMiscA/>
+        </section>
 
         </>
     )

@@ -14,6 +14,8 @@ require('./bootstrap');
 
 require('./components/Example')
 
+require('./components/home/RowImages')
+require('./components/home/TextImageMisc')
 require('./components/home/HomeView')
 require('./components/card/BigCard')
 
