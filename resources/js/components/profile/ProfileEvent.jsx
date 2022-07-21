@@ -5,7 +5,7 @@ const ProfileEvent = (props) => {
     const [date, setDate] = useState(props.myEvent.date)
     
     const changeFormat = () => {
-        let months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"]
+        let months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
         let getMonth = date.split('-')[1];
         let getDay = date.split('-')[2]
         let month = getMonth[0] == 0 ? getMonth[1] : getMonth

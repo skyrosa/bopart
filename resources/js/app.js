@@ -14,6 +14,7 @@ require('./bootstrap');
 
 require('./components/Example')
 
+require('./components/home/HomeView')
 require('./components/card/BigCard')
 
 require('./components/profile/ProfileUser')
