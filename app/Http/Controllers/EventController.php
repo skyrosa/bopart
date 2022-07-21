@@ -33,6 +33,7 @@ class EventController extends Controller
         }
         
         $event = Event::factory()->make();
+        
         return view('events.create', compact('event'));
     }
 
@@ -45,7 +46,10 @@ class EventController extends Controller
         
         $data = $request->validated();
 
-        $data['image'] =  $data['image'] ? $this->storeImage($data['image']) : '';
+        if(!filter_var($data['image'], FILTER_VALIDATE_URL)){
+            $data['image'] =  $data['image'] ? $this->storeImage($data['image']) : '';
+        }
+
 
         $event = Event::create($data);
 

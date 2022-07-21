@@ -49,7 +49,7 @@ class AdminEventTest extends TestCase
     {
         $event = $this->event();
         $response = $this->post(route('events.store'), $event); //almacenamos el evento en la base de datos
-        // $response->assertCreated(); //status 201
+        $response->assertCreated(); //status 201
         $this->assertDatabaseCount('events', 1); //verificamos si el registro existe en la base de datos 
 
         $this->withoutExceptionHandling();
