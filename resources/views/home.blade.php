@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="container">
-    <div id="home"></div>
+    <div id="home-view"></div>
 </div>
 @endsection

@@ -1,11 +1,19 @@
 import React, {useState, useEffect} from 'react'
 import Button from '../Button'
+import { createRoot } from "react-dom/client"
 import SmallCard from '../card/SmallCard'
 
 const HomeView = () => {
     return (
         <>
+        <div className='bg-colorPink flex h-full border-2  '>
+
         <SmallCard></SmallCard>
+        <SmallCard></SmallCard>
+        <SmallCard></SmallCard>
+        
+        </div>
+
         </>
     )
 }
