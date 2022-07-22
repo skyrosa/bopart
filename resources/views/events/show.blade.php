@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="w-full min-h-full bg-gradient-to-b from-colorTourq to-colorYellow  p-4 flex flex-col justify-center">
+<div class="flex flex-col justify-center min-w-full min-h-full  || bg-gradient-to-b from-colorYellow to-colorTourq">
     <div id="big-card"></div>    
 </div>
 @endsection
