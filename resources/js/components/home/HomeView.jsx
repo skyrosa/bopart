@@ -10,15 +10,15 @@ const HomeView = () => {
         <>
 
 
-        <section>
+        <section className=''>
             <RowImagesA></RowImagesA>
         </section>   
-        <section className='flex gap-10 self-center px-40 font-sansita | flex min-h-screen '>
+        <section className='flex p-5 justify-center space-x-10  '>
             <SmallCard></SmallCard>
             <SmallCard></SmallCard>
             <SmallCard></SmallCard>
         </section>
-        <section>
+        <section className=''>
             <TextImageMiscA/>
         </section>
 

@@ -21300,11 +21300,13 @@ __webpack_require__.r(__webpack_exports__);
 var HomeView = function HomeView() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
+      className: "",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_RowImages__WEBPACK_IMPORTED_MODULE_3__.RowImagesA, {})
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
-      className: "flex gap-10 self-center px-40 font-sansita | flex min-h-screen ",
+      className: "flex p-5 justify-center space-x-10  ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
+      className: "",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_TextImageMisc__WEBPACK_IMPORTED_MODULE_4__.TextImageMiscA, {})
     })]
   });
@@ -21427,9 +21429,9 @@ __webpack_require__.r(__webpack_exports__);
 var TextImageMiscA = function TextImageMiscA() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "bg-gradient-blue h-auto border-4 min-h-screen | p-[50px] gap-[30px]  flex  ",
+      className: "bg-gradient-blue w-full h-auto border-4 min-h-screen | p-[50px] gap-[30px]  flex  ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "border  w-screen h-screen   ",
+        className: "border  w-full h-screen   ",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
           className: "border-2   h-full w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
           style: {

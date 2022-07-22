@@ -3,10 +3,10 @@ import React from 'react'
 export const TextImageMiscA = () => {
     return (
     <>
-    <div className="bg-gradient-blue h-auto border-4 min-h-screen | p-[50px] gap-[30px]  flex  "  >
+    <div className="bg-gradient-blue w-full h-auto border-4 min-h-screen | p-[50px] gap-[30px]  flex  "  >
         
 
-        <div className="border  w-screen h-screen   ">
+        <div className="border  w-full h-screen   ">
             <img className='border-2   h-full w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)`}}  />
         </div>
 
