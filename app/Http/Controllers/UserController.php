@@ -18,7 +18,6 @@ class UserController extends Controller
     public function myInformation()
     {
         $user = auth()->user();
-        $events = $user->event;
         return response(json_encode($user), Response::HTTP_OK);
     }
 

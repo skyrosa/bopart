@@ -15,16 +15,19 @@ class EventController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('index', 'show');
+        $this->middleware('auth')->except('index', 'show', 'getAllEvent');
     }
 
 
     public function index()
     {
-        $events = Event::all();
         return view('events.index', compact('events'));
     }
 
+    public function getAllEvent(){
+        $events = Event::orderBy('date', 'asc')->get();
+        return response(json_encode($events), Response::HTTP_OK);
+    }
 
     public function create()
     {

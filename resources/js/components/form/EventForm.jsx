@@ -22,6 +22,7 @@ const EventForm = () => {
     const [message, setMessage] = useState([])
 
     const storeEvent = async (e) => {
+        console.log(image)
             e.preventDefault()
             let event = {
                 name: name ,
