@@ -40,3 +40,7 @@ Route::resource('events', EventController::class);
 Route::resource('collaborators', CollaboratorController::class);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::get('/about', function(){
+    return view('about');
+});
