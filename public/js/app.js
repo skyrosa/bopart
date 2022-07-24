@@ -20572,7 +20572,7 @@ var SmallCard = function SmallCard() {
           children: "CARRER DE BARNOLA, 08030 BARCELONA."
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-        className: " tracking-[0.20em] h-fit py-4 px-[69px]  font-librefranklin font-bold text-[24px] bg-colorYellow rounded-bl-[10px] rounded-br-[10px]  text-colorWhite text-2xl",
+        className: " tracking-[0.20em] h-fit py-4   font-librefranklin font-bold text-[24px] bg-colorYellow rounded-bl-[10px] rounded-br-[10px]  text-colorWhite text-2xl",
         children: "DESAPUNTAR"
       })]
     })
@@ -21353,18 +21353,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 var HomeView = function HomeView() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
-      className: "",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_RowImages__WEBPACK_IMPORTED_MODULE_3__.RowImagesA, {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
-      className: "flex p-5 justify-center space-x-10  ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
-      className: "",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_TextImageMisc__WEBPACK_IMPORTED_MODULE_4__.TextImageMiscA, {})
-    })]
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: " bg-gradient-to-l from-colorTourq to-colorPink",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
+        className: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_RowImages__WEBPACK_IMPORTED_MODULE_3__.RowImagesB, {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
+        className: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_TextImageMisc__WEBPACK_IMPORTED_MODULE_4__.TextImageMiscA, {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
+        className: "flex p-5 justify-center space-x-10  ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
+        className: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_TextImageMisc__WEBPACK_IMPORTED_MODULE_4__.TextImageMiscB, {})
+      })]
+    })
   });
 };
 
@@ -21428,31 +21436,26 @@ var RowImagesA = function RowImagesA() {
 var RowImagesB = function RowImagesB() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "flex h-screen  bg-gradient-yellow border-4 ",
+      className: " sm:flex-row flex flex-col w-full h-screen  ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "border w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
+        className: " w-full sm:h-full h-1/5  bg-cover bg-center bg-no-repeat",
         style: {
-          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+          backgroundImage: "url(https://images.unsplash.com/photo-1630807284621-9c1e13de79ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)"
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "border w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
+        className: " w-full sm:h-full h-1/5  bg-cover bg-center bg-no-repeat",
         style: {
-          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+          backgroundImage: "url(https://images.unsplash.com/photo-1517456793572-1d8efd6dc135?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)"
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "border w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
+        className: " w-full sm:h-full h-1/5  bg-cover bg-center bg-no-repeat",
         style: {
-          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+          backgroundImage: "url(https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80)"
         }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-        className: "border w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: " w-full sm:h-full h-1/5  bg-cover bg-center bg-no-repeat",
         style: {
-          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
-        }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-        className: "border w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
-        style: {
-          backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+          backgroundImage: "url(https://images.unsplash.com/photo-1592321050415-411b2293852a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80)"
         }
       })]
     })
@@ -21512,29 +21515,32 @@ var TextImageMiscA = function TextImageMiscA() {
 };
 var TextImageMiscB = function TextImageMiscB() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "bg-gradient-blue h-auto border-4 min-h-screen | p-[50px] gap-[30px]  flex  ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "border  w-screen h-screen   ",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-          className: "border-2   h-full w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
-          style: {
-            backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
-          }
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "justify-center flex flex-col max-w-prose border text-2xl font-sansita text-center gap-y-2.5",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-          className: "text-[40px] font-extrabold",
-          children: "Bop & LiveMusic  "
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-          className: "border",
-          children: "CatchPhrase "
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-          className: "",
-          children: "Enim urna fames convallis leo ultrices ut facilisis. Et eros donec sagittis mauris sed duis cras integer viverra. Eu sed consequat in commodo vitae, nunc quam suspendisse nunc. Mollis sed nulla blandit nullam suspendisse habitant. Pellentesque ipsum sollicitudin a eget ornare. Mi et sed adipiscing id neque pellentesque fermentum. Ullamcorper rhoncus purus, vitae nec, leo. Diam nunc commodo lacinia risus urna. Arcu urna, nunc varius cursus. Rhoncus id nulla lacus, nunc.  "
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: " w-full h-screen items-center  border-4  justify-center | py-[] gap-[px]  flex  ",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: " sm:flex-row flex flex-col justify-center h-3/4 w-10/12  items-center border text-2xl font-sansita text-center gap-y-2.5",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "flex-col sm:w-3/4 flex gap-5",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            className: "text-[40px] font-extrabold",
+            children: "Bop & LiveMusic  "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            className: "border",
+            children: "CatchPhrase "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            className: "",
+            children: "Enim urna fames convallis leo ultrices ut facilisis. Et eros donec sagittis mauris sed duis cras integer viverra. Eu sed consequat in commodo vitae, nunc quam suspendisse nunc. Mollis sed nulla blandit nullam suspendisse habitant. Pellentesque ipsum sollicitudin a eget ornare. Mi et sed adipiscing id neque pellentesque fermentum. Ullamcorper rhoncus purus, vitae nec, leo. Diam nunc commodo lacinia risus urna. Arcu urna, nunc varius cursus. Rhoncus id nulla lacus, nunc.  "
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "border flex   sm:w-2/4 sm:h-full w-full h-2/4     ",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            className: "border-2 w-full   rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+            style: {
+              backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+            }
+          })
         })]
-      })]
+      })
     })
   });
 };
