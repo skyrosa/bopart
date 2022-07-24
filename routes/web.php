@@ -41,6 +41,11 @@ Route::resource('collaborators', CollaboratorController::class);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+
+
+Route::get('/services', function(){
+    return view('services');
+});
 Route::get('/about', function(){
     return view('about');
 });

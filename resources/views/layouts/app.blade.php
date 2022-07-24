@@ -105,7 +105,7 @@
 
             <div class='w-full flex flex-row'>
                 <div class='w-full flex items-center justify-center'>
-                    <a href='#' class='p-2   text-colorPink hover:text-[#E37383]  font-sansita text-[14px] md:text-[23px] lg:text-[40px] font-extrabold  self-center max-w-max uppercase'>
+                    <a href='/services' class='p-2   text-colorPink hover:text-[#E37383]  font-sansita text-[14px] md:text-[23px] lg:text-[40px] font-extrabold  self-center max-w-max uppercase'>
                         Que ofrecemos
                     </a>
                 </div>
@@ -117,7 +117,7 @@
                 </div>
     
                 <div class='w-full flex items-center justify-center'>
-                    <a href='#' class='p-2   text-colorPink hover:text-[#E37383]  font-sansita text-[14px] md:text-[23px] lg:text-[40px] font-extrabold  self-center max-w-max uppercase'>
+                    <a href='/about' class='p-2   text-colorPink hover:text-[#E37383]  font-sansita text-[14px] md:text-[23px] lg:text-[40px] font-extrabold  self-center max-w-max uppercase'>
                         Quienes somos
                     </a>
                 </div>
