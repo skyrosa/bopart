@@ -127,7 +127,7 @@
             
         
             <div class=" border-4 justify-between border-colorPink max-w-xl md:flex flex flex-col gap-20   container w-full    ">
-                <img class='border-2 sm:p-40 sm:w-auto w-full h-96   rounded-l-[28px] bg-cover bg-center bg-no-repeat' style=" background-image: url('https://i.postimg.cc/TPcbcR3Q/702A6509.jpg')"  />
+                <img class='border-2 sm: sm:w-auto w-full h-96   rounded-l-[28px] bg-cover bg-center bg-no-repeat' style=" background-image: url('https://i.postimg.cc/TPcbcR3Q/702A6509.jpg')"  />
 
             <div class=" flex flex-col gap-5">
                 <p class="">
@@ -159,7 +159,7 @@
                 Desde una visión artística la creación es infinita, los límites desaparecen, las dificultades se convierten en reto, y cualquier objeto, situación o momento se puede convertir en un lienzo en blanco para recrearnos. 
                 </p>
 
-                <img class='border-2 sm:p-40 sm:w-auto w-full h-96   rounded-l-[28px] bg-cover bg-center bg-no-repeat' style=" background-image: url('https://i.postimg.cc/4xWZvqTV/702A6299.jpg')"  />
+                <img class='border-2 sm: sm:w-auto w-full h-96   rounded-l-[28px] bg-cover bg-center bg-no-repeat' style=" background-image: url('https://i.postimg.cc/4xWZvqTV/702A6299.jpg')"  />
 
             </div>
 
