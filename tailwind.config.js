@@ -6,17 +6,19 @@ module.exports = {
   ],
   theme: {
     colors:{
-      colorGreen:  '#5CBB5A',
+      colorGreen:   '#5CBB5A',
       colorTourq:  '#7CC7BF',
       colorWhite:  '#F5F5F5',
       colorYellow: '#F6BD60',
       colorPink:   '#F28482',
       colorBlack:  '#2F2A2A',
       gradient: {
-        blue: '#7CC7BF',
-        pink: '#F28482',
-        yellow: '#F6BD60',
-       }
+        lightBlue: '#94DBD3',
+        midBlue: '#4AADA3',
+        darkerBlue: '#0F7267',
+      },
+    
+
     },
 
     extend: {
@@ -30,5 +32,6 @@ module.exports = {
       }
     },
   }
+
 
 /* v17.9.0  node*/ 
