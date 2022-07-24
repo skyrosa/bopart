@@ -6,9 +6,9 @@ import { createRoot } from 'react-dom/client'
 const BigCard = () => {
     return (
 <>
-<main className="flex flex-col   justify-center min-w-full min-h-full   || bg-gradient-to-b from-colorYellow to-colorTourq">
+<main className="flex flex-col   justify-center min-w-full h-screen  || bg-gradient-to-b from-colorYellow to-colorTourq">
         
-    <div className="flex flex-col rounded-[10px] gap-2.5 container p-0 px-10 self-center bg-colorWhite  pb-5">
+    <div className="flex flex-col rounded-[10px] gap-2.5 container p-0 self-center bg-colorWhite  pb-5">
         <section className="">
             <div className='rounded-t-[10px] h-72  hidden md:block bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(https://images.unsplash.com/photo-1630807284621-9c1e13de79ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)`}} ></div>
         </section>

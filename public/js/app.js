@@ -20430,9 +20430,9 @@ __webpack_require__.r(__webpack_exports__);
 var BigCard = function BigCard() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("main", {
-      className: "flex flex-col   justify-center min-w-full min-h-full   || bg-gradient-to-b from-colorYellow to-colorTourq",
+      className: "flex flex-col   justify-center min-w-full h-screen  || bg-gradient-to-b from-colorYellow to-colorTourq",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "flex flex-col rounded-[10px] gap-2.5 container p-0 px-10 self-center bg-colorWhite  pb-5",
+        className: "flex flex-col rounded-[10px] gap-2.5 container p-0 self-center bg-colorWhite  pb-5",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
           className: "",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
