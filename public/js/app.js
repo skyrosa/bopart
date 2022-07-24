@@ -20548,7 +20548,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var SmallCard = function SmallCard() {
+var SmallCard_Old = function SmallCard_Old() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
       className: " h-fit  max-w-max flex flex-col gap-[10px] font-extrabold font-sansita text-colorBlack bg-colorWhite rounded-[10px]   ",
@@ -20579,7 +20579,38 @@ var SmallCard = function SmallCard() {
   });
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SmallCard);
+var SmallCardA = function SmallCardA() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
+      "class": " h-fit xl:   max-w-max flex flex-col gap-[10px] font-extrabold font-sansita text-colorBlack bg-colorWhite rounded-[10px]   ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        "class": "max-w-fit mb-2.5 hidden md:block sm:block  ",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+          "class": "rounded-t-[10px] w-screen max-h-56 object-cover ",
+          src: "https://images.unsplash.com/photo-1658266212763-49bf8e9f8ac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          alt: ""
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        "class": "flex flex-col  px-2 center   text-center gap-[40px] py-[20px]  ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          "class": "text-[26px]",
+          children: "A "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          "class": "text-[20px] text-colorPink",
+          children: "Jueves, 23 de Junio"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          "class": " font-bold",
+          children: "CARRER DE BARNOLA, 08030 BARCELONA."
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        "class": "xl:px-5 tracking-[0.20em] h-fit py-4   font-librefranklin font-bold text-[24px] bg-colorYellow rounded-bl-[10px] rounded-br-[10px]  text-colorWhite text-2xl",
+        children: "DESAPUNTAR"
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SmallCardA);
 
 /***/ }),
 
@@ -21364,13 +21395,13 @@ var HomeView = function HomeView() {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_RowImages__WEBPACK_IMPORTED_MODULE_3__.RowImagesB, {})
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
         className: "",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_TextImageMisc__WEBPACK_IMPORTED_MODULE_4__.TextImageMiscA, {})
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_TextImageMisc__WEBPACK_IMPORTED_MODULE_4__.TextImageMiscLeft, {})
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
-        className: "flex p-5 justify-center space-x-10  ",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+        "class": " flex flex-col 2xl: xl:flex-wrap sm:flex-wrap sm:flex-row p-10 overflow-hidden items-center gap-7  w-full justify-center    ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_card_SmallCard__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("section", {
         className: "",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_TextImageMisc__WEBPACK_IMPORTED_MODULE_4__.TextImageMiscB, {})
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_TextImageMisc__WEBPACK_IMPORTED_MODULE_4__.TextImageMiscRight, {})
       })]
     })
   });
@@ -21474,8 +21505,8 @@ var RowImagesB = function RowImagesB() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "TextImageMiscA": () => (/* binding */ TextImageMiscA),
-/* harmony export */   "TextImageMiscB": () => (/* binding */ TextImageMiscB),
+/* harmony export */   "TextImageMiscLeft": () => (/* binding */ TextImageMiscLeft),
+/* harmony export */   "TextImageMiscRight": () => (/* binding */ TextImageMiscRight),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -21485,66 +21516,69 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var TextImageMiscA = function TextImageMiscA() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "bg-gradient-blue w-full h-auto border-4 min-h-screen | p-[50px] gap-[30px]  flex  ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "border  w-full h-screen   ",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-          className: "border-2   h-full w-full rounded-l-[28px] bg-cover bg-center bg-no-repeat",
-          style: {
-            backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
-          }
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "justify-center flex flex-col max-w-prose border text-2xl font-sansita text-center gap-y-2.5",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-          className: "text-[40px] font-extrabold",
-          children: "Bop & LiveMusic  "
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-          className: "border",
-          children: "CatchPhrase "
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-          className: "",
-          children: "Enim urna fames convallis leo ultrices ut facilisis. Et eros donec sagittis mauris sed duis cras integer viverra. Eu sed consequat in commodo vitae, nunc quam suspendisse nunc. Mollis sed nulla blandit nullam suspendisse habitant. Pellentesque ipsum sollicitudin a eget ornare. Mi et sed adipiscing id neque pellentesque fermentum. Ullamcorper rhoncus purus, vitae nec, leo. Diam nunc commodo lacinia risus urna. Arcu urna, nunc varius cursus. Rhoncus id nulla lacus, nunc.  "
-        })]
-      })]
-    })
-  });
-};
-var TextImageMiscB = function TextImageMiscB() {
+var TextImageMiscLeft = function TextImageMiscLeft() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: " w-full h-screen items-center  border-4  justify-center | py-[] gap-[px]  flex  ",
+      "class": " w-full h-screen items-center  border-4  justify-center | py-[] gap-[px]  flex  ",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: " sm:flex-row flex flex-col justify-center h-3/4 w-10/12  items-center border text-2xl font-sansita text-center gap-y-2.5",
+        "class": " sm:flex-row flex flex-col justify-center h-3/4 w-10/12  items-center border text-xl font-sansita text-center gap-y-2.5",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "flex-col sm:w-3/4 flex gap-5",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-            className: "text-[40px] font-extrabold",
-            children: "Bop & LiveMusic  "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-            className: "border",
-            children: "CatchPhrase "
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-            className: "",
-            children: "Enim urna fames convallis leo ultrices ut facilisis. Et eros donec sagittis mauris sed duis cras integer viverra. Eu sed consequat in commodo vitae, nunc quam suspendisse nunc. Mollis sed nulla blandit nullam suspendisse habitant. Pellentesque ipsum sollicitudin a eget ornare. Mi et sed adipiscing id neque pellentesque fermentum. Ullamcorper rhoncus purus, vitae nec, leo. Diam nunc commodo lacinia risus urna. Arcu urna, nunc varius cursus. Rhoncus id nulla lacus, nunc.  "
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          className: "border flex   sm:w-2/4 sm:h-full w-full h-2/4     ",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-            className: "border-2 w-full   rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+          "class": "border flex   sm:w-2/4 sm:h-full justify-center w-full h-2/4     ",
+          children: ["            ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            "class": "border-2 sm:w-full w-8/12   rounded-l-[28px] bg-cover bg-center bg-no-repeat",
             style: {
               backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
             }
-          })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          "class": "flex-col sm:w-3/4 flex gap-5",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            "class": "sm:text-[40px]  font-extrabold",
+            children: "Bop & LiveMusic  "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            "class": "sm:text-2xl border",
+            children: "CatchPhrase "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            "class": "sm:text-2xl ",
+            children: "Enim urna fames convallis leo ultrices ut facilisis. Et eros donec sagittis mauris sed duis cras integer viverra. Eu sed consequat in commodo vitae, nunc quam suspendisse nunc. Mollis sed nulla blandit nullam suspendisse habitant. Pellentesque ipsum sollicitudin a eget ornare. Mi et sed adipiscing id neque pellentesque fermentum. Ullamcorper rhoncus purus, vitae nec, leo. Diam nunc commodo lacinia risus urna. Arcu urna, nunc varius cursus. Rhoncus id nulla lacus, nunc.  "
+          })]
         })]
       })
     })
   });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TextImageMiscA);
+var TextImageMiscRight = function TextImageMiscRight() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      "class": " w-full h-screen items-center  border-4  justify-center | py-[] gap-[px]  flex  ",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        "class": " sm:flex-row flex flex-col justify-center h-3/4 w-10/12  items-center border text-xl font-sansita text-center gap-y-2.5",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          "class": "flex-col sm:w-3/4 flex gap-5",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            "class": "sm:text-[40px]  font-extrabold",
+            children: "Bop & LiveMusic  "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            "class": "sm:text-2xl border",
+            children: "CatchPhrase "
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            "class": "sm:text-2xl ",
+            children: "Enim urna fames convallis leo ultrices ut facilisis. Et eros donec sagittis mauris sed duis cras integer viverra. Eu sed consequat in commodo vitae, nunc quam suspendisse nunc. Mollis sed nulla blandit nullam suspendisse habitant. Pellentesque ipsum sollicitudin a eget ornare. Mi et sed adipiscing id neque pellentesque fermentum. Ullamcorper rhoncus purus, vitae nec, leo. Diam nunc commodo lacinia risus urna. Arcu urna, nunc varius cursus. Rhoncus id nulla lacus, nunc.  "
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          "class": "border flex   sm:w-2/4 sm:h-full w-full h-2/4     ",
+          children: ["            ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            "class": "border-2 w-full    rounded-l-[28px] bg-cover bg-center bg-no-repeat",
+            style: {
+              backgroundImage: "url(https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"
+            }
+          })]
+        })]
+      })
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TextImageMiscRight);
 
 /***/ }),
 

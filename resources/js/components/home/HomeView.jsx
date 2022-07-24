@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import { createRoot } from "react-dom/client"
 
-import SmallCard from '../card/SmallCard'
+import SmallCardA from '../card/SmallCard'
 import { RowImagesA } from './RowImages'
-import { TextImageMiscA } from './TextImageMisc'
 import { RowImagesB } from './RowImages'
-import { TextImageMiscB } from './TextImageMisc'
+import { TextImageMiscLeft } from './TextImageMisc'
+import { TextImageMiscRight } from './TextImageMisc'
 
 const HomeView = () => {
     return (
@@ -17,15 +17,23 @@ const HomeView = () => {
             <RowImagesB/>
         </section>   
         <section className=''>
-            <TextImageMiscA/>
+            <TextImageMiscLeft/>
         </section>
-        <section className='flex p-5 justify-center space-x-10  '>
-            <SmallCard/>
-            <SmallCard/> 
+        <section class=' flex flex-col 2xl: xl:flex-wrap sm:flex-wrap sm:flex-row p-10 overflow-hidden items-center gap-7  w-full justify-center    '>
+
+            <SmallCardA/>
+            <SmallCardA/> 
+            <SmallCardA/>
+            <SmallCardA/> 
+            <SmallCardA/>
+            <SmallCardA/> 
+            <SmallCardA/>
+            <SmallCardA/> 
+            <SmallCardA/> 
             
         </section>
         <section className=''>
-            <TextImageMiscB/>
+            <TextImageMiscRight/>
         </section>
     </div>
 
