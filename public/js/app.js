@@ -21074,7 +21074,7 @@ var LoginForm = function LoginForm() {
   };
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("section", {
-    className: "bg-colorWhite w-full lg:w-3/5 rounded-[28px] flex flex-row",
+    className: " bg-colorWhite w-full lg:w-3/5 rounded-[28px] flex flex-row",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat",
       style: {
@@ -21148,8 +21148,8 @@ var LoginForm = function LoginForm() {
             type: "submit",
             className: "px-3 py-[10px] text-colorBlack text-sm lg:text-lg font-inter font-medium border-2 rounded-lg border-colorTourq hover:bg-colorGreen hover:text-colorWhite",
             children: "Iniciar sesi\xF3n"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-            type: "submit",
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+            href: "/register",
             className: "px-3 py-[10px] text-colorBlack text-sm lg:text-lg font-inter font-medium  rounded-lg border-colorTourq hover:bg-colorGreen hover:text-colorWhite",
             children: "Registrarse"
           })]
@@ -21281,69 +21281,69 @@ var RegisterForm = function RegisterForm() {
   };
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
-      className: " w-fit items-center   flex flex-col font-inter font-semibold gap-[25px] pb-[30px] px-[67px] border rounded-[28px] bg-colorWhite ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "flex flex-col gap-5 pt-[60px] pb-[25px]",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
+      className: " lg:max-w-xl max-h-screen lg:flex lg:flex-col lg:gap-[25px] lg:pb-[30px] || md:max-w-xl md:flex md:flex-col md:pb-[30px] md: || sm:max-w-sm sm:flex  sm:pb-5 || max-w-xs flex gap-[px] pb-[30px] || items-center justify-center self-center container     font-inter font-semibold    rounded-[28px] bg-colorWhite ",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: " md:flex md:flex-col flex gap-5 pt-[60px] pb-[25px]",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          className: "font-bold text-[32px]",
+          className: "font-bold sm:text-[32px] text-[24px] lg:block hidden",
           children: "Registrar Usuario"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {})]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
-        className: "gap-[25px] flex flex-col ",
-        onSubmit: register,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
-          className: "space-y-[22px]",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-            children: "Nombre y Apellido:"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-            type: "text",
-            className: "bg-colorTourq pl-3 py-[15px] rounded-[10px] text-[18px] font-normal text-colorWhite",
-            placeholder: "NombreDeEjemplo",
-            value: name,
-            onChange: function onChange(e) {
-              return setName(e.target.value);
-            }
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-            children: "Correo Electronico:"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-            type: "email",
-            className: "bg-colorTourq pl-3 py-[15px] rounded-[10px] text-[18px] font-normal text-colorWhite",
-            placeholder: "Ejemplo@gmail.com",
-            value: email,
-            onChange: function onChange(e) {
-              return setEmail(e.target.value);
-            }
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-            children: "Contrase\xF1a:"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-            type: "password",
-            className: "bg-colorTourq pl-3 py-[15px] rounded-[10px] text-[18px] font-normal text-colorWhite",
-            placeholder: "*******",
-            value: password,
-            onChange: function onChange(e) {
-              return setPassword(e.target.value);
-            }
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-            children: "Confirmar Contrase\xF1a:"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-            type: "password",
-            className: "bg-colorTourq pl-3 py-[15px] rounded-[10px] text-[18px] font-normal text-colorWhite",
-            placeholder: "*******",
-            value: passwordConfirmation,
-            onChange: function onChange(e) {
-              return setPasswordConfirmation(e.target.value);
-            }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+          className: " gap-[25px] sm:flex-col ",
+          onSubmit: register,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
+            className: "   md:gap-[22px] sm:gap-[12px] gap-1 flex flex-col",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              children: "Nombre y Apellido:"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+              type: "text",
+              className: " bg-colorTourq pl-3 sm:py-[15px] py-[10px] sm:rounded-[10px] rounded-[6px] sm:text-[18px] text-[14px] font-normal text-colorWhite",
+              placeholder: "NombreDeEjemplo",
+              value: name,
+              onChange: function onChange(e) {
+                return setName(e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              children: "Correo Electronico:"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+              type: "email",
+              className: " bg-colorTourq pl-3 sm:py-[15px] py-[10px] rounded-[10px] sm:text-[18px] text-[14px] font-normal text-colorWhite",
+              placeholder: "Ejemplo@gmail.com",
+              value: email,
+              onChange: function onChange(e) {
+                return setEmail(e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              children: "Contrase\xF1a:"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+              type: "password",
+              className: " bg-colorTourq pl-3 sm:py-[15px] py-[10px] rounded-[10px] sm:text-[18px] text-[14px] font-normal text-colorWhite",
+              placeholder: "*******",
+              value: password,
+              onChange: function onChange(e) {
+                return setPassword(e.target.value);
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              children: "Confirmar Contrase\xF1a:"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+              type: "password",
+              className: " bg-colorTourq pl-3 sm:py-[15px] py-[10px] rounded-[10px] sm:text-[18px] text-[14px] font-normal text-colorWhite",
+              placeholder: "*******",
+              value: passwordConfirmation,
+              onChange: function onChange(e) {
+                return setPasswordConfirmation(e.target.value);
+              }
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
+            className: "flex  justify-center lg:justify-center sm:items-end py-[10px]",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              type: "submit",
+              className: " px-5 py-[10px] max-w-fit h-fit  md:text-lg text-sm font-inter font-medium   border-colorTourq text-colorBlack border-2 rounded-lg | hover:bg-colorGreen hover:text-colorWhite",
+              children: "Crear Cuenta"
+            })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
-          className: "flex justify-center py-[10px]",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-            type: "submit",
-            className: " px-5 py-[10px] max-w-fit h-fit  text-lg font-inter font-medium   border-colorTourq text-colorBlack border-2 rounded-lg | hover:bg-colorGreen hover:text-colorWhite",
-            children: "Crear Cuenta"
-          })
         })]
-      })]
+      })
     })
   });
 };

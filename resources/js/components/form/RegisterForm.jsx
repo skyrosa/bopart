@@ -31,57 +31,55 @@ const RegisterForm = () => {
   }
   
   return (
-  <>
-  <section className=' w-fit items-center   flex flex-col font-inter font-semibold gap-[25px] pb-[30px] px-[67px] border rounded-[28px] bg-colorWhite '>
-    <div className="flex flex-col gap-5 pt-[60px] pb-[25px]">
-      <p className='font-bold text-[32px]'>
-        Registrar Usuario</p>
-    <div/>
-        
-    </div>
-
-    <form className="gap-[25px] flex flex-col " onSubmit={register}  >
-      <section className='space-y-[22px]'>
-        
-        <p>Nombre y Apellido:</p>
-        <input type="text" className="bg-colorTourq pl-3 py-[15px] rounded-[10px] text-[18px] font-normal text-colorWhite" placeholder="NombreDeEjemplo"
-        value={name}
-        onChange={(e) => setName(e.target.value) }
-        />
-
-        <p>Correo Electronico:</p>
-        <input type="email" className="bg-colorTourq pl-3 py-[15px] rounded-[10px] text-[18px] font-normal text-colorWhite" placeholder="Ejemplo@gmail.com"
-        value={email}
-        onChange={(e) => setEmail(e.target.value) }
-        />
-
-        <p>Contraseña:</p>
-        <input type="password" className="bg-colorTourq pl-3 py-[15px] rounded-[10px] text-[18px] font-normal text-colorWhite" placeholder="*******"
-        value={password}
-        onChange={(e) => setPassword(e.target.value) }
-        />
-
-        <p>Confirmar Contraseña:</p>
-        <input type="password" className="bg-colorTourq pl-3 py-[15px] rounded-[10px] text-[18px] font-normal text-colorWhite" placeholder="*******"
-        value={passwordConfirmation}
-        onChange={(e) => setPasswordConfirmation(e.target.value) }
-        />
-        
-      </section>
-
-      <section className='flex justify-center py-[10px]'>
-        <button type='submit' className=" px-5 py-[10px] max-w-fit h-fit  text-lg font-inter font-medium   border-colorTourq text-colorBlack border-2 rounded-lg | hover:bg-colorGreen hover:text-colorWhite">
-          Crear Cuenta
-        </button>
-      </section>
-
-    </form>
-
-  </section>
+<>
 
 
+<section className=' lg:max-w-xl max-h-screen lg:flex lg:flex-col lg:gap-[25px] lg:pb-[30px] || md:max-w-xl md:flex md:flex-col md:pb-[30px] md: || sm:max-w-sm sm:flex  sm:pb-5 || max-w-xs flex gap-[px] pb-[30px] || items-center justify-center self-center container     font-inter font-semibold    rounded-[28px] bg-colorWhite '>
+      <div className=" md:flex md:flex-col flex gap-5 pt-[60px] pb-[25px]">
+        <p className='font-bold sm:text-[32px] text-[24px] lg:block hidden'>
+          Registrar Usuario</p>
 
-  </>
+      <form className=" gap-[25px] sm:flex-col " onSubmit={register}  >
+          <section className='   md:gap-[22px] sm:gap-[12px] gap-1 flex flex-col'>
+              
+                <p>Nombre y Apellido:</p>
+                <input type="text" className=" bg-colorTourq pl-3 sm:py-[15px] py-[10px] sm:rounded-[10px] rounded-[6px] sm:text-[18px] text-[14px] font-normal text-colorWhite" placeholder="NombreDeEjemplo"
+                value={name}
+                onChange={(e) =>   setName(e.target.value) }
+                />  
+
+                <p>Correo Electronico:</p>
+                <input type="email" className=" bg-colorTourq pl-3 sm:py-[15px] py-[10px] rounded-[10px] sm:text-[18px] text-[14px] font-normal text-colorWhite" placeholder="Ejemplo@gmail.com"
+                value={email}
+                onChange={(e) =>    setEmail(e.target.value) }
+                /> 
+
+                <p>Contraseña:</p>
+                <input type="password" className=" bg-colorTourq pl-3 sm:py-[15px] py-[10px] rounded-[10px] sm:text-[18px] text-[14px] font-normal text-colorWhite" placeholder="*******"
+                value={password}
+                onChange={(e) =>    setPassword(e.target.value) }
+                />  
+
+                <p>Confirmar Contraseña:</p>
+                <input type="password" className=" bg-colorTourq pl-3 sm:py-[15px] py-[10px] rounded-[10px] sm:text-[18px] text-[14px] font-normal text-colorWhite" placeholder="*******"
+                value={passwordConfirmation}
+                onChange={(e) =>   setPasswordConfirmation(e.target.value) }
+                />  
+            
+            
+          </section>
+
+          <section className='flex  justify-center lg:justify-center sm:items-end py-[10px]'>
+            <button type='submit' className=" px-5 py-[10px] max-w-fit h-fit  md:text-lg text-sm font-inter font-medium   border-colorTourq text-colorBlack border-2 rounded-lg | hover:bg-colorGreen hover:text-colorWhite">
+              Crear Cuenta
+            </button>
+        </section>
+
+
+      </form>
+      </div>
+</section> 
+</>
   )
 }
 
@@ -90,3 +88,7 @@ if (document.getElementById('register-form')) {
     const root = createRoot(document.getElementById("register-form"));
     root.render(<RegisterForm />);
   }
+
+
+
+

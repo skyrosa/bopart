@@ -30,7 +30,7 @@ const LoginForm = () => {
 
 
   return (
-    <section className='bg-colorWhite w-full lg:w-3/5 rounded-[28px] flex flex-row'>
+    <section className=' bg-colorWhite w-full lg:w-3/5 rounded-[28px] flex flex-row'>
         <div className='w-full rounded-l-[28px] hidden md:block bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(`+Background+`)`}} >
         </div>
         
@@ -83,9 +83,9 @@ const LoginForm = () => {
                         Iniciar sesión
                     </button>
 
-                    <button type='submit' className="px-3 py-[10px] text-colorBlack text-sm lg:text-lg font-inter font-medium  rounded-lg border-colorTourq hover:bg-colorGreen hover:text-colorWhite">
+                    <a href="/register" className="px-3 py-[10px] text-colorBlack text-sm lg:text-lg font-inter font-medium  rounded-lg border-colorTourq hover:bg-colorGreen hover:text-colorWhite">
                         Registrarse
-                    </button>
+                    </a>
                 </div>
             </form>
         </div>

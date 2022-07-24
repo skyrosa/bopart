@@ -134,7 +134,8 @@
             </div>
         </nav>
 <!-- --C -->       
-        <main class="w-full  justify-center   border-colorGreen border  || bg-colorPink">
+        <main class="w-full  justify-center    border-colorGreen border-4  || bg-colorPink">
+
 
             @yield('content')
         </main>
