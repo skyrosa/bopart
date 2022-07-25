@@ -20436,7 +20436,7 @@ var Events = function Events() {
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return axios.get('/getAllEvents');
+              return axios.get('/api/events');
 
             case 3:
               response = _context.sent;
@@ -20608,7 +20608,7 @@ var Slide = function Slide() {
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return axios.get('/getAllEvents');
+              return axios.get('/api/getFirstEvents');
 
             case 3:
               response = _context.sent;

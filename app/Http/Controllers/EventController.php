@@ -24,10 +24,6 @@ class EventController extends Controller
         return view('events.index');
     }
 
-    public function getAllEvent(){
-        $events = Event::orderBy('date', 'asc')->get();
-        return response(json_encode($events), Response::HTTP_OK);
-    }
 
     public function create()
     {

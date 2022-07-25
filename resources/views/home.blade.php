@@ -10,7 +10,7 @@
     </section>
 
     <div class="bg-gradient-to-b from-colorPink to-colorTourq flex flex-col">
-        <h1 class='font-inter font-bold text-[20px] lg:text-[32px] text-center capitalize mt-3'>Eventos</h1>
+        <h1 class='font-inter font-bold text-[20px] lg:text-[32px] text-center capitalize mt-3'>Proximos Eventos</h1>
         <div id="slide" class= py-5 ">
         </div>
     </div>

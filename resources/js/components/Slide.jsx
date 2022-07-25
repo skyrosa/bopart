@@ -8,7 +8,7 @@ const Slide = () => {
     const [events, setEvents] = useState([])
     const getEvents = async () => {
         try {
-            const response = await axios.get('/getAllEvents')
+            const response = await axios.get('/api/getFirstEvents')
             setEvents(response.data)
         } catch(err) {
             console.log(err.response.request.response)
