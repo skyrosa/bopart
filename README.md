@@ -20,6 +20,8 @@
 
 ## · Figma Layout Pages
 
+[Link to Figma](https://www.figma.com/file/6RLESpGPKHLMLKe9Vkd8SW/Bopart_Fixed_?node-id=1%3A3)
+
 ### No Auth User
 ![NoUser](https://user-images.githubusercontent.com/97969369/180829192-f8e299f7-ce33-474d-8c49-6b70dcc675ff.png)
 <br>
