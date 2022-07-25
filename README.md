@@ -91,12 +91,10 @@ Put the same name of the database that you have created on the .env file, in DB_
 (if DB_CONNECTION is = laravel, change it for =mysql)
 <br>
 <br>
-Then execute this too commands on the terminal:
+Then execute those two commands on the terminal:
 ```bash
   php artisan migrate:fresh --seed
 ```
-​And the server command:
-​
 ```bash
   php artisan serve
 ```
