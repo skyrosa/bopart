@@ -4,8 +4,9 @@ import { createRoot } from "react-dom/client"
 const ContactCollaborators = () => {
     return (
 <>
+        <div class="h-auto w-screen flex justify-center">
 
-            <div className="borde flex-col  text-center md:gap-[50px] sm: gap-8 flex py-[25px] sm: md: lg:py-[25px] container  bg-colorBlack text-colorWhite font-sansita text-3xl md:text-4xl ">
+<div className="borde flex-col  text-center md:gap-[50px] sm: gap-8 flex py-[25px] sm: md: lg:py-[25px] container  bg-colorBlack text-colorWhite font-sansita text-3xl md:text-4xl ">
 
             
                         <section className="flex-col border self-center flex gap-5    ">
@@ -39,7 +40,8 @@ const ContactCollaborators = () => {
 
                         </form>
                 
-            </div>
+</div>
+</div>
 
 
 </>

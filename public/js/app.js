@@ -20764,55 +20764,58 @@ __webpack_require__.r(__webpack_exports__);
 
 var ContactCollaborators = function ContactCollaborators() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "borde flex-col  text-center md:gap-[50px] sm: gap-8 flex py-[25px] sm: md: lg:py-[25px] container  bg-colorBlack text-colorWhite font-sansita text-3xl md:text-4xl ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
-        className: "flex-col border self-center flex gap-5    ",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-          className: "border text-left text-colorPink",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-            className: "border",
-            children: "Bopart S.L"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-            href: "",
-            className: "hover:text-colorTourq || hover:animate-pulse   ",
-            children: "Bopart@bopmail.es"
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      "class": "h-auto w-screen flex justify-center",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "borde flex-col  text-center md:gap-[50px] sm: gap-8 flex py-[25px] sm: md: lg:py-[25px] container  bg-colorBlack text-colorWhite font-sansita text-3xl md:text-4xl ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
+          className: "flex-col border self-center flex gap-5    ",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "border text-left text-colorPink",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              className: "border",
+              children: "Bopart S.L"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+              href: "",
+              className: "hover:text-colorTourq || hover:animate-pulse   ",
+              children: "Bopart@bopmail.es"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "text-lg sm:text-xl md:text-2xl",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              children: "Carrer de Barnola, 5B \xB7 08030 Barcelona \xB7 (+34) 934 198 864"
+            })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          className: "text-lg sm:text-xl md:text-2xl",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-            children: "Carrer de Barnola, 5B \xB7 08030 Barcelona \xB7 (+34) 934 198 864"
-          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+          className: "border-colorWhite border justify-center sm:gap-4 gap-8 space flex-wrap sm:flex flex ",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+            className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+            style: {
+              backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+            className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+            style: {
+              backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+            className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+            style: {
+              backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+            className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+            style: {
+              backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+            className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+            style: {
+              backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+            }
+          })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
-        className: "border-colorWhite border justify-center sm:gap-4 gap-8 space flex-wrap sm:flex flex ",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
-          style: {
-            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
-          style: {
-            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
-          style: {
-            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
-          style: {
-            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
-          style: {
-            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
-          }
-        })]
-      })]
+      })
     })
   });
 };
