@@ -1,7 +1,7 @@
 # Bopart
 
 
->"***Bopart*** es un proyecto establecido en Barcelona que nace con la intención de crear una comunidad artística en el barrio de *Sant Andreu*. Para ello se ha habilitado una sala comunal en la que podrán hacer eventos para que, tanto también puedan conocerse y hacer comunidad a nivel interno, como que los artistas puedan hacer bolos y darse a conocer al resto del barrio. 
+>"***Bopart*** es un proyecto establecido en Barcelona que nace con la intención de crear una comunidad artística en el barrio de *Sant Andreu*. Para ello se ha habilitado una sala comunal en la que podrán hacer eventos para que, tanto los artistas puedan conocerse y hacer comunidad a nivel interno, como que también puedan hacer bolos y darse a conocer al resto del barrio. 
 Para poder acercar la comunidad de vecinos, la web permitirá tener el conocimiento de las actividades organizadas en el local y se podrá inscribir a los eventos para controlar el aforo limitado del local.<br>
 >La página web de ***Bopart*** es el trabajo final del curso Full-stack de 850h de *Factoría F5*."
 
