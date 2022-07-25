@@ -15,12 +15,22 @@
 
 ## dominio del site aqui
 ​
+## Gallery
+
+### Profile
+![perfil](https://user-images.githubusercontent.com/97969369/180808798-f71e7b2e-d901-449d-b98f-e8d408a4e495.png)<br><br>
+### Create Event
+![crearevento](https://user-images.githubusercontent.com/97969369/180808826-e293ee34-3c2a-410c-97ff-b7d6f1e9dff0.png)<br><br>
+### Login
+![login](https://user-images.githubusercontent.com/97969369/180808767-7c034930-5650-412e-b6f5-367e80c8f736.png)<br><br>
+### Tests
+![test](https://user-images.githubusercontent.com/97969369/180808873-e38fc360-4f2c-47ab-984e-296beeff72e9.png)<br><br>
 ​
 ## Documentation
  * <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> [Laravel](https://laravel.com/docs/9.x)
  * <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> [React](https://es.reactjs.org/)
  * <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> [PHP](https://www.php.net/manual/es/intro-whatis.php)
-​
+
 ## To run Locally:
 
 Clone the repository:
@@ -104,16 +114,6 @@ Hold the CTRL button and click in the IP that the command gave to you and it wil
 * User from no Auth to Auth
 <img src="https://user-images.githubusercontent.com/97969369/180795629-1d5303c1-d3d7-46c9-af57-3364bb635622.png">
 
-## Gallery
-
-### Profile
-![perfil](https://user-images.githubusercontent.com/97969369/180808798-f71e7b2e-d901-449d-b98f-e8d408a4e495.png)<br><br>
-### Create Event
-![crearevento](https://user-images.githubusercontent.com/97969369/180808826-e293ee34-3c2a-410c-97ff-b7d6f1e9dff0.png)<br><br>
-### Login
-![login](https://user-images.githubusercontent.com/97969369/180808767-7c034930-5650-412e-b6f5-367e80c8f736.png)<br><br>
-### Tests
-![test](https://user-images.githubusercontent.com/97969369/180808873-e38fc360-4f2c-47ab-984e-296beeff72e9.png)<br><br>
 
 ## Authors
 - [@Jhon Vásquez](https://github.com/jhonv4sq)
