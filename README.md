@@ -104,12 +104,6 @@ Hold the CTRL button and click in the IP that the command gave to you and it wil
 * User from no Auth to Auth
 <img src="https://user-images.githubusercontent.com/97969369/180795629-1d5303c1-d3d7-46c9-af57-3364bb635622.png">
 
-## Authors
-- [@Jhon Vásquez](https://github.com/jhonv4sq)
-- [@Miguel Angel Dominguez de la Rocha](https://github.com/MADROCHA)
-- [@Scarlet Rosa](https://github.com/skyrosa)
-- [@Albert Martínez](https://github.com/QuercusJS)
-
 ## Gallery
 
 ### Profile
@@ -120,6 +114,12 @@ Hold the CTRL button and click in the IP that the command gave to you and it wil
 ![login](https://user-images.githubusercontent.com/97969369/180808767-7c034930-5650-412e-b6f5-367e80c8f736.png)<br><br>
 ### Tests
 ![test](https://user-images.githubusercontent.com/97969369/180808873-e38fc360-4f2c-47ab-984e-296beeff72e9.png)<br><br>
+
+## Authors
+- [@Jhon Vásquez](https://github.com/jhonv4sq)
+- [@Miguel Angel Dominguez de la Rocha](https://github.com/MADROCHA)
+- [@Scarlet Rosa](https://github.com/skyrosa)
+- [@Albert Martínez](https://github.com/QuercusJS)
 
 ## Special Thanks
 
