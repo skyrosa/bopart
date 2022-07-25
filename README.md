@@ -29,7 +29,7 @@ La página web de ***Bopart*** es el trabajo final del curso Full-stack de 850h 
  * <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> [PHP](https://www.php.net/manual/es/intro-whatis.php)
 ​
 ### To run Locally:
-​<p align="center">
+
 Clone the repository:
 ​<br>
 ![Logo](https://i.postimg.cc/fbgsHHJZ/sdga.png)
@@ -100,7 +100,6 @@ Then execute this too commands on the terminal:
 ![Logo](https://i.postimg.cc/NM2FqdC8/SEMIOSDGISAD.png)
 ​<br>
 Hold the CTRL button and click in the IP that the command gave to you and it will open in yours default browser!
-</p>
 
 
 ## Flux Diagrams
