@@ -18,3 +18,5 @@ require('./components/form/LoginForm')
 require('./components/form/EventForm')
 
 require('./components/Events')
+require('./components/Slide')
+require('./components/pagination/Pagination')

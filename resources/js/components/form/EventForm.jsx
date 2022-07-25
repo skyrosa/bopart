@@ -91,7 +91,7 @@ const EventForm = () => {
                         </button>
                         {image.map(i => <div key={i.name} className='w-full h-full absolute bg-cover bg-center bg-no-repeat rounded-t-[28px]' style={{ backgroundImage: `url(`+i.preview+`)`}}></div>)}
                         <input {...getInputProps()} type='file' className='z-10 rounded-t-[28px] h-60 w-full cursor-pointer absolute'/>
-                        <FontAwesomeIcon icon={faBoxOpen} className='text-colorWhite text-8xl  ' />
+                        <FontAwesomeIcon icon={faBoxOpen} className='text-colorWhite text-8xl' />
 
                     </div>
                     {message ? <p className='text-colorPink text-center'>{message}</p> : ''}

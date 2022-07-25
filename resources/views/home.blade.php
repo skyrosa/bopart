@@ -9,4 +9,9 @@
         <div class="w-full h-full bg-cover bg-center bg-no-repeat" style=" background-image: url('https://images.unsplash.com/photo-1592321050415-411b2293852a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80')"></div>
     </section>
 
+    <div class="bg-gradient-to-b from-colorPink to-colorTourq flex flex-col">
+        <h1 class='font-inter font-bold text-[20px] lg:text-[32px] text-center capitalize mt-3'>Eventos</h1>
+        <div id="slide" class= py-5 ">
+        </div>
+    </div>
 @endsection

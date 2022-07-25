@@ -11,6 +11,7 @@ const ProfileUser = () => {
   const getInformation = async () => {
     const user = await axios.get('/myInformation')
     setMyUser(user.data)
+    console.log(user.data)
     const events = await user.data.event
     setMyEvents(events)
   }
