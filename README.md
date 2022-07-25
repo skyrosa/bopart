@@ -1,4 +1,4 @@
-# Bopart
+# ![#f03c15]Bopart
 ​
 >"***Bopart*** es un proyecto con sed en Barcelona que nace con la intención de crear una comunidad artística en el barrio de *Sant Andreu*. Para ello se ha habilitado una sala comunal en la que podrán hacer eventos para que, tanto los artistas puedan conocerse y hacer comunidad a nivel interno, como que los artistas puedan hacer bolos y darse a conocer al resto del barrio. 
 Para poder acercar la comunidad de vecinos, la web permitirá tener el conocimiento de las actividades organizadas en el local y se podrá inscribir a los eventos para controlar el aforo limitado del local.<br>
@@ -15,15 +15,7 @@ Para poder acercar la comunidad de vecinos, la web permitirá tener el conocimie
 ## dominio del site aqui
 ​
 ​
-## Authors
-- [@Jhon Vásquez](https://github.com/jhonv4sq)
-- [@Miguel Angel Dominguez de la Rocha](https://github.com/MADROCHA)
-- [@Scarlet Rosa](https://github.com/skyrosa)
-- [@Albert Martínez](https://github.com/QuercusJS)
-​
-​
- ## Requisits
-### Documentation
+## Documentation
  * <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> [Laravel](https://laravel.com/docs/9.x)
  * <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> [React](https://es.reactjs.org/)
  * <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> [PHP](https://www.php.net/manual/es/intro-whatis.php)
@@ -110,6 +102,12 @@ Hold the CTRL button and click in the IP that the command gave to you and it wil
 
 * User from no Auth to Auth
 <img src="https://user-images.githubusercontent.com/97969369/180795629-1d5303c1-d3d7-46c9-af57-3364bb635622.png">
+
+## Authors
+- [@Jhon Vásquez](https://github.com/jhonv4sq)
+- [@Miguel Angel Dominguez de la Rocha](https://github.com/MADROCHA)
+- [@Scarlet Rosa](https://github.com/skyrosa)
+- [@Albert Martínez](https://github.com/QuercusJS)
 
 ## Special Thanks
 
