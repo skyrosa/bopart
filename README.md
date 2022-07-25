@@ -112,13 +112,13 @@ Hold the CTRL button and click in the IP that the command gave to you and it wil
 
 ## Gallery
 
-Profile
+###Profile
 ![perfil](https://user-images.githubusercontent.com/97969369/180808798-f71e7b2e-d901-449d-b98f-e8d408a4e495.png)<br><br>
-Create Event
+###Create Event
 ![crearevento](https://user-images.githubusercontent.com/97969369/180808826-e293ee34-3c2a-410c-97ff-b7d6f1e9dff0.png)<br><br>
-Login
+###Login
 ![login](https://user-images.githubusercontent.com/97969369/180808767-7c034930-5650-412e-b6f5-367e80c8f736.png)<br><br>
-Tests
+###Tests
 ![test](https://user-images.githubusercontent.com/97969369/180808873-e38fc360-4f2c-47ab-984e-296beeff72e9.png)<br><br>
 
 ## Special Thanks
