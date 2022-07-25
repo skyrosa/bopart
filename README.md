@@ -123,11 +123,11 @@ Hold the CTRL button and click in the IP that the command gave to you and it wil
 
 ## Special Thanks
 
-To all our colleagues, who become true friends.
-Jessica Mejia; Daniel Calvo; Ales Navarro; Àlex Vidal; Liviu Badea; Adrian Pelayo; Uri Codina; Sergi Aparicio; Guillermo Labrador; Damaris Teoc; Ales.
-To our ~~profesores~~ formadores Laura and José Miguel.
+To all our colleagues, who become true friends.<br>
+Jessica Mejia; Daniel Calvo; Ales Navarro; Àlex Vidal; Liviu Badea; Adrian Pelayo; Uri Codina; Sergi Aparicio; Guillermo Labrador; Damaris Teoc; Ales.<br>
+To our ~~profesores~~ formadores Laura and José Miguel.<br>
 All the members of Factoría F5 for the opportunity and encouragement for our continuous learning.
-
+<br><br>
 Tnxs for all 💜
 
 
