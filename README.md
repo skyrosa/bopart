@@ -107,12 +107,12 @@ Hold the CTRL button and click in the IP that the command gave to you and it wil
 
 * Admin
 <br>
-![Admin] (https://user-images.githubusercontent.com/97969369/180795566-cbaeb124-7e2c-4550-b5da-c0e833bfd4d7.png)
+<img src="https://user-images.githubusercontent.com/97969369/180795566-cbaeb124-7e2c-4550-b5da-c0e833bfd4d7.png">
 <br>
 
 * User from no Auth to Auth
 <br>
-![Users] (https://user-images.githubusercontent.com/97969369/180795629-1d5303c1-d3d7-46c9-af57-3364bb635622.png)
+<img src="https://user-images.githubusercontent.com/97969369/180795629-1d5303c1-d3d7-46c9-af57-3364bb635622.png">
 
 ## Special Thanks
 
