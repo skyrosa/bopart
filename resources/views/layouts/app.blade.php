@@ -80,31 +80,31 @@
             </main>
         </div>
 
-        <footer class="w-full text-colorWhite bg-colorBlack h-40 md:h-64  flex flex-row justify-between p-2 ">
-            <div class="h-full flex flex-col items-start justify-center gap-3 font-bold md:pl-7">
-                <h1 class="text-[9px] md:text-xl w-full text-center ">Bopart S.L</h1>
-                <p class="text-[7.5px] md:text-[16px]">
+        <footer class="w-full text-colorWhite bg-colorBlack h-40 lg:h-64 flex flex-row justify-between p-2 ">
+            <div class="h-full flex flex-col items-start justify-center gap-3 font-bold lg:pl-7">
+                <h1 class="text-[9px] lg:text-xl w-full text-center ">Bopart S.L</h1>
+                <p class="text-[7.5px] lg:text-[16px]">
                     Carrer de Barnola, 5B · 08030 Barcelona · (+34) 934 198 864<br>
                     Príncipe de Vergara 112 · 28002 Madrid · (+34) 910 205 328
                 </p>
                 <div class="flex w-full flex-row justify-between">
-                    <p class="text-[7.5px] md:text-[16px]">
+                    <p class="text-[7.5px] lg:text-[16px]">
                         Copyright ℗ 2022. Bopart All rights reserved.<br>
                         © 2022 Bopart<br>
                         BopartContacto@gmail.com
                     </p>
                     <div class="h-full flex flex-row items-center justify-center gap-2">
-                        <a href="#" class="fa-brands fa-instagram text-lg md:text-4xl  hover:text-colorWhite"></a>
-                        <a href="#" class="fa-brands fa-facebook-square text-lg md:text-4xl  hover:text-colorWhite"></a>
+                        <a href="#" class="fa-brands fa-instagram text-lg lg:text-4xl  hover:text-colorWhite"></a>
+                        <a href="#" class="fa-brands fa-facebook-square text-lg lg:text-4xl  hover:text-colorWhite"></a>
                     </div>
                 </div>
 
             </div>
 
-            <div class="h-full flex flex-row items-center justify-end gap-1 md:pr-7">
-                <img class="w-[40px] h-[35px] md:w-40 md:h-32" src="https://i.postimg.cc/7LsBnKHK/2collaborator.png" alt=""/>
-                <img class="w-[40px] h-[35px] md:w-40 md:h-32" src="https://i.postimg.cc/fLV82YkD/1collaborator.png" alt=""/>
-                <img class="w-[40px] h-[35px] md:w-40 md:h-32" src="https://i.postimg.cc/KzCJd4gL/3collaborator.png" alt=""/>
+            <div class="h-full flex flex-row items-center justify-end gap-1 lg:pr-7">
+                <img class="w-[40px] h-[35px] lg:w-40 lg:h-32" src="https://i.postimg.cc/7LsBnKHK/2collaborator.png" alt=""/>
+                <img class="w-[40px] h-[35px] lg:w-40 lg:h-32" src="https://i.postimg.cc/fLV82YkD/1collaborator.png" alt=""/>
+                <img class="w-[40px] h-[35px] lg:w-40 lg:h-32" src="https://i.postimg.cc/KzCJd4gL/3collaborator.png" alt=""/>
             </div>
         </footer>
     </div>
