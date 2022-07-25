@@ -6,7 +6,6 @@
 >Para poder acercar la comunidad de vecinos, la web permitirá tener el conocimiento de las actividades organizadas en el local y se podrá inscribir a los eventos para controlar el aforo limitado del local.<br>
 >La página web de ***Bopart*** es el trabajo final del curso Full-stack de 850h de *Factoría F5*."
 
-<br>
 ​
 <p align="center">
   <img src="https://user-images.githubusercontent.com/97969369/180838679-360bb720-bd7f-4d49-9cc3-6fec47ed08a5.gif" title="logo">
