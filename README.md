@@ -42,8 +42,6 @@
 ![crearevento](https://user-images.githubusercontent.com/97969369/180808826-e293ee34-3c2a-410c-97ff-b7d6f1e9dff0.png)<br><br>
 ### Login
 ![login](https://user-images.githubusercontent.com/97969369/180808767-7c034930-5650-412e-b6f5-367e80c8f736.png)<br><br>
-### Tests
-![test](https://user-images.githubusercontent.com/97969369/180808873-e38fc360-4f2c-47ab-984e-296beeff72e9.png)<br><br>
 ​
 ## Documentation
  * <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> [Laravel](https://laravel.com/docs/9.x)
@@ -120,6 +118,13 @@ Then execute those two commands on the terminal:
 ![Logo](https://i.postimg.cc/NM2FqdC8/SEMIOSDGISAD.png)
 ​<br>
 Hold the CTRL button and click in the IP that the command gave to you and it will open in yours default browser!
+<br>
+You can run tests by terminal using
+```bash
+    npm test
+```
+### Tests
+![test](https://user-images.githubusercontent.com/97969369/180808873-e38fc360-4f2c-47ab-984e-296beeff72e9.png)<br><br>
 
 
 ## Flux Diagrams
