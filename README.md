@@ -147,7 +147,9 @@ All the members of Factoría F5 for the opportunity and encouragement for our co
 <br><br>
 Tnxs for all 💜
 
+# Contact
 
-
+- 📫 **comunicacionbopart@gmail.com**
+- <a href="https://instagram.com/lebopart" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="lebopart" height="30" width="40" /></a>
 
 
