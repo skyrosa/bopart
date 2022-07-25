@@ -20216,21 +20216,23 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
 
-__webpack_require__(/*! ./components/home/RowImages */ "./resources/js/components/home/RowImages.jsx");
-
-__webpack_require__(/*! ./components/home/TextImageMisc */ "./resources/js/components/home/TextImageMisc.jsx");
-
-__webpack_require__(/*! ./components/home/HomeView */ "./resources/js/components/home/HomeView.jsx");
-
 __webpack_require__(/*! ./components/card/BigCard */ "./resources/js/components/card/BigCard.jsx");
 
-__webpack_require__(/*! ./components/profile/ProfileUser */ "./resources/js/components/profile/ProfileUser.jsx");
+__webpack_require__(/*! ./components/contact/ContactCollaborators */ "./resources/js/components/contact/ContactCollaborators.jsx");
 
 __webpack_require__(/*! ./components/form/EventForm.jsx */ "./resources/js/components/form/EventForm.jsx");
 
 __webpack_require__(/*! ./components/form/LoginForm */ "./resources/js/components/form/LoginForm.jsx");
 
 __webpack_require__(/*! ./components/form/RegisterForm */ "./resources/js/components/form/RegisterForm.jsx");
+
+__webpack_require__(/*! ./components/home/RowImages */ "./resources/js/components/home/RowImages.jsx");
+
+__webpack_require__(/*! ./components/home/TextImageMisc */ "./resources/js/components/home/TextImageMisc.jsx");
+
+__webpack_require__(/*! ./components/home/HomeView */ "./resources/js/components/home/HomeView.jsx");
+
+__webpack_require__(/*! ./components/profile/ProfileUser */ "./resources/js/components/profile/ProfileUser.jsx");
 
 /***/ }),
 
@@ -20736,6 +20738,91 @@ var SmallCardA = function SmallCardA() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SmallCardA);
+
+/***/ }),
+
+/***/ "./resources/js/components/contact/ContactCollaborators.jsx":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/contact/ContactCollaborators.jsx ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+var ContactCollaborators = function ContactCollaborators() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "borde flex-col  text-center md:gap-[50px] sm: gap-8 flex py-[25px] sm: md: lg:py-[25px] container  bg-colorBlack text-colorWhite font-sansita text-3xl md:text-4xl ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
+        className: "flex-col border self-center flex gap-5    ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "border text-left text-colorPink",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            className: "border",
+            children: "Bopart S.L"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+            href: "",
+            className: "hover:text-colorTourq || hover:animate-pulse   ",
+            children: "Bopart@bopmail.es"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "text-lg sm:text-xl md:text-2xl",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: "Carrer de Barnola, 5B \xB7 08030 Barcelona \xB7 (+34) 934 198 864"
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+        className: "border-colorWhite border justify-center sm:gap-4 gap-8 space flex-wrap sm:flex flex ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+          style: {
+            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+          style: {
+            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+          style: {
+            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+          style: {
+            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          className: "flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 ",
+          style: {
+            backgroundImage: "url(https://i.postimg.cc/4xWZvqTV/702A6299.jpg)"
+          }
+        })]
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ContactCollaborators);
+
+if (document.getElementById('contact-collaborators')) {
+  var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById("contact-collaborators"));
+  root.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(ContactCollaborators, {}));
+}
 
 /***/ }),
 

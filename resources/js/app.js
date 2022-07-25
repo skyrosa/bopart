@@ -14,15 +14,18 @@ require('./bootstrap');
 
 require('./components/Example')
 
-require('./components/home/RowImages')
-require('./components/home/TextImageMisc')
-require('./components/home/HomeView')
 require('./components/card/BigCard')
 
-require('./components/profile/ProfileUser')
+require('./components/contact/ContactCollaborators')
 
 require('./components/form/EventForm.jsx')
 require('./components/form/LoginForm')
 require('./components/form/RegisterForm')
+
+require('./components/home/RowImages')
+require('./components/home/TextImageMisc')
+require('./components/home/HomeView')
+
+require('./components/profile/ProfileUser')
 
 
