@@ -112,7 +112,7 @@ Hold the CTRL button and click in the IP that the command gave to you and it wil
 
 * User from no Auth to Auth
 <br>
-![Captura de pantalla de 2022-07-21 17-07-49](https://user-images.githubusercontent.com/97969369/180795629-1d5303c1-d3d7-46c9-af57-3364bb635622.png)
+![Users](https://user-images.githubusercontent.com/97969369/180795629-1d5303c1-d3d7-46c9-af57-3364bb635622.png)
 
 ## Special Thanks
 
@@ -121,7 +121,7 @@ Jessica Mejia; Daniel Calvo; Ales Navarro; Àlex Vidal; Liviu Badea; Adrian Pela
 To our ~~profesores~~ formadores Laura and José Miguel.
 All the members of Factoría F5 for the opportunity and encouragement for our continuous learning.
 
-Tnxs for all <color="red"> <3
+Tnxs for all <3
 
 
 
