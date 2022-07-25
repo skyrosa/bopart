@@ -1,11 +1,16 @@
 # Bopart
 ​
-Bopart nace con la intención de crear comunidad artística en el barrio de Sant Andreu. Para ello se ha habilitado una sala comunal en la que podrán hacer eventos para que, tanto los artistas puedan conocerse y hacer comunidad a nivel interno, como que los artistas puedan hacer bolos y darse a conocer al resto del barrio. 
-Para poder acercar la comunidad de vecinos, la web permitirá tener el conocimiento de las actividades organizadas en el local y se podrá inscribir a los eventos para controlar el aforo limitado del local
+"***Bopart*** es un proyecto con sed en Barcelona que nace con la intención de crear una comunidad artística en el barrio de *Sant Andreu*. Para ello se ha habilitado una sala comunal en la que podrán hacer eventos para que, tanto los artistas puedan conocerse y hacer comunidad a nivel interno, como que los artistas puedan hacer bolos y darse a conocer al resto del barrio. 
+Para poder acercar la comunidad de vecinos, la web permitirá tener el conocimiento de las actividades organizadas en el local y se podrá inscribir a los eventos para controlar el aforo limitado del local.
+<br>
+La página web de ***Bopart*** es el trabajo final del curso Full-stack de 850h de *Factoría F5*."
 <br>
 ​
 ​
-![Logo](https://i.postimg.cc/wMxxsKm5/bopart-logo.png)
+![Logo](https://i.postimg.cc/wMxxsKm5/bopart-logo.png)<img align="center">
+<br>
+
+# dominio del site aqui
 ​
 ​
 ## Authors
@@ -16,162 +21,104 @@ Para poder acercar la comunidad de vecinos, la web permitirá tener el conocimie
 - [@Albert Martínez](https://github.com/QuercusJS)
 ​
 ​
- ##
-​
  ## Requisits
-## Documentation
+### Documentation
+ * <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> [Laravel](https://laravel.com/docs/9.x)
+ * <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> [React](https://es.reactjs.org/)
+ * <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> [PHP](https://www.php.net/manual/es/intro-whatis.php)
+ *
 ​
- - [Laravel](https://laravel.com/docs/9.x)
- - [React](https://es.reactjs.org/)
- - [php](https://www.php.net/manual/es/intro-whatis.php)
+### To run it Locally:
 ​
+Clone the repository:
 ​
-## Run Locally
-​
-Clone the project
-​
+![Logo](https://i.postimg.cc/fbgsHHJZ/sdga.png)
+<br>
 ```bash
   git clone https://github.com/jhonv4sq/bopart.git
 ```
 ​
-Go to the project directory
+Enter in the project directory:
 ​
 ```bash
   cd bopart
 ```
 ​
-Install dependencies
+Install dependencies with:
 ​
 ```bash
   npm install
 ```
 ​
-Start the server
+Start the server using:
 ​
 ```bash
   php artisan serve
 ```
 ​
-​
-## Visual installation
-​
-To install this project first you need to go to the code button
-​
-![Logo](https://i.postimg.cc/pLqq846W/captura-1.png)
-​
-Then click on the button at the right of the link 
-​
-![Logo](https://i.postimg.cc/fbgsHHJZ/sdga.png)
-​
-Then open vscode and vs code terminal
-​
-![Logo](https://i.postimg.cc/Mp5fG8rD/sgsadwqtwqtwqetfgwre.png)
-​
-​
-Run this command on the terminal to install the project
-​
-```bash
-  git clone https://github.com/jhonv4sq/bopart.git
-```
-Open it in the folder that you are using 
-​
-##
-​
-Once you have done it run this again in to your terminal
+Once you have done it, run this code on your terminal to install Laravel dependences:
 ​
 ```bash
  composer require laravel/installer
 ```
-​
-![Logo](https://i.postimg.cc/SsSH6cy8/clone.png)
-​
-Then put this command on the terminal to install laravel 
-​
 ```bash
-  
+  @php artisan vendor:publish --tag=laravel-assets --ansi --force
 ```
-​
+![Logo](https://i.postimg.cc/SsSH6cy8/clone.png)
+<br>
+
+Copy all the .env.example file, then create a new .env file and paste everything on it
 ![Logo](https://i.postimg.cc/XJ362pbK/asdgfwtqwe.png)
 ​
-Copy all the env example file
-​
-Then create a new .env file and paste everything
-​
-Open xampp on your computer
-​
-​
+Open *XAMPP* on your computer and start Apache and MySQL, then click on MySQL Admin to open your DataBase
 ![Logo](https://i.postimg.cc/RFFxr2Wq/sgsadggweqt.png)
+<br>
 ​
-Start Apache and MySQL and click on MySQL Admin
-​
-Click on new
-​
-Put the name you want to the database
-​
+Click to create a New Archive and give the name you want to the Database
 ![Logo](https://i.postimg.cc/jSX9hKXm/base-ede-asdfsd.png)
+<br>
 ​
-​
-put the name of the database you created 
+Put the same name of the database that you have created on the .env file, in DB_DATABASE
 ​
 ​
 ![Logo](https://i.postimg.cc/fR7bM3vF/Captura.png)
-​
-Then execute this too commands in the terminal
-​
-```bash
-  php artisan migrate
-```
-​
+<br>
+(if DB_CONNECTION is = laravel, change it for =mysql)
+<br>
+Then execute this too commands on the terminal:
 ```bash
   php artisan migrate:fresh --seed
 ```
-​
-Then execute the server command
-​
+​And the server command:
 ​
 ```bash
   php artisan serve
 ```
 ​
 ![Logo](https://i.postimg.cc/NM2FqdC8/SEMIOSDGISAD.png)
-​
-Then copy the ip that the command gave to you and copy it in to your favorite browser!
-​
-Enter the ip in to the searcher and... whoualah!
+​<br>
+Hold de CTRL button and click in the IP that the command gave to you and it will open in yours default browser!
 
-## Lessons Learned
-​
-What did you learn while building this project? What challenges did you face and how did you overcome them?
-​
-​
-## Support
-​
-For support, email thefuturecrisp@gmail.com 
-​
-## MIT License
-​
-Copyright (c) [2022] [bopart team]
-​
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-​
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-​
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-Contraer
 
-Enviar un mensaje a bopart
+
+##Flux Diagrams
+
+*Admin
+![Admin](https://user-images.githubusercontent.com/97969369/180795566-cbaeb124-7e2c-4550-b5da-c0e833bfd4d7.png)
+<br>
+
+*User from no Auth to Auth
+![Captura de pantalla de 2022-07-21 17-07-49](https://user-images.githubusercontent.com/97969369/180795629-1d5303c1-d3d7-46c9-af57-3364bb635622.png)
+
+##Special Thanks
+
+To all our colleagues, who become true friends.
+Jessica Mejia; Daniel Calvo; Ales Navarro; Àlex Vidal; Liviu Badea; Adrian Pelayo; Uri Codina; Sergi Aparicio; Guillermo Labrador; Damaris Teoc; Ales.
+To our ~~profesores~~ formadores Laura and José Miguel.
+All the members of Factoría F5 for the opportunity and encouragement for our continuous learning.
+
+Tnxs for all <3
+
 
 
 
