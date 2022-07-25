@@ -18,7 +18,7 @@
 
 # Image Gallery
 
-## · Figma Layout Pages
+## · Figma
 
 [Click here to go to the Figma Layout Page](https://www.figma.com/file/6RLESpGPKHLMLKe9Vkd8SW/Bopart_Fixed_?node-id=1%3A3)
 
