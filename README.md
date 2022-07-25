@@ -118,7 +118,7 @@ Then execute those two commands on the terminal:
 ![Logo](https://i.postimg.cc/NM2FqdC8/SEMIOSDGISAD.png)
 ​<br>
 Hold the CTRL button and click in the IP that the command gave to you and it will open in yours default browser!
-<br>
+<br><br>
 You can run tests by terminal using
 ```bash
     npm test
