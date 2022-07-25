@@ -16,17 +16,17 @@
 ## dominio del site aqui
 ​
 # Image Gallery
-##Figma Page Layout
+## Figma Layout Pages
 
-###No Auth User
+### No Auth User
 ![NoUser](https://user-images.githubusercontent.com/97969369/180829192-f8e299f7-ce33-474d-8c49-6b70dcc675ff.png)
 
 <br><br>
-###Auth User
+### Auth User
 ![User](https://user-images.githubusercontent.com/97969369/180829210-e1fa5c2f-122c-48c2-b067-bc17a75466eb.png)
 
 <br><br>
-###Admin
+### Admin
 ![Admin](https://user-images.githubusercontent.com/97969369/180829219-1a34f34d-3582-4db1-a454-0b91c5d783e1.png)
 
 <br>
