@@ -1,4 +1,4 @@
-# Bopart
+# Bopart 🐽
 
 
 >"***Bopart*** es un proyecto establecido en Barcelona que nace con la intención de crear una comunidad artística en el barrio de *Sant Andreu*.<br>
@@ -8,6 +8,10 @@
 
 <br>
 ​
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97969369/180837468-600d184a-0c43-45d1-a26f-77a3efdff692.gif" title="logo">
+</p>
+
 <p align="center">
   <img src="https://camo.githubusercontent.com/dad9ffe15ef795edb95ba14d3440b279fec8648ae7cf1a344c6463b2704100a1/68747470733a2f2f692e706f7374696d672e63632f774d7878734b6d352f626f706172742d6c6f676f2e706e67" title="logo">
 </p>
