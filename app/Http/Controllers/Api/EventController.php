@@ -22,7 +22,7 @@ class EventController extends Controller
 
     public function getFirstEvents()
     {
-        $events = Event::orderBy('date', 'asc')->take(5)->get();
+        $events = Event::orderBy('date', 'asc')->take(6)->get();
         return response(json_encode($events), Response::HTTP_OK);
     }
     /**

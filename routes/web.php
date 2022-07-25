@@ -30,7 +30,6 @@ Route::get('/myInformation', [UserController::class, 'myInformation']);
 Route::get('/users', [UserController::class, 'index'])->name('users');
 Route::get('/users/{user}/destroy', [UserController::class, 'destroy'])->name('users');
 
-Route::get('/getAllEvents', [EventController::class, 'getAllEvent']);
 Route::get('/events/{event}/check-in', [EventController::class, 'checkIn'])->name('events.checkIn');
 Route::get('/events/{event}/drop-out', [EventController::class, 'dropOut'])->name('events.dropOut');
 

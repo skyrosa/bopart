@@ -15,7 +15,7 @@ class EventController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('index', 'show', 'getAllEvent');
+        $this->middleware('auth')->except('index', 'show');
     }
 
 
@@ -123,8 +123,15 @@ class EventController extends Controller
             $user->event()->attach($event);
 
             Event::minusStock($event);
+
+            return response(['message' => 'Te has registrado en este evento',
+                             'checkIn' => true], Response::HTTP_OK);
         }
-        return redirect()->back();
+        if($isCheck){
+            return response(['message' => 'Ya estas registrado en este evento',
+                             'checkIn' => false], Response::HTTP_OK);
+        }
+        
     }
 
 

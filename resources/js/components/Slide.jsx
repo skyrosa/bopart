@@ -25,9 +25,10 @@ const Slide = () => {
     <div className='w-full flex flex-row gap-4 overflow-x-auto scroll pl-5'>
         {   !events.length ? <Spinner />:
             events.map((event, index) => {
-            return <div key={index} className='w-96 py-3 '>
-                <SmallCard event={event} />
-            </div> 
+                
+            return index != 0 ? <div key={index} className='w-96 py-3 '>
+                 <SmallCard event={event} />
+            </div> : ''
         } )}
     </div>
   )

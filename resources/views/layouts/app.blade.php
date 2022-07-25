@@ -22,7 +22,7 @@
 <body>
     <div id="app" class="w-full flex flex-col justify-between">
         <div class="w-full flex flex-col">
-            <nav class="class='w-full bg-colorBlack text-colorWhite font-sansita py-2 space-y-2 lg:space-y-6 lg:text-2xl bg-cover bg-center bg-no-repeat" style="background-image: url('/storage/pictures/banner.png');">
+            <nav class="class='w-full bg-colorBlack text-colorWhite font-sansita py-4 space-y-2 lg:space-y-6 lg:text-2xl bg-cover bg-center bg-no-repeat" style="background-image: url('/storage/pictures/banner.png');">
                 <div class='flex flex-row md:justify-end justify-between gap-2 mx-2'>
                     @auth
                         <a href='{{ route('profile') }}' class='p-2  bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase'>Perfil</a>
