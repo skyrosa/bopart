@@ -12,10 +12,10 @@
         <!-- --Start_component -->
         <section class="gap-[10px] text-center text-2xl flex flex-col font-sansita">
         <!-- --Start_component -->
-                <div class="  text-colorPink">
+                <div class=" font-bold text-5xl pt-[40px] text-colorPink">
                     QUE OFRECEMOS
                 </div>
-                <div>
+                <div class="border flex flex-col gap-5 pb-[30px] text-[32px] tracking-[0.165em]  ">
                     <p>
                     Un proyecto donde la igualdad y la diversidad es nuestra realidad más cotidiana.
                     </p>
@@ -27,12 +27,12 @@
 
 
 
-                    
+                        
                     <div>
-                    <div class="" style="background-image: url('https://i.postimg.cc/2y9F7CTg/702A6426.jpg');"></div>
-                        <p>
-                        Organizamos actividades culturales de todo tipo con la RRRecreación por bandera. Súmate a nuestra oferta: micro teatro, monólogos, magia, acústicos, debates, conferencias, recitales de poesía, presentación de libros, talleres y coloquios.
-                        </p>
+                        <div class="" style="background-image: url('https://i.postimg.cc/2y9F7CTg/702A6426.jpg');"></div>
+                            <p>
+                            Organizamos actividades culturales de todo tipo con la RRRecreación por bandera. Súmate a nuestra oferta: micro teatro, monólogos, magia, acústicos, debates, conferencias, recitales de poesía, presentación de libros, talleres y coloquios.
+                            </p>
                     </div>
 
                     <div>
@@ -42,7 +42,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="flex flex-col py-[30px] space-y-5 tracking-[0.1em]">
                       <p>
                         Si quieres sumarte o si necesitas una colaboración desde el BOPART tenemos infinidad de ideas creativas para la organización y dinamización de eventos. 
                       </p>
@@ -51,19 +51,19 @@
                       </p>
                     </div>
 
-                    <div>
-                    <section>                         
+                    <div class="flex border ">
+                    <section class="w-full border">                         
                         <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
                         <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
                         <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
                         <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
                     </section>
 
-                    <section>
-                            <p>
+                    <section class="w-full space-y-10 border font-normal ">
+                            <p class="py-2.5 text-[40px] font-extrabold ">
                             BopArt 
                             </p>
-                        <div>
+                        <div class="py-2.5 ">
                             <p>
                                 *Acciones de dinamización comunitaria.</p>
                             <p>
@@ -80,7 +80,7 @@
                             </p>
                         </div>
 
-                        <div>
+                        <div class="py-2.5 ">
                             <p>
                             *Actividades en grupo. 
                             </p>
@@ -98,7 +98,7 @@
                             </p>
                         </div>
 
-                        <div>
+                        <div class="py-2.5 ">
                             <p>
                                 *Exposiciones artísticas. 
                             </p>
@@ -119,7 +119,7 @@
                     </section>
                 </div>
 
-                <p>
+                <p class="text-[32px] py-[70px]">
                     Todas estás acciones y actividades buscan la creación de una red fuerte y dinámica de nuestra comunidad. Nos encanta ser tribu y trabajar por ella.
                 </p>
 
