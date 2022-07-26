@@ -36,39 +36,19 @@ class UserController extends Controller
         }
 
         $users = User::all();
-        return view('auth.users', compact('users'));
+        return view('auth.users');
     }
 
-
-    public function create()
+    public function getAllUsers()
     {
-        //
+        if(! Gate::allows('only-admin')){
+            abort(403);
+        }
+        $myUser = auth()->user();
+        $users = User::all()->where('id', '!=', $myUser->id);
+
+        return response(json_encode($users), Response::HTTP_OK);
     }
-
-
-    public function store(Request $request)
-    {
-        //
-    }
-
-
-    public function show(User $user)
-    {
-        //
-    }
-
-
-    public function edit(User $user)
-    {
-        //
-    }
-
-
-    public function update(Request $request, User $user)
-    {
-        //
-    }
-
 
     public function destroy(User $user)
     {
@@ -76,7 +56,8 @@ class UserController extends Controller
 
         $user->delete();
 
-        return redirect()->back();
+        return response(['message' => 'Usuario eliminado exitosamente.',
+        'deleted' => true], Response::HTTP_ACCEPTED);
     }
 
 }

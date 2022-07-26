@@ -25,4 +25,5 @@ require('./components/Events')
 require('./components/Slide')
 require('./components/pagination/Pagination')
 
-require('./components/table/Table')
+require('./components/table/EventsTable')
+require('./components/table/UsersTable')

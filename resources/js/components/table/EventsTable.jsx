@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { createRoot } from "react-dom/client"
-import Spinner from '../Spinner'
 
-const Table = () => {
+const EventsTable = () => {
 
     const [events, setEvents] = useState([])
     const [update, setUpdate] = useState(false)
@@ -66,8 +65,8 @@ const Table = () => {
   )
 }
 
-export default Table
-if (document.getElementById('table')) {
-    const root = createRoot(document.getElementById('table'));
-    root.render(<Table />);
+export default EventsTable
+if (document.getElementById('events-table')) {
+    const root = createRoot(document.getElementById('events-table'));
+    root.render(<EventsTable />);
 }

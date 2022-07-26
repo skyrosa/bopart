@@ -44,6 +44,9 @@
                                     <a href="{{ route('events.setting') }}"  class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Gestión de eventos</a>
                                 </li>
                                 <li class="w-full text-center bg-colorPink hover:bg-[#cc706f] py-2 uppercase">
+                                    <a href="{{ route('users.index') }}"  class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Usuarios</a>
+                                </li>
+                                <li class="w-full text-center bg-colorPink hover:bg-[#cc706f] py-2 uppercase">
                                     <a href="#" class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Colaboradores</a>
                                 </li>
                             @endif

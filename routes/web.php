@@ -26,9 +26,10 @@ Auth::routes();
 
 Route::get('/profile', [UserController::class, 'profile'])->name('profile');
 Route::get('/myInformation', [UserController::class, 'myInformation']);
+Route::get('/getAllUsers', [UserController::class, 'getAllUsers'])->name('getAllUsers');
 
-Route::get('/users', [UserController::class, 'index'])->name('users');
-Route::get('/users/{user}/destroy', [UserController::class, 'destroy'])->name('users');
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
+Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
 
 
 Route::get('/events/setting', [EventController::class, 'setting'])->name('events.setting');
