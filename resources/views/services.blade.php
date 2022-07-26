@@ -12,14 +12,14 @@
         <!-- --Start_component -->
         <section class="gap-[10px] text-center text-2xl flex flex-col font-sansita">
         <!-- --Start_component -->
-                <div class=" font-bold text-5xl pt-[40px] text-colorPink">
+                <div class=" font-bold text-5xl  pb-[60px] pt-[40px] text-colorPink">
                     QUE OFRECEMOS
                 </div>
-                <div class="border flex flex-col gap-5 pb-[30px] text-[32px] tracking-[0.165em]  ">
-                    <p>
+                <div class="border flex flex-col gap-5 pb-[30px] text-[32px] tracking-[0.165em] items-center ">
+                    <p class=" border p-2.5 max-w-lg">
                     Un proyecto donde la igualdad y la diversidad es nuestra realidad más cotidiana.
                     </p>
-                    <p>
+                    <p class=" border p-2.5 max-w-[670px]">
                         Colaboramos de manera transversal con el tejito asociativo de la ciudad, en especial el de nuestro barrio.
                     </p>
                 </div>
