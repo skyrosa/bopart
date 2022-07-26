@@ -18,6 +18,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/services', function(){
+    return view('services');
+});
+Route::get('/about', function(){
+    return view('about');
+});
+Route::get('/contact', function(){
+    return view('contact');
+});
 
 Route::get('/', [HomeController::class, 'index']);
 

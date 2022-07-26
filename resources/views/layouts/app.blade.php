@@ -74,7 +74,7 @@
     
                 <div class='w-full flex flex-row'>
                     <div class='w-full flex items-center justify-center'>
-                        <a href='#' class='p-2   text-colorPink hover:text-[#E37383]  font-sansita text-[14px] md:text-[23px] lg:text-[40px] font-extrabold  self-center max-w-max uppercase'>
+                        <a href='/services' class='p-2   text-colorPink hover:text-[#E37383]  font-sansita text-[14px] md:text-[23px] lg:text-[40px] font-extrabold  self-center max-w-max uppercase'>
                             Que ofrecemos
                         </a>
                     </div>
@@ -86,14 +86,14 @@
                     </div>
         
                     <div class='w-full flex items-center justify-center'>
-                        <a href='#' class='p-2   text-colorPink hover:text-[#E37383]  font-sansita text-[14px] md:text-[23px] lg:text-[40px] font-extrabold  self-center max-w-max uppercase'>
+                        <a href='/about' class='p-2   text-colorPink hover:text-[#E37383]  font-sansita text-[14px] md:text-[23px] lg:text-[40px] font-extrabold  self-center max-w-max uppercase'>
                             Quienes somos
                         </a>
                     </div>
                 </div>
     
                 <div class='flex justify-center gap-2'>
-                    <a class='p-2  bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase'>
+                    <a  href="/contact" class='p-2  bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase'>
                         Contacto
                     </a>
      
