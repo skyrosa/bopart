@@ -173,7 +173,8 @@ class EventController extends Controller
         $user->event()->detach($event);
         Event::moreStock($event);
 
-        return redirect()->back();
+        return response(['message' => 'Usuario desapuntado exitosamente.',
+        'deleted' => true], Response::HTTP_ACCEPTED);
     }
 
     
