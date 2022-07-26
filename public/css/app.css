@@ -22195,6 +22195,11 @@ video {
   margin-top: calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.625rem * var(--tw-space-y-reverse));
 }
+.space-x-\[75px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(75px * var(--tw-space-x-reverse));
+  margin-left: calc(75px * calc(1 - var(--tw-space-x-reverse)));
+}
 .place-self-start {
   place-self: start;
 }
@@ -22494,6 +22499,14 @@ video {
 .py-\[90px\] {
   padding-top: 90px;
   padding-bottom: 90px;
+}
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .pb-5 {
   padding-bottom: 1.25rem;

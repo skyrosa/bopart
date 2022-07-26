@@ -45,22 +45,23 @@
                     </div>
 
                     <div class="flex flex-col py-[30px] space-y-5 tracking-[0.1em] items-center">
-                      <p class=" max-w-3xl border">
-                        Si quieres sumarte o si necesitas una colaboración desde el BOPART tenemos infinidad de ideas creativas para la organización y dinamización de eventos. 
-                      </p>
-                      <p class=" max-w-2xl border">
-                         Dentro y fuera de nuestro espacio de RRRECREACIÓN te ofrecemos un amplio abanico de actividades, eventos y talleres con la RRRecreación como eje principal:
-                      </p>
+                        <p class=" max-w-3xl border">
+                            Si quieres sumarte o si necesitas una colaboración desde el BOPART tenemos infinidad de ideas creativas para la organización y dinamización de eventos. 
+                        </p>
+                        <p class=" max-w-2xl border">
+                            Dentro y fuera de nuestro espacio de RRRECREACIÓN te ofrecemos un amplio abanico de actividades, eventos y talleres con la RRRecreación como eje principal:
+                        </p>
                     </div>
 
-                <div class="flex border ">
-                    <section class="flex flex-col h-auto w-1/2 border">                         
-                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-1/2 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
-                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-1/2 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
-                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-1/2 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
-                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-1/2 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
-
-                    </section>
+                    <div class="flex border px-[50px] py-[50px] space-x-[75px] ">
+                        <section class="flex flex-col gap-2.5 h-auto w-1/2 items-center border">
+                    
+                            <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-full sm: md: lg: | h-full sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+                            <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-full sm: md: lg: | h-full sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+                            <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-full sm: md: lg: | h-full sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+                            <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-full sm: md: lg: | h-full sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+                
+                        </section>
 
                     <section class=" space-y-10 border font-normal w-1/2">
                             <p class="py-2.5 text-[40px] font-extrabold ">
