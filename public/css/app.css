@@ -21932,6 +21932,12 @@ video {
 .w-2\/3 {
   width: 66.666667%;
 }
+.w-3\/5 {
+  width: 60%;
+}
+.w-2\/5 {
+  width: 40%;
+}
 .min-w-full {
   min-width: 100%;
 }
