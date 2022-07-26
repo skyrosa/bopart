@@ -53,19 +53,20 @@
                       </p>
                     </div>
 
-                    <div class="flex border ">
-                    <section class="w-full border">                         
-                        <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
-                        <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
-                        <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
-                        <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
+                <div class="flex border ">
+                    <section class="flex flex-col h-auto w-1/2 border">                         
+                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-1/2 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-1/2 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-1/2 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-1/2 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+
                     </section>
 
-                    <section class="w-full space-y-10 border font-normal ">
+                    <section class=" space-y-10 border font-normal w-1/2">
                             <p class="py-2.5 text-[40px] font-extrabold ">
                             BopArt 
                             </p>
-                        <div class="py-2.5 ">
+                        <div class="py-2.5 space-y-2.5 ">
                             <p>
                                 *Acciones de dinamización comunitaria.</p>
                             <p>
@@ -82,7 +83,7 @@
                             </p>
                         </div>
 
-                        <div class="py-2.5 ">
+                        <div class="py-2.5 space-y-2.5 ">
                             <p>
                             *Actividades en grupo. 
                             </p>
@@ -100,7 +101,7 @@
                             </p>
                         </div>
 
-                        <div class="py-2.5 ">
+                        <div class="py-2.5 space-y-2.5 ">
                             <p>
                                 *Exposiciones artísticas. 
                             </p>
