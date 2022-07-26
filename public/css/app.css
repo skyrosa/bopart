@@ -22546,6 +22546,9 @@ video {
 .tracking-\[0\.20em\] {
   letter-spacing: 0.20em;
 }
+.tracking-\[8px\] {
+  letter-spacing: 8px;
+}
 .text-colorBlack {
   --tw-text-opacity: 1;
   color: rgb(47 42 42 / var(--tw-text-opacity));
@@ -22770,6 +22773,14 @@ video {
     gap: 12px;
   }
 
+  .sm\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .sm\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .sm\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
@@ -22831,8 +22842,53 @@ video {
     line-height: 1.75rem;
   }
 
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-\[22px\] {
+    font-size: 22px;
+  }
+
+  .sm\:text-\[21px\] {
+    font-size: 21px;
+  }
+
+  .sm\:text-\[2px\] {
+    font-size: 2px;
+  }
+
+  .sm\:text-\[23px\] {
+    font-size: 23px;
+  }
+
+  .sm\:text-\[26px\] {
+    font-size: 26px;
+  }
+
+  .sm\:text-\[28px\] {
+    font-size: 28px;
+  }
+
   .sm\:tracking-\[16px\] {
     letter-spacing: 16px;
+  }
+
+  .sm\:tracking-\[12px\] {
+    letter-spacing: 12px;
+  }
+
+  .sm\:tracking-\[px\] {
+    letter-spacing: px;
+  }
+
+  .sm\:tracking-\[8px\] {
+    letter-spacing: 8px;
+  }
+
+  .sm\:tracking-\[14px\] {
+    letter-spacing: 14px;
   }
 
   .sm\:text-colorBlack {
@@ -22940,6 +22996,10 @@ video {
     gap: 22px;
   }
 
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
   .md\:space-x-9 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.25rem * var(--tw-space-x-reverse));
@@ -23005,6 +23065,23 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:tracking-\[12px\] {
+    letter-spacing: 12px;
+  }
+
+  .md\:tracking-\[8px\] {
+    letter-spacing: 8px;
+  }
+
+  .md\:tracking-\[16px\] {
+    letter-spacing: 16px;
   }
 }
 

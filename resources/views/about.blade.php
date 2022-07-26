@@ -81,25 +81,25 @@
                 </div>
 
 
-                <div class="flex-col flex sm:tracking-[16px] tracking-[12px]   gap-10 ">
+                <div class="flex-col flex sm:tracking-[12px] tracking-[12px] md:tracking-[16px]   gap-10 ">
 
-                    <div class=" sm:flex-row flex flex-col-reverse  sm:items-start items-center  gap-10 border">
+                    <div class=" sm:flex-row flex flex-col-reverse sm:items-start items-center  md:gap-12 sm:gap-2 gap-10 border">
                         <img class='border-2 sm:p-40 p-32 sm:w-1/2 w-1/4    rounded-l-[28px] bg-cover bg-center bg-no-repeat' style=" background-image: url('https://images.unsplash.com/photo-1559304879-0bbc7c0314ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80')"  />
-                        <p class="text-center "> 
+                        <p class="text-center sm:text-[28px] md:text-3xl "> 
                         reducir 
                         </p>
                     </div>
-                    <div class="  sm:flex-row flex-col flex sm:items-start items-center  gap-10 place-content-end border">
-                        <p class="text-center "> 
+                    <div class="  sm:flex-row flex-col flex sm:items-start items-center  md:gap-12 sm:gap-2 gap-10 place-content-end border">
+                        <p class="text-center sm:text-[28px] md:text-3xl "> 
                         reutilizar
                         </p>
                         <img class='border-2 sm:p-40 p-32 sm:w-1/2 w-1/4    rounded-r-[28px] bg-cover bg-center bg-no-repeat' style=" background-image: url('https://i.postimg.cc/tgFkGQCV/702A6409.jpg')"  />
                     </div>
 
-                    <div class=" sm:flex-row flex flex-col-reverse  sm:items-start items-center  gap-10 border">
+                    <div class=" sm:flex-row flex flex-col-reverse sm:items-start items-center  md:gap-12 sm:gap-2 gap-10  border">
                         <img class='border-2 sm:p-40 p-32 sm:w-1/2 w-1/4    rounded-l-[28px] bg-cover bg-center bg-no-repeat' style=" background-image: url('https://images.unsplash.com/photo-1559304879-0bbc7c0314ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80')"  />
-                        <p class="text-center ">
-                            y reciclar
+                        <p class="text-center sm:text-[28px] md:text-3xl ">
+                        reciclar
                         </p>
                     </div>
 
