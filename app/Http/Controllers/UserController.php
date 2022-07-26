@@ -45,7 +45,7 @@ class UserController extends Controller
             abort(403);
         }
         $myUser = auth()->user();
-        $users = User::all()->where('id', '!=', $myUser->id);
+        $users = User::all();
 
         return response(json_encode($users), Response::HTTP_OK);
     }

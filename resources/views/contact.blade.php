@@ -25,10 +25,6 @@
                 </div>
             </section>
     
-        
-    
-
-    
             <form class=" justify-center sm:gap-4 gap-8 space flex-wrap sm:flex flex ">
                 <a class="flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 " style=" background-image: url('https://i.postimg.cc/4xWZvqTV/702A6299.jpg')" ></a>
                 <a class="flex sm:m-4 bg-cover bg-no-repeat bg-center w-full lg:w-1/4 md:w-2/5 sm:w-1/3 h-40 " style=" background-image: url('https://i.postimg.cc/4xWZvqTV/702A6299.jpg')" ></a>
