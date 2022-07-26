@@ -53,7 +53,7 @@
                         </p>
                     </div>
 
-                    <div class="flex border px-[50px] py-[50px] space-x-[75px]  ">
+                    <div class="flex border sm:px-[50px] py-[50px] sm:space-x-[75px]  ">
                         <section class="sm:flex flex-col gap-2.5 h-auto w-1/2 items-center border  hidden">
                     
                             <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-full sm: md: lg: | h-full sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>

@@ -22918,6 +22918,12 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .sm\:space-x-\[75px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(75px * var(--tw-space-x-reverse));
+    margin-left: calc(75px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .sm\:self-center {
     align-self: center;
   }
@@ -22938,6 +22944,11 @@ video {
   .sm\:py-\[15px\] {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .sm\:px-\[50px\] {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .sm\:pb-5 {
