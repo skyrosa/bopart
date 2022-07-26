@@ -6,13 +6,13 @@
                 <div class="flex bg-cover bg-no-repeat bg-center w-full sm:w-1/4 md:w-3/12 lg:w-1/4 h-28 sm:h-full  md: lg:" style=" background-image: url('https://i.postimg.cc/4xWZvqTV/702A6299.jpg')" ></div>
                 <div class="flex bg-cover bg-no-repeat bg-center w-full sm:w-1/4 md:w-3/12 lg:w-1/4 h-28 sm:h-full  md: lg:" style=" background-image: url('https://i.postimg.cc/JhgLvX0h/702A6304.jpg')"  ></div>
                 <div class="flex bg-cover bg-no-repeat bg-center w-full sm:w-1/4 md:w-3/12 lg:w-1/4 h-28 sm:h-full  md: lg:" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
-                <div class="flex bg-cover bg-no-repeat bg-center w-full sm:w-1/4 md:w-3/12 lg:w-1/4 h-28 sm:h-full  md: lg:" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+                <div class="flex bg-cover bg-no-repeat bg-center w-full sm:w-1/4 md:w-3/12 lg:w-1/4 h-28 sm:h-full  md: lg:" style=" background-image: url('https://i.postimg.cc/vTKf63Zs/702A6448.jpg')"  ></div>
             </div>                            
                             
         <!-- --Start_component -->
-        <section class=" flex flex-col ">
+        <section class="gap-[10px] text-center text-2xl flex flex-col font-sansita">
         <!-- --Start_component -->
-                <div class=" flex text-colorPink">
+                <div class="  text-colorPink">
                     QUE OFRECEMOS
                 </div>
                 <div>
@@ -29,14 +29,14 @@
 
                     
                     <div>
-                    <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
+                    <div class="" style="background-image: url('https://i.postimg.cc/2y9F7CTg/702A6426.jpg');"></div>
                         <p>
                         Organizamos actividades culturales de todo tipo con la RRRecreación por bandera. Súmate a nuestra oferta: micro teatro, monólogos, magia, acústicos, debates, conferencias, recitales de poesía, presentación de libros, talleres y coloquios.
                         </p>
                     </div>
 
                     <div>
-                        <div class="" style="background-image: url('/storage/pictures/banner.png');"></div>
+                        <div class="" style="background-image: url('https://i.postimg.cc/2y9F7CTg/702A6426.jpg');"></div>
                         <p>
                         Somos un agente muy activo en nuestro territorio más inmediato, nos sentimos muy orgullosos y orgullosas de decir que nuestro proyecto es MADE IN BON PASTOR.
                         </p>

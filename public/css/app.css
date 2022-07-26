@@ -22122,6 +22122,11 @@ video {
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
 .place-self-start {
   place-self: start;
 }
@@ -22402,6 +22407,18 @@ video {
   padding-top: ;
   padding-bottom: ;
 }
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.py-\[70px\] {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -22425,6 +22442,9 @@ video {
 }
 .pl-2 {
   padding-left: 0.5rem;
+}
+.pt-\[40px\] {
+  padding-top: 40px;
 }
 .text-left {
   text-align: left;
@@ -22513,6 +22533,9 @@ video {
 .text-\[12px\] {
   font-size: 12px;
 }
+.text-\[32px\] {
+  font-size: 32px;
+}
 .font-semibold {
   font-weight: 600;
 }
@@ -22551,6 +22574,12 @@ video {
 }
 .tracking-\[8px\] {
   letter-spacing: 8px;
+}
+.tracking-\[0\.165em\] {
+  letter-spacing: 0.165em;
+}
+.tracking-\[0\.1em\] {
+  letter-spacing: 0.1em;
 }
 .text-colorBlack {
   --tw-text-opacity: 1;
