@@ -20765,9 +20765,9 @@ __webpack_require__.r(__webpack_exports__);
 var ContactCollaborators = function ContactCollaborators() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": "h-auto w-screen flex justify-center",
+      "class": "h-auto  flex justify-center",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "borde flex-col  text-center md:gap-[50px] sm: gap-8 flex py-[25px] sm: md: lg:py-[25px] container  bg-colorBlack text-colorWhite font-sansita text-3xl md:text-4xl ",
+        className: "borde flex-col lg:px-40 md:px-32 sm:px-20  text-center md:gap-[50px] sm: gap-8 flex py-[25px] sm: md: lg:py-[25px] container  bg-colorBlack text-colorWhite font-sansita text-3xl md:text-4xl ",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
           className: "flex-col border self-center flex gap-5    ",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -20781,9 +20781,9 @@ var ContactCollaborators = function ContactCollaborators() {
               children: "Bopart@bopmail.es"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-            className: "text-lg sm:text-xl md:text-2xl",
+            className: " text-base sm:text-lg md:text-xl lg:text-2xl",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-              children: "Carrer de Barnola, 5B \xB7 08030 Barcelona \xB7 (+34) 934 198 864"
+              children: "Carrer de Barnola, 5B \xB7 08030 Barcelona \xB7 (+34) 675 936 567"
             })
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
