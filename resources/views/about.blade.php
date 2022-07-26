@@ -8,7 +8,13 @@
     <section class=" scroll-smooth bg-gradient-blue justify-center w-full h-auto border-4 min-h-screen text-3xl leading-snug | | p-[px] gap-[30px]  bg-gradient-to-b from-gradient-lightBlue to-gradient-midBlue "  >
 
         <div class="flex-col border-4 border-colorPink ">
-            <div class="flex text-center justify-center text-6xl leading-normal underline underline-offset-[20px]  p-10">
+            <div class=" place-self-start w-full flex-col sm:flex border flex-wrap || h-40 sm:h-80 md:  ">
+                        <div class="flex bg-cover bg-no-repeat bg-center w-full sm:w-1/4 md:w-1/4 lg:w-1/4 h-2/3 sm:h-full md: lg:h-7/8" style=" background-image: url('https://i.postimg.cc/4xWZvqTV/702A6299.jpg')" ></div>
+                        <div class="flex bg-cover bg-no-repeat bg-center w-full sm:w-1/4 md:w-1/4 lg:w-1/4 h-2/3 sm:h-80   md: lg:h-7/8" style=" background-image: url('https://i.postimg.cc/JhgLvX0h/702A6304.jpg')"  ></div>
+                        <div class="flex bg-cover bg-no-repeat bg-center w-full sm:w-1/4 md:w-1/4 lg:w-1/4 h-2/3 sm:h-80   md: lg:h-7/8" style=" background-image: url('https://images.unsplash.com/photo-1658244410168-78923d5c9f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80')"  ></div>
+                        <div class="flex bg-cover bg-no-repeat bg-center w-full sm:w-1/4 md:w-1/4 lg:w-1/4 h-2/3 sm:h-80   md: lg:h-7/8" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+            </div>         
+            <div class="flex text-center justify-center sm:text-colorBlack  text-colorWhite  text-6xl leading-normal underline underline-offset-[20px]  p-10">
             <p>¿QUIÉNES SOMOS? </p>
             </div>
             <!-- quienes somos -->
