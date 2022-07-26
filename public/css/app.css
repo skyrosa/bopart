@@ -21878,6 +21878,9 @@ video {
 .h-2\/3 {
   height: 66.666667%;
 }
+.h-3\/6 {
+  height: 50%;
+}
 .max-h-56 {
   max-height: 14rem;
 }
@@ -22957,6 +22960,10 @@ video {
   }
 
   .md\:w-1\/4 {
+    width: 25%;
+  }
+
+  .md\:w-3\/12 {
     width: 25%;
   }
 
