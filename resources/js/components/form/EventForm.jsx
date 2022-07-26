@@ -42,7 +42,7 @@ const EventForm = () => {
                     text: 'Evento creado Exitosamente ',
                     icon: 'success',
                   }).then(response =>{
-                      window.location = '/events'
+                      window.location = '/events/setting'
                   })
             }catch (err){
                 let error = JSON.parse(err.response.request.response)

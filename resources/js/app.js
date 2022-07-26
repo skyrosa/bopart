@@ -24,3 +24,5 @@ require('./components/form/RegisterForm')
 require('./components/Events')
 require('./components/Slide')
 require('./components/pagination/Pagination')
+
+require('./components/table/Table')

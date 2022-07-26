@@ -67,10 +67,11 @@ class EventController extends Controller
     }
 
 
-    public function deleteImage($event)
-    {
-
+    public function show(Event $event)
+    {   
+        return view('events.show', compact('event'));
     }
+
 
     public function searchEvent(Event $event)
     {
@@ -81,11 +82,6 @@ class EventController extends Controller
         $data['registereds'] = Gate::allows('only-admin') ? Event::showRegisteredUsers($event): [];
         
         return response(json_encode($data) , Response::HTTP_OK);
-    }
-
-    public function show(Event $event)
-    {   
-        return view('events.show', compact('event'));
     }
 
 
@@ -167,7 +163,8 @@ class EventController extends Controller
         $this->authorize('delete', $event);
 
         $event->delete();
-        return redirect()->route('events.index');
+        return response(['message' => 'Evento eliminado exitosamente.',
+                             'deleted' => true], Response::HTTP_ACCEPTED);
     }
 
 
@@ -177,5 +174,14 @@ class EventController extends Controller
         Event::moreStock($event);
 
         return redirect()->back();
+    }
+
+    
+    public function setting()
+    {
+        if(! Gate::allows('only-admin')){
+            abort(403);
+        }
+        return view('events.setting');
     }
 }

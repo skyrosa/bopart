@@ -6,59 +6,32 @@ use App\Http\Controllers\Controller;
 use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Carbon;
 
 class EventController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('index', 'getFirstEvents');
+        $this->middleware('auth')->except('index', 'getFirstEvents', 'getAllEvents');
     }
 
     public function index()
     {
-        $events = Event::orderBy('date', 'asc')->get();
+        $today = Carbon::now();
+        $events = Event::orderBy('date', 'asc')->where('date', '>', $today)->get();
         return response(json_encode($events), Response::HTTP_OK);
     }
 
     public function getFirstEvents()
     {
-        $events = Event::orderBy('date', 'asc')->take(6)->get();
+        $today = Carbon::now();
+        $events = Event::orderBy('date', 'asc')->where('date', '>', $today)->take(6)->get();
         return response(json_encode($events), Response::HTTP_OK);
     }
 
-    
-    public function create()
+    public function getAllEvents()
     {
-        //
-    }
-
- 
-    public function store(Request $request)
-    {
-        //
-    }
-
-
-    public function show(Event $event)
-    {
-
-    }
-
-
-    public function edit(Event $event)
-    {
-        //
-    }
-
-
-    public function update(Request $request, Event $event)
-    {
-        //
-    }
-
-
-    public function destroy(Event $event)
-    {
-        //
+        $events = Event::all();
+        return response(json_encode($events), Response::HTTP_OK);
     }
 }

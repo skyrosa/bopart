@@ -41,7 +41,7 @@
                             <ul class="dropdown-menu absolute hidden w-full flex-col items-center justify-center border-none py-0">
                             @if (Auth::user()->rol->first()->name == 'admin')
                                 <li class="w-full text-center bg-colorPink hover:bg-[#cc706f] py-2 uppercase">
-                                    <a href="#"  class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Gestión de eventos</a>
+                                    <a href="{{ route('events.setting') }}"  class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Gestión de eventos</a>
                                 </li>
                                 <li class="w-full text-center bg-colorPink hover:bg-[#cc706f] py-2 uppercase">
                                     <a href="#" class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Colaboradores</a>

@@ -42,7 +42,6 @@ const Events = () => {
 
   return (
     <div className='w-full flex flex-col gap-5'>
-    
         <div className='w-full flex flex-row flex-wrap justify-center gap-6'>
             {   !events.length ? <Spinner />:
                 events.slice((page - 1) * splitPage,
