@@ -128,6 +128,9 @@
         <!-- --End_component -->
         </section>
         <!-- --End_component -->
+        <div class="flex  border place-self-start flex-wrap w-full || place-items-end lg: h-56 sm:h-72 md: lg:h-full  ">
+            <div class="flex bg-cover bg-no-repeat bg-center w-full sm: md: lg:w- h-full sm:  md: lg:h-[400px]" style=" background-image: url('https://images.unsplash.com/photo-1569634311433-afb9edb8a3f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1111&q=80')" ></div>
+        </div>
 </div>
 
 @endsection
