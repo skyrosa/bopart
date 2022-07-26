@@ -28,25 +28,27 @@
 
 
                         
-                    <div>
-                        <div class="" style="background-image: url('https://i.postimg.cc/2y9F7CTg/702A6426.jpg');"></div>
-                            <p>
-                            Organizamos actividades culturales de todo tipo con la RRRecreación por bandera. Súmate a nuestra oferta: micro teatro, monólogos, magia, acústicos, debates, conferencias, recitales de poesía, presentación de libros, talleres y coloquios.
-                            </p>
-                    </div>
+                    <div class="flex border  ">
+                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-1/2 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
 
-                    <div>
-                        <div class="" style="background-image: url('https://i.postimg.cc/2y9F7CTg/702A6426.jpg');"></div>
-                        <p>
-                        Somos un agente muy activo en nuestro territorio más inmediato, nos sentimos muy orgullosos y orgullosas de decir que nuestro proyecto es MADE IN BON PASTOR.
+                        <p class="flex border p-2.5 w-1/2 border-colorPink ">
+                        Organizamos actividades culturales de todo tipo con la RRRecreación por bandera. Súmate a nuestra oferta: micro teatro, monólogos, magia, acústicos, debates, conferencias, recitales de poesía, presentación de libros, talleres y coloquios.
                         </p>
                     </div>
 
-                    <div class="flex flex-col py-[30px] space-y-5 tracking-[0.1em]">
-                      <p>
+                    <div class="flex border  ">
+                        <p class="flex border p-2.5  w-2/3 border-colorPink ">
+                        Somos un agente muy activo en nuestro territorio más inmediato, nos sentimos muy orgullosos y orgullosas de decir que nuestro proyecto es MADE IN BON PASTOR.
+                        </p>
+                        <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-2/3 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
+
+                    </div>
+
+                    <div class="flex flex-col py-[30px] space-y-5 tracking-[0.1em] items-center">
+                      <p class=" max-w-3xl border">
                         Si quieres sumarte o si necesitas una colaboración desde el BOPART tenemos infinidad de ideas creativas para la organización y dinamización de eventos. 
                       </p>
-                      <p>
+                      <p class=" max-w-2xl border">
                          Dentro y fuera de nuestro espacio de RRRECREACIÓN te ofrecemos un amplio abanico de actividades, eventos y talleres con la RRRecreación como eje principal:
                       </p>
                     </div>
