@@ -30,7 +30,7 @@
                         
                     <div class="flex border  ">
                         <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-3/5 sm: md: lg: | h sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
-
+                        
                         <p class="flex border p-2.5 w-2/3 border-colorPink ">
                         Organizamos actividades culturales de todo tipo con la RRRecreación por bandera. Súmate a nuestra oferta: micro teatro, monólogos, magia, acústicos, debates, conferencias, recitales de poesía, presentación de libros, talleres y coloquios.
                         </p>
@@ -53,8 +53,8 @@
                         </p>
                     </div>
 
-                    <div class="flex border px-[50px] py-[50px] space-x-[75px] ">
-                        <section class="flex flex-col gap-2.5 h-auto w-1/2 items-center border">
+                    <div class="flex border px-[50px] py-[50px] space-x-[75px]  ">
+                        <section class="sm:flex flex-col gap-2.5 h-auto w-1/2 items-center border  hidden">
                     
                             <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-full sm: md: lg: | h-full sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
                             <div class="border border-colorWhite flex bg-cover bg-no-repeat bg-center | w-full sm: md: lg: | h-full sm:  md: lg: |" style=" background-image: url('https://i.postimg.cc/bNGQjcmN/702A6466.jpg')"  ></div>
@@ -63,7 +63,7 @@
                 
                         </section>
 
-                    <section class=" space-y-10 border font-normal w-1/2">
+                    <section class=" space-y-10 border font-normal sm:w-1/2 sm:">
                             <p class="py-2.5 text-[40px] font-extrabold ">
                             BopArt 
                             </p>

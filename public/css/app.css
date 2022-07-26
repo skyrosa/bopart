@@ -22886,6 +22886,10 @@ video {
     align-items: flex-end;
   }
 
+  .sm\:items-center {
+    align-items: center;
+  }
+
   .sm\:gap-2 {
     gap: 0.5rem;
   }
@@ -22914,6 +22918,10 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .sm\:self-center {
+    align-self: center;
+  }
+
   .sm\:rounded-\[10px\] {
     border-radius: 10px;
   }
@@ -22934,6 +22942,10 @@ video {
 
   .sm\:pb-5 {
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:text-center {
+    text-align: center;
   }
 
   .sm\:text-\[28px\] {
