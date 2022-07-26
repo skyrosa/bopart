@@ -18,9 +18,9 @@ const ProfileEvent = (props) => {
 
   return (
     <div className='flex flex-row w-full h-28 lg:h-48   border-b'>
-        <div className='w-full bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(`+props.myEvent.image+`)` }}>
+        <a href={`/events/`+ props.myEvent.id} className='w-full bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(`+props.myEvent.image+`)` }}>
 
-        </div>
+        </a>
         <div className='w-full flex flex-col justify-evenly'> 
 
             <div className=''>

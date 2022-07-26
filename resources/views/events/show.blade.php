@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-    <div class="row justify-content-center">
+    {{-- <div class="row justify-content-center">
 
         <div class="col-md-4">
             <div class="card  mb-5">
@@ -60,6 +60,8 @@
             @endforeach
         </div>
 
-    </div>
+    </div> --}}
+
+    <div id="event-card" class="py-5 w-full flex justify-center" event={{ $event->id }}></div>
 </div>
 @endsection

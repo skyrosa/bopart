@@ -72,16 +72,20 @@ class EventController extends Controller
 
     }
 
+    public function searchEvent(Event $event)
+    {
+        $data = json_decode($event, true);
+
+        $data['isCheck'] = Event::verifyRecord($event);
+        $data['canRegister'] = Event::checkCapacity($event);
+        $data['registereds'] = Gate::allows('only-admin') ? Event::showRegisteredUsers($event): [];
+        
+        return response(json_encode($data) , Response::HTTP_OK);
+    }
 
     public function show(Event $event)
-    {
-        $registereds = Event::showRegisteredUsers($event);
-
-        $isCheck = Event::verifyRecord($event);
-        $canRegister = Event::checkCapacity($event);
-        
-        return view('events.show', compact('event', 'isCheck', 'canRegister'), 
-        ['registereds' => Gate::allows('only-admin') ? $registereds : [] ]);
+    {   
+        return view('events.show', compact('event'));
     }
 
 
@@ -124,11 +128,11 @@ class EventController extends Controller
 
             Event::minusStock($event);
 
-            return response(['message' => 'Te has registrado en este evento',
+            return response(['message' => 'Te has registrado en este evento.',
                              'checkIn' => true], Response::HTTP_OK);
         }
         if($isCheck){
-            return response(['message' => 'Ya estas registrado en este evento',
+            return response(['message' => 'Ya estas registrado en este evento.',
                              'checkIn' => false], Response::HTTP_OK);
         }
         
@@ -137,10 +141,19 @@ class EventController extends Controller
 
     public function dropOut(Event $event)
     {
+        $isCheck = Event::verifyRecord($event);
         $user = auth()->user();
-        $user->event()->detach($event);
 
-        Event::moreStock($event);
+        if($isCheck){
+            $user->event()->detach($event);
+            Event::moreStock($event);
+            return response(['message' => 'Ya no estas apuntado en este evento.',
+                             'dropOut' => true], Response::HTTP_OK);
+        }
+        if(!$isCheck){
+            return response(['message' => 'Ya no estas apuntado en este evento.',
+            'dropOut' => false], Response::HTTP_OK);
+        }
     }
 
     

@@ -31,7 +31,9 @@ const SmallCard = (props) => {
           window.location = `/events/${ id }`
         })
     } catch(err) {
-        console.log(err.response.request.response)
+        const message = JSON.parse(err.response.request.response).message
+        console.log(JSON.parse(err.response.request.response).message)
+        message == 'Unauthenticated.' ? window.location = '/login' : ''
     }
   }
 

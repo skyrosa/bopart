@@ -18,6 +18,7 @@ use App\Http\Controllers\Api\EventController;
 Route::controller(EventController::class)->group(function(){
     Route::get('/events', 'index')->name('getAllEvent');
     Route::get('/getFirstEvents', 'getFirstEvents')->name('getFirstEvents');
+    // Route::get('/events/{event}', 'show');
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
