@@ -21999,6 +21999,12 @@ video {
 .max-w-2xl {
   max-width: 42rem;
 }
+.max-w-4xl {
+  max-width: 56rem;
+}
+.max-w-\[790px\] {
+  max-width: 790px;
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -22478,6 +22484,10 @@ video {
 .py-\[40px\] {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.py-\[90px\] {
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 .pb-5 {
   padding-bottom: 1.25rem;

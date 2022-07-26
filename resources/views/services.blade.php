@@ -122,7 +122,7 @@
                     </section>
                 </div>
 
-                <p class="text-[32px] py-[70px]">
+                <p class="text-[32px] py-[90px] max-w-[790px] border flex self-center  ">
                     Todas estás acciones y actividades buscan la creación de una red fuerte y dinámica de nuestra comunidad. Nos encanta ser tribu y trabajar por ella.
                 </p>
 
