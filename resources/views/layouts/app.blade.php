@@ -23,19 +23,37 @@
     <div id="app" class="w-full flex flex-col justify-between">
         <div class="w-full flex flex-col">
             <nav class="class='w-full bg-colorBlack text-colorWhite font-sansita py-4 space-y-2 lg:space-y-6 lg:text-2xl bg-cover bg-center bg-no-repeat" style="background-image: url('/storage/pictures/banner.png');">
-                <div class='flex flex-row md:justify-end justify-between gap-2 mx-2'>
+                <div class='flex flex-row md:justify-end justify-between items-center gap-2 mx-2'>
                     @auth
                         <a href='{{ route('profile') }}' class='p-2  bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase'>Perfil</a>
                         <p class="hidden md:block">|</p>
+                        <div class="flex flex-col dropdown relative">
+                            <button type="button" 
+                            class='dropdown-toggle transition duration-150 ease-in-out py-2 px-4 flex flex-row gap-2 items-center  bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase' 
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                                Opciones  
+                            </button>
+                            <ul class="dropdown-menu absolute hidden w-full flex-col items-center justify-center border-none py-0">
+                                <li class="w-full text-center bg-colorPink hover:bg-[#cc706f] py-2 uppercase">
+                                    <a href="#"  class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Gestión de eventos</a>
+                                </li>
+                                <li class="w-full text-center bg-colorPink hover:bg-[#cc706f] py-2 uppercase">
+                                    <a href="#" class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Colaboradores</a>
+                                </li>
+                                <li class="w-full text-center bg-colorPink hover:bg-[#cc706f] py-2 uppercase">
+                                    <a href="{{ route('logout') }}" 
+                                        class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold"
+                                     onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">Cerrar Sesión</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
         
-                        <a class='p-2  bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase' href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
-                                {{ __('Cerrar Sesión') }}
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
                     @endauth
                     @guest
                         <a href='{{ route('register') }}' class='p-2  bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase'> Registrarse </a>

@@ -131,11 +131,16 @@ class EventController extends Controller
             return response(['message' => 'Te has registrado en este evento.',
                              'checkIn' => true], Response::HTTP_OK);
         }
+
         if($isCheck){
             return response(['message' => 'Ya estas registrado en este evento.',
                              'checkIn' => false], Response::HTTP_OK);
         }
-        
+
+        if(!$canRegister){
+            return response(['message' => 'No hay plazas disponible para este evento.',
+                             'checkIn' => false], Response::HTTP_OK);
+        }
     }
 
 

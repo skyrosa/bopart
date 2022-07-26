@@ -7,7 +7,7 @@ const EventCard = (props) => {
     const [data, setData] = useState()
     const [isCheck, setIsCheck] = useState(false)
 
-    
+
     const getEvent = async () => {
         try {
             const response = await axios.get(`/searchEvent/${props.event}`)
@@ -103,7 +103,7 @@ const EventCard = (props) => {
             <h1 className='text-center font-bold text-2xl'>{data.address}</h1>
             {
               !data.isCheck ? 
-              <button onClick={alert1} className='tracking-[0.20em] py-3 font-librefranklin font-bold uppercase bg-colorGreen hover:bg-[#50a34e] rounded-[10px] flex justify-center items-center text-colorWhite text-base md:text-xl'>
+              <button disabled={!data.canRegister} onClick={alert1} className='tracking-[0.20em] py-3 font-librefranklin font-bold uppercase bg-colorGreen hover:bg-[#50a34e] rounded-[10px] flex justify-center items-center text-colorWhite text-base md:text-xl'>
                 Apuntate 
               </button> : 
               <button onClick={alert2} className='tracking-[0.20em] py-3 font-librefranklin font-bold uppercase bg-colorYellow hover:bg-[#dca956] rounded-[10px] flex justify-center items-center text-colorWhite text-base md:text-xl'>

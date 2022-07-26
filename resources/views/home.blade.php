@@ -14,6 +14,8 @@
         <div id='big-card' class="py-5 px-3 w-full flex justify-center"></div>
     </section>
 
+
+    
     <section class="bg-gradient-to-b from-colorPink to-colorTourq flex flex-col py-5">
         <h1 class='font-inter font-bold text-[20px] lg:text-[32px] text-center capitalize mt-3'>Proximos Eventos</h1>
         <div id="slide" class="py-5">

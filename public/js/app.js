@@ -21055,6 +21055,7 @@ var EventCard = function EventCard(props) {
           className: "text-center font-bold text-2xl",
           children: data.address
         }), !data.isCheck ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+          disabled: !data.canRegister,
           onClick: alert1,
           className: "tracking-[0.20em] py-3 font-librefranklin font-bold uppercase bg-colorGreen hover:bg-[#50a34e] rounded-[10px] flex justify-center items-center text-colorWhite text-base md:text-xl",
           children: "Apuntate"
