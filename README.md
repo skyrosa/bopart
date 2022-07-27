@@ -12,11 +12,7 @@
 </p>
 
 <p align="center">
-
-
-https://user-images.githubusercontent.com/97969369/181202055-8cb3bb5d-7e74-4330-93f1-0c3e69857d75.mp4
-
-
+https://user-images.githubusercontent.com/97969369/181202388-dd598909-cbef-4da1-bf49-525190643bdb.mp4
 </p>
 
 # Image Gallery
