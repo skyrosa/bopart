@@ -18,7 +18,8 @@ class CollaboratorPolicy
      */
     public function viewAny(User $user)
     {
-        //
+        $rolName = $user->rol->first()->name;
+        return $rolName == 'admin';
     }
 
     /**

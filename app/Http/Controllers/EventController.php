@@ -97,18 +97,25 @@ class EventController extends Controller
     {
         $this->authorize('update', $event);
 
-        $event->update([
-            'name' => $request['name'],
-            'description' => $request['description'],
-            'date' => $request['date'],
-            'startTime' => $request['startTime'],
-            'endTime' => $request['endTime'],
-            'image' => $request['image'],
-            'address' => $request['address'],
-            'capacity' => $request['capacity'],
-            'type' => $request['type'],
-        ]);
-        return redirect()->route('events.show', compact('event'));
+        $data = $request->validated();
+
+        $event->update($data);
+
+        return response(status: Response::HTTP_OK);
+
+        // $event->update([
+        //     'name' => $request['name'],
+        //     'description' => $request['description'],
+        //     'date' => $request['date'],
+        //     'startTime' => $request['startTime'],
+        //     'endTime' => $request['endTime'],
+        //     'image' => $request['image'],
+        //     'address' => $request['address'],
+        //     'capacity' => $request['capacity'],
+        //     'type' => $request['type'],
+        // ]);
+
+        // return redirect()->route('events.show', compact('event'));
     }
 
 

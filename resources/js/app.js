@@ -14,15 +14,16 @@ require('./bootstrap');
 require('./components/card/BigCard')
 require('./components/card/EventCard')
 
-require('./components/Example')
 require('./components/profile/ProfileUser')
 
 require('./components/form/LoginForm')
 require('./components/form/EventForm')
 require('./components/form/RegisterForm')
+require('./components/form/EditEventForm')
 
 require('./components/Events')
 require('./components/Slide')
+
 require('./components/pagination/Pagination')
 
 require('./components/table/EventsTable')

@@ -1,12 +1,14 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
 import { createRoot } from "react-dom/client"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBoxOpen} from '@fortawesome/free-solid-svg-icons'
 import {useDropzone} from 'react-dropzone'
 import swal from 'sweetalert'
+import axios from 'axios'
+import { set } from 'lodash'
 
 
-const EventForm = () => {
+const EditEventForm = (props) => {
 
     const [name, setName] = useState('')
     const [description, setDescription] = useState('')
@@ -21,8 +23,7 @@ const EventForm = () => {
     const [error, setError] = useState([])
     const [message, setMessage] = useState([])
 
-    const storeEvent = async (e) => {
-        console.log(image)
+    const updateEvent = async (e) => {
             e.preventDefault()
             let event = {
                 name: name ,
@@ -36,19 +37,34 @@ const EventForm = () => {
                 type: type,
             }
             try{
-                const response = await axios.post('/events', event)
+                const response = await axios.put(`/events/${props.event}`, event)
                 console.log(response.data)
                 swal({
-                    text: 'Evento creado Exitosamente ',
+                    text: 'Cambios guardados con éxito  ',
                     icon: 'success',
                   }).then(response =>{
-                      window.location = '/events/setting'
+                      window.location = `/events/${props.event}`
                   })
             }catch (err){
                 let error = JSON.parse(err.response.request.response)
                 setError(!error.errors ? [] : error.errors )
                 setMessage(error.message)
             }
+    }
+
+    const getEvent = async () => {
+        const response = await axios.get(`/searchEvent/${props.event}`)
+        const data = response.data
+
+        setName(data.name)
+        setDescription(data.description)
+        setDate(data.date)
+        setStartTime(data.startTime)
+        setEndTime(data.endTime)
+        setImage(data.image)
+        setAddress(data.address)
+        setCapacity(data.capacity)
+        setType(data.type)
     }
 
     const onDrop = useCallback(acceptedFiles => {
@@ -75,10 +91,13 @@ const EventForm = () => {
           }
     }) 
 
+    useEffect(() => {
+        getEvent()
+    },[])
   return (
     <div className='w-full h-full flex justify-center'>
         <div className='flex flex-col w-full md:w-5/5 lg:w-3/5 rounded-[28px] bg-colorWhite '>
-            <form className='flex flex-col w-full font-semibold font-inter gap-4' onSubmit={storeEvent} encType="multipart/form-data">
+            <form className='flex flex-col w-full font-semibold font-inter gap-4' onSubmit={updateEvent} encType="multipart/form-data">
 
                 <div>
                     <div {...getRootProps()} className='flex justify-center items-center relative rounded-t-[28px] bg-colorBlack h-60 cursor-pointer'>
@@ -185,7 +204,8 @@ const EventForm = () => {
                                 <div>
                                     <select className={`w-full ${error['type'] ? 'bg-colorPink' : 'bg-colorTourq'} text-lg font-normal rounded-[10px] px-[13px] py-[10px] focus:outline-0`}
                                     onChange={ (e) => setType(e.target.value) } 
-                                    type='text'>
+                                    type='text'
+                                    value={type}>
                                         <option value=""></option>
                                         <option value="Evento">Evento</option>
                                         <option value="Taller">Taller</option>
@@ -216,8 +236,8 @@ const EventForm = () => {
                                 />
                                 {error['image'] ? <p className='text-colorPink '>{error['image']}</p> : ''}
                             </div>
-                        </div>
 
+                        </div>
 
                     </div>
                 </div>
@@ -234,8 +254,9 @@ const EventForm = () => {
   )
 }
 
-export default EventForm
-if (document.getElementById('event-form')) {
-    const root = createRoot(document.getElementById("event-form"));
-    root.render(<EventForm />);
+export default EditEventForm
+if (document.getElementById('edit-event-form')) {
+    const root = createRoot(document.getElementById("edit-event-form"));
+    let event = document.getElementById('edit-event-form').getAttribute('event');
+    root.render(<EditEventForm  event={event} />);
   }

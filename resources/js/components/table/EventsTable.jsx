@@ -56,7 +56,7 @@ const EventsTable = () => {
                             </th> 
                             <th className='flex flex-row w-full justify-end mt-2 '>
                             <a href={'/events/'+ event.id +'/edit'} className='focus:outline-none text-white bg-colorGreen hover:bg-[#4e9f4c] focus:ring-4 focus:ring-bg-[#4e9f4c] font-inter rounded-lg text-sm px-4 py-2.5 mr-2 mb-2'>Editar</a>
-                            <button onClick={() => alert(event)} className='focus:outline-none text-white bg-colorPink hover:bg-[#be6665] focus:ring-4 focus:ring-bg-[#4e9f4c] font-inter rounded-lg text-sm px-4 py-2.5 mr-2 mb-2 '>Eliminar</button>
+                            <button onClick={() => alert(event)} className='focus:outline-none text-white bg-colorPink hover:bg-[#be6665] focus:ring-4 focus:ring-bg-[#4e9f4c] font-inter rounded-lg text-sm px-4 py-2.5 mr-2 mb-2'>Eliminar</button>
                             </th>
                         </tr>
             })

@@ -47,7 +47,7 @@
                                     <a href="{{ route('users.index') }}"  class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Usuarios</a>
                                 </li>
                                 <li class="w-full text-center bg-colorPink hover:bg-[#cc706f] py-2 uppercase">
-                                    <a href="#" class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Colaboradores</a>
+                                    <a href="{{ route('collaborators.create') }}" class="w-full text-colorWhite hover:text-colorWhite font-sansita text-[13px] lg:text-lg  font-extrabold">Agregar Colaboradores</a>
                                 </li>
                             @endif
 
@@ -93,7 +93,7 @@
                 </div>
     
                 <div class='flex justify-center gap-2'>
-                    <a  href="/contact" class='p-2  bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase'>
+                    <a  href="{{ route('collaborators.index') }}" class='p-2  bg-colorPink text-colorWhite hover:text-colorWhite hover:bg-[#cc706f] font-sansita text-[13px] lg:text-2xl font-extrabold rounded-md self-center max-w-max uppercase'>
                         Contacto
                     </a>
      

@@ -24,9 +24,6 @@ Route::get('/services', function(){
 Route::get('/about', function(){
     return view('about');
 });
-Route::get('/contact', function(){
-    return view('contact');
-});
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -54,6 +51,7 @@ Route::get('/events/{event}/{user}/drop-out', [EventController::class, 'detachRe
 Route::resource('events', EventController::class);
 
 
-Route::resource('collaborators', CollaboratorController::class);
+Route::resource('collaborators', CollaboratorController::class)->except('index');
+Route::get('/contact', [CollaboratorController::class, 'index'])->name('collaborators.index');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');

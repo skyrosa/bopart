@@ -40,7 +40,7 @@ const LoginForm = () => {
                 <p className='text-[25px] lg:text-[32px] font-bold'>Login de Usuario</p>
                 <div className="border-b-2 border-[#959393] w-4/6"></div>
                 {!error.message ? '':
-                    <div className='absolute top-[20%] lg:top-[24%] w-4/6 text-[9px] font-bold md:text-[12px] rounded-[10px] py-[5px] text-lg bg-gradient-yellow text-center'>
+                    <div className='absolute top-[20%] lg:top-[24%] w-4/6 text-[9px] font-bold md:text-[12px] rounded-[10px] py-[5px] text-lg bg-colorYellow text-center'>
                     {error.message}
                     </div>
                 }
@@ -73,7 +73,7 @@ const LoginForm = () => {
                 </div>
 
                 <div className='w-3/4'>
-                    <a href='#' className='underline underline-offset-4 text-xs	text-left'>
+                    <a href='#' className='underline-offset-4 text-xs	text-left line-through'>
                         Olvide mi contraseña:
                     </a>
                 </div>
@@ -83,9 +83,9 @@ const LoginForm = () => {
                         Iniciar sesión
                     </button>
 
-                    <button type='submit' className="px-3 py-[10px] text-colorBlack text-sm lg:text-lg font-inter font-medium  rounded-lg border-colorTourq hover:bg-colorGreen hover:text-colorWhite">
+                    <a href='/register' className="px-3 py-[10px] text-colorBlack text-sm lg:text-lg font-inter font-medium  rounded-lg border-colorTourq hover:bg-colorGreen hover:text-colorWhite">
                         Registrarse
-                    </button>
+                    </a>
                 </div>
             </form>
         </div>

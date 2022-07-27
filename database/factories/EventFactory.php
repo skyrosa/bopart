@@ -17,7 +17,7 @@ class EventFactory extends Factory
     public function definition()
     {   
         $date = $this->faker->dateTimeBetween('+0 days', '+2 years');
-        $time = date('H:i' ,strtotime($this->faker->time()));
+        $time = date('H:i:s' ,strtotime($this->faker->time()));
         return [
             "name" => $this->faker->company(),
             "description" => $this->faker->paragraph(),
