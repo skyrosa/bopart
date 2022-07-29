@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
+<div class="w-full min-h-full bg-gradient-to-b from-colorPink to-colorTourq p-4 flex flex-col justify-center">
+    <div id="login-form" class='w-full flex justify-center'></div>
+</div>
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +73,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection

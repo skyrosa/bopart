@@ -1,0 +1,53 @@
+.spinner{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+       #0000 10%,
+       #4105f5
+     );
+    -webkit-mask:
+       radial-gradient(
+          farthest-side,
+         #0000 calc(100% - 10px),
+         #000
+         0
+        );
+    animation:spin 0.8s infinite linear;
+}
+@keyframes spin{
+    to{
+    transform:rotate(1turn);
+    }
+}
+
+.scroll::-webkit-scrollbar{
+    height: 15px;
+    background-color: rgb(63, 62, 62);
+}
+.scroll::-webkit-scrollbar-thumb{
+    height: 15px;
+    background-color: #c84675;
+    border-radius: 10px;
+}
+
+    .truncate_text{
+        height:63px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    .card{
+        padding: 15px;
+    }
+    @media (min-width: 768px) {
+        .truncate_text{
+            height:113px;
+            -webkit-line-clamp: 4;
+        }
+        .card{
+            padding: 30px;
+        }
+    }
+
